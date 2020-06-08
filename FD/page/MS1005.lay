@@ -1,0 +1,34 @@
+<div data-max-abutton="15" data-max-aimage="20" data-base="APage" data-class="MS1005" data-flag="1110" class="APage-Style ui-droppable" data-max-alabel="15" data-max-alistview="1" data-max-atabview="1" data-max-aview="14" style="width: 100%; height: 100%; border: 0px none rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0);">
+    <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" id="MS1005--View5" style="width: 100%; height: 100%; background-color: rgb(255, 255, 255); position: absolute; border: 0px solid rgb(255, 255, 255);">
+        <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" id="MS1005--TitleView" style="width: 100%; height: 88px; background-color: rgba(0, 0, 0, 0); position: absolute; float: none; left: 0px; top: 0px;">
+            <span class="ALabel-Style" data-base="ALabel" data-center-left="true" data-class="ALabel" data-flag="0001" id="MS1005--TitleLbl" style="width: 70%; height: 100%; left: 96px; position: absolute; text-align: center; font-size: 34px; float: none; bottom: auto; top: auto;">
+                <span class="page_tit M" data-style="page_tit M" style="background-color: rgba(0, 0, 0, 0); color: rgb(50, 59, 76); border-bottom-color: rgb(255, 255, 255);"></span>
+            </span>
+            <div class="AView-Style ui-droppable" data-base="AView" data-center-top="true" data-class="AView" data-flag="1011" data-listener-actiondown="MS1005:onHomeBtnClick" id="MS1005--HomeView" style="width: 60px; height: 60px; background-color: rgba(0, 0, 0, 0); position: absolute; border: 0px solid rgb(255, 255, 255); float: none; left: 30px; top: 14px;">
+                <button class="AButton-Style BT_01_NOR AButton-normal" data-base="AButton" data-center-left="true" data-center-top="true" data-class="AButton" data-flag="0001" data-state="0" data-style="BT_01_NOR|BT_01_TCH|" id="MS1005--HomeBtn" style="width: 32px; height: 29px; left: 14px; top: 15.5px; position: absolute; float: none;"></button>
+            </div>
+            <button class="AButton-Style AButton-normal" data-base="AButton" data-bgcolor="rgb(255, 0, 0)||" data-class="AButton" data-flag="0001" data-listener-click="MS1005:onTestNextBtnClick" data-state="0" id="MS1005--TestNextBtn" style="width: 70px; height: 40px; left: 540px; top: 23px; position: absolute; background-color: rgb(255, 0, 0); visibility: hidden;">Next</button>
+            <button class="AButton-Style AButton-normal" data-base="AButton" data-bgcolor="rgb(255, 0, 0)||" data-class="AButton" data-flag="0001" data-listener-click="MS1005:onTestPrevBtnClick" data-state="0" id="MS1005--TestPrevBtn" style="width: 90px; height: 40px; left: 430px; top: 20px; position: absolute; background-color: rgb(255, 0, 0); visibility: hidden;">Prev</button>
+            <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1005--TestLbl" style="width: 180px; height: 30px; left: 110px; top: 20px; position: absolute; text-align: left; font-size: 26px; visibility: hidden;"><span class="SB" data-style="SB" style="color: rgb(255, 0, 0);">TEST</span></span>
+        </div>
+        <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-float="left" id="MS1005--View3" style="width: 100%; height: 125px; background-color: rgba(0, 0, 0, 0); position: absolute; float: none; opacity: 1; border: 0px solid rgb(255, 255, 255); left: 0px; top: 88px; padding-top: 65px; padding-left: 55px; padding-right: 55px;">
+            <div class="AView-Style ui-droppable StepLine" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-style="StepLine" id="MS1005--View13" style="width: 100%; height: 60px; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; position: relative; float: left;">
+                <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1005--NaviText" style="width: auto; height: auto; position: relative; font-size: 40px; text-align: left; float: left; left: 0px; top: 0px;">
+                    <span class="NaviTitle M" data-style="NaviTitle M" style="color: rgb(50, 59, 76); background-color: rgba(0, 0, 0, 0); vertical-align: bottom;">신분증 확인</span>
+                </span>
+                <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" id="MS1005--Step" style="width: auto; height: auto; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; position: relative; float:right;">
+                    <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1005--CurrentStep" style="width: auto; height: 25px; left: 0px; top: 0px; position: relative; float: left;"><span class="SD30 fc_red1" data-style="SD30 fc_red1">1</span></span>
+                    <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1005--TotalStep" style="width: auto; height: 28px; left: 0px; top: 0px; position: relative; float: left;"><span class="SD30 fc_black_base" data-style="SD30 fc_black_base">/9</span></span>
+                </div>
+            </div>
+        </div>
+        <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-sgap-height="0px" id="MS1005--View6" style="background-color: rgba(0, 0, 0, 0); position: absolute; width: 100%; border: 0px solid rgb(255, 255, 255); float: none; left: 0px; top: 213px; height: 925px;">
+            <div class="ATabView-Style" data-base="ATabView" data-class="ATabView" data-flag="0001" data-state="0" id="MS1005--MainView" style="position: relative; height: 100%; float: left; background-color: rgba(0, 0, 0, 0); width: 100%;">
+                <div class="tabContents" style="padding-top: 0px;"></div>
+                <div class="tabArea" style="height: 65px; visibility: hidden;"><span class="ATabView-select" style="width:110px; line-height: 65px;">tab1</span>
+                    <span class="ATabView-diselect" style="width:110px; line-height: 65px;">tab2</span>
+                    <span class="ATabView-diselect" style="width:110px; line-height: 65px;">tab3</span></div>
+            </div>
+        </div>
+    </div>
+</div>

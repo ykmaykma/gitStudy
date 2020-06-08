@@ -1,0 +1,13 @@
+{
+	"meta": "PSACCTR,계정계 일반,비대면계좌개설 동영상확인번호 요청",
+	"name": "SBPGQ121",
+	"queryType": ".STRT",
+	"input": {},
+	"output": {
+		"OutBlock1":{
+			"format": [
+				"응답코드,D1응답코드,0,RtnCode,STRING,4,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"meta": "PSACCTR,계정계 일반,비대면 계좌 HTS ID 등록",
+	"name": "SBPGT175",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"사용자ID,D1사용자ID,0,UserId,STRING,16,0",
+				"전자금융거래매체비밀번호,D1전자금융거래매체비밀번호,0,ElecfnTrdmdaPwd,STRING,32,0",
+				"확인로그인비밀번호,D1확인로그인비밀번호,0,CnfLoginPwd,STRING,32,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"고객명,D1고객명,0,CIntNm,STRING,40,0",
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"전화지역번호,D1전화지역번호,0,TelRgno,STRING,4,0",
+				"전화국번호,D1전화국번호,0,TelExno,STRING,4,0",
+				"전화일련번호,D1전화일련번호,0,TelSeqno,STRING,4,0",
+				"휴대폰지역번호,D1휴대폰지역번호,0,HpRgno,STRING,4,0",
+				"휴대폰국번호,D1휴대폰국번호,0,HpExno,STRING,4,0",
+				"휴대폰일련번호,D1휴대폰일련번호,0,HpSeqno,STRING,4,0",
+				"동이상주소,D1동이상주소,0,AdbngAddr,STRING,100,0",
+				"동이하주소,D1동이하주소,0,BlwdngAddr,STRING,100,0",
+				"우편번호,D1우편번호,0,PostNo,STRING,6,0",
+				"email출처,D1email출처,0,EmailOutPlc,STRING,100,0"
+			]
+		}
+	}
+}

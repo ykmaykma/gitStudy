@@ -1,0 +1,28 @@
+{
+	"meta": "PSACCTR,계정계 일반,주민등록번호별 저축상품별 세금우대현황",
+	"name": "SACMT194",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"실명확인구분,D1실명확인구분,0,RmnCnfTp,STRING,1,0",
+				"은행연합회상품코드,D1은행연합회상품코드,0,KfbPrdtCode,STRING,2,0",
+				"생계형가입코드,D1생계형가입코드,0,LhfrmJoinCode,STRING,2,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"상호명,D1상호명,0,Frmnm,STRING,40,0",
+				"성명,D1성명,0,Nm,STRING,40,0",
+				"생계형가입구분,D1생계형가입구분,0,LhfrmJoinCodeNm,STRING,40,0",
+				"중복가입여부,D1중복가입여부,0,DupJoinNm,STRING,40,0",
+				"세금우대가입금액,D1세금우대가입금액,0,TaxPrvlgJoinAmt,NUMSTRING,16,0",
+				"한도잔여금액,D1한도잔여금액,0,LmtRmndAmt,NUMSTRING,16,0",
+				"은행연합회지점번호,D1은행연합회지점번호,0,KfbBrnNo,NUMSTRING,9,0"
+			]
+		}
+	}
+}

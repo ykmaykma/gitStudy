@@ -1,0 +1,36 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드예약매수",
+	"name": "SOFFT223",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"예약구분,D1예약구분,0,RsvTp,STRING,1,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"매수금액,D1매수금액,0,BuyAmt,NUMSTRING,16,0",
+				"예약일,D1예약일,0,RsvDt,STRING,8,0",
+				"납입방법코드,D1납입방법코드,0,PayMthdCode,STRING,2,0",
+				"계약기간,D1계약기간,0,CvntTerm,NUMSTRING,4,0",
+				"계약금액,D1계약금액,0,CvntAmt,NUMSTRING,16,0",
+				"전화지역번호,D1전화지역번호,0,TelRgno,STRING,4,0",
+				"전화국번호,D1전화국번호,0,TelExno,STRING,4,0",
+				"전화일련번호,D1전화일련번호,0,TelSeqno,STRING,4,0",
+				"월납입일,D1월납입일,0,MthPayDt,STRING,2,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"예약번호,D1예약번호,0,RsvNo,NUMSTRING,10,0",
+				"주문일,D1주문일,0,OrdDt,STRING,8,0",
+				"체결일,D1체결일,0,ExecDt,STRING,8,0",
+				"결제일,D1결제일,0,SettDt,STRING,8,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"meta": "로그아웃",
+	"name": "SBPLT304",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {}
+}

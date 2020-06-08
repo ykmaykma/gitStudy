@@ -1,0 +1,24 @@
+{
+	"meta": "PSACCTR,계정계 일반,은행계좌번호조회",
+	"name": "SDPNQ031",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"은행코드,D1은행코드,0,BankCode,STRING,3,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 20,
+			"format": [
+				"은행코드,D1은행코드,0,BnkCode,STRING,3,0",
+				"은행명,D1은행명,0,BnkNm,STRING,40,0",
+				"은행계좌번호,D1은행계좌번호,0,BnkAcntNo,STRING,20,0"
+			]
+		}
+	}
+}

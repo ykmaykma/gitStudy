@@ -1,0 +1,36 @@
+{
+	"meta": "PSACCTR,계정계 일반,투자자체크리스트 등록/정정",
+	"name": "SACMT112",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"확인구분,D1확인구분,0,CnfTp,STRING,1,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"종목번호,D1종목번호,0,IsuNo,STRING,12,0",
+				"항목1여부,D1항목1여부,0,Item1Yn,STRING,1,0",
+				"항목2여부,D1항목2여부,0,Item2Yn,STRING,1,0",
+				"항목3여부,D1항목3여부,0,Item3Yn,STRING,1,0",
+				"항목4여부,D1항목4여부,0,Item4Yn,STRING,1,0",
+				"항목5여부,D1항목5여부,0,Item5Yn,STRING,1,0",
+				"항목6여부,D1항목6여부,0,Item6Yn,STRING,1,0",
+				"항목7여부,D1항목7여부,0,Item7Yn,STRING,1,0",
+				"항목8여부,D1항목8여부,0,Item8Yn,STRING,1,0",
+				"펀드설명여부,D1펀드설명여부,0,FundDescrYn,STRING,1,0",
+				"처리일,D1처리일,0,TrxDt,STRING,8,0",
+				"처리일련번호,D1처리일련번호,0,TrxSeqno,NUMSTRING,10,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"종목명,D1종목명,0,IsuNm,STRING,40,0",
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"처리일련번호,D1처리일련번호,0,TrxSeqno,NUMSTRING,10,0"
+			]
+		}
+	}
+}

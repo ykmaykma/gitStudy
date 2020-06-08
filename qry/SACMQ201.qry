@@ -1,0 +1,46 @@
+{
+	"meta": "PSACCTR,계정계 일반,계좌 기본정보 조회",
+	"name": "SACMQ201",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"입력비밀번호,D1입력비밀번호,0,InptPwd,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"고객번호,D1고객번호,0,ClntNo,STRING,20,0",
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"관리지점번호,D1관리지점번호,0,MgmtBrnNo,STRING,3,0",
+				"관리지점명,D1관리지점명,0,MgmtBrnNm,STRING,40,0",
+				"원천징수위임여부,D1원천징수위임여부,0,WthldEntruNm,STRING,40,0",
+				"계좌상태명,D1계좌상태명,0,AcntStatNm,STRING,40,0",
+				"카드발급일,D1카드발급일,0,CardIssDt,STRING,8,0",
+				"카드발급건수,D1카드발급건수,0,CardIssCnt,NUMSTRING,10,0",
+				"신카드여부,D1신카드여부,0,NewCardYnNm,STRING,40,0",
+				"은행제휴카드번호,D1은행제휴카드번호,0,BnkCpcrdNo,STRING,20,0",
+				"카드일련번호,D1카드일련번호,0,CardSeqno,STRING,11,0",
+				"은행대표연결계좌번호,D1은행대표연결계좌번호,0,BnkDlgConnAcntNo,STRING,20,0",
+				"실명구분,D1실명구분,0,RmnTpNm,STRING,20,0",
+				"실명확인일,D1실명확인일,0,RmnCnfDt,STRING,8,0",
+				"반송횟수,D1반송횟수,0,RtpstCnt,NUMSTRING,6,0",
+				"통보불원,D1통보불원,0,SdinfYnNm,STRING,40,0",
+				"원장통보지,D1원장통보지,0,LedgSdinfAddrPtnNm,STRING,40,0",
+				"매매통보지,D1매매통보지,0,BnsSdinfAddrPtnNm,STRING,40,0",
+				"실질주주통보처,D1실질주주통보처,0,BenownSdinfAddrPtnNm,STRING,40,0",
+				"비밀번호연속오류횟수,D1비밀번호연속오류횟수,0,PwdContErrCnt,NUMSTRING,10,0",
+				"CD기비밀번호연속오류횟수,D1CD기비밀번호연속오류횟수,0,AtmPwdContErrCnt,NUMSTRING,10,0",
+				"이체비밀번호연속오류횟수,D1이체비밀번호연속오류횟수,0,MtrsfPwdContErrCnt,NUMSTRING,10,0",
+				"개인법인코드,D1개인법인코드,0,PsnlCorpCode,STRING,2,0",
+				"개인법인구분명,D1개인법인구분명,0,PsTpNm,STRING,40,0",
+				"대리인명,D1대리인명,0,AgntNm,STRING,40,0",
+				"계좌한글부기명,D1계좌한글부기명,0,AcntHanglAlias,STRING,40,0",
+				"계좌영문부기명,D1계좌영문부기명,0,AcntEngAlias,STRING,40,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,36 @@
+{
+	"meta": "PSACCTR,계정계 일반,CMS 약정 신청",
+	"name": "SACAT516",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"서브계좌번호,D1서브계좌번호,0,SubAcntNo,STRING,20,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"입력비밀번호,D1입력비밀번호,0,InptPwd,STRING,8,0",
+				"은행코드,D1은행코드,0,BnkCode,STRING,3,0",
+				"은행계좌번호,D1은행계좌번호,0,BnkAcntNo,STRING,20,0",
+				"은행계좌명,D1은행계좌명,0,BnkAcntNm,STRING,40,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"자동대체일,D1자동대체일,0,AbkpDt,STRING,2,0",
+				"이체종료일,D1이체종료일,0,MtrsfEndDt,STRING,8,0",
+				"이체시작일,D1이체시작일,0,MtrsfSrtDt,STRING,8,0",
+				"은행자동이체금액,D1은행자동이체금액,0,BnkAmtrAmt,NUMSTRING,16,0",
+				"은행본인계좌여부,D1은행본인계좌여부,0,BnkOnesfAcntYn,STRING,1,0",
+				"통장사용여부,D1통장사용여부,0,PsbUseYn,STRING,1,0",
+				"증빙구분,D1증빙구분,0,EvdnTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"최초거래일,D1최초거래일,0,FstTrdDt,STRING,8,0",
+				"통장유형구분,D1통장유형구분,0,PsbPtnTp,STRING,1,0"
+			]
+		}
+	}
+}

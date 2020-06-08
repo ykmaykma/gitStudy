@@ -1,0 +1,56 @@
+{
+	"meta": "PSACCTR,계정계 일반,신연금저축 계좌 개설",
+	"name": "SACMT295",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"고객번호,D1고객번호,0,ClntNo,STRING,20,0",
+				"상위계좌번호,D1상위계좌번호,0,HirnkAcntNo,STRING,20,0",
+				"상품유형코드,D1상품유형코드,0,PdptnCode,STRING,2,0",
+				"상품상세코드,D1상품상세코드,0,PrdtDtlCode,STRING,2,0",
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"계좌한글부기명,D1계좌한글부기명,0,AcntHanglAlias,STRING,40,0",
+				"계좌영문부기명,D1계좌영문부기명,0,AcntEngAlias,STRING,40,0",
+				"계좌비밀번호,D1계좌비밀번호,0,AcntPwd,STRING,8,0",
+				"확인계좌비밀번호,D1확인계좌비밀번호,0,CnfAcntPwd,STRING,8,0",
+				"원천징수위임여부,D1원천징수위임여부,0,WthldEntruYn,STRING,1,0",
+				"대리인주민등록번호,D1대리인주민등록번호,0,CDDRmnno,STRING,13,0",
+				"원장통보주소유형코드,D1원장통보주소유형코드,0,LedgSdinfAddrPtnCode,STRING,2,0",
+				"매매통보주소유형코드,D1매매통보주소유형코드,0,BnsSdinfAddrPtnCode,STRING,2,0",
+				"기타우편물통보주소유형코드,D1기타우편물통보주소유형코드,0,EtcPtmtrSdinfAddrPtnCode,STRING,2,0",
+				"거래세징수여부,D1거래세징수여부,0,TrtaxLevyYn,STRING,1,0",
+				"관리사원번호,D1관리사원번호,0,MgempNo,STRING,9,0",
+				"권유사원번호,D1권유사원번호,0,CnvsEmpNo,STRING,9,0"
+			]
+		},
+		"InBlock2": {
+			"format": [
+				"투자신탁투자자분류코드,D1투자신탁투자자분류코드,0,IvtrstInvstrClssCode,STRING,4,0",
+				"계약기간월수,D1계약기간월수,0,CvntTermMthQty,NUMSTRING,6,0",
+				"납입단위금액,D1납입단위금액,0,PayUnitAmt,NUMSTRING,16,0", 
+				"연금지급시작일,D1연금지급시작일,0,AnutyGivSrtDt,STRING,8,0",
+				"최초매수일,D1최초매수일,0,FstBuyDt,STRING,8,0"
+			]
+		},
+		"InBlock3": {
+			"format": [
+				"계정구분,D1계정구분,0,AccTp,STRING,1,0",
+				"출금계좌번호,D1출금계좌번호,0,MnyoutAcntNo,STRING,20,0",
+				"피해자_계좌번호,D1피해자_계좌번호,0,AcsdAcntNo,STRING,20,0",
+				"피상속인사망일,D1피상속인사망일,0,AcsdScsorDthDt,STRING,8,0"
+			]
+		}
+    },
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"만기일,D1만기일,0,DueDt,STRING,8,0",
+				"조회계좌번호,D1조회계좌번호,0,QryAcntNo,STRING,20,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0"
+			]
+		}
+	}
+}

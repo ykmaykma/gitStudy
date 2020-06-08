@@ -1,0 +1,77 @@
+{
+	"meta": "PSACCTR,계정계 일반,개인(신용)정보 제공활용 동의",
+	"name": "SACMT289",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"개인정보제공동의여부1,D1개인정보제공동의여부1,0,ClntInfoTp1,STRING,1,0",
+				"개인정보제공동의여부2,D1개인정보제공동의여부2,0,ClntInfoTp2,STRING,1,0",
+				"개인정보제공동의여부3,D1개인정보제공동의여부3,0,ClntInfoTp3,STRING,1,0",
+				"개인정보제공동의여부4,D1개인정보제공동의여부4,0,ClntInfoTp4,STRING,1,0",
+				"개인정보제공동의여부5,D1개인정보제공동의여부5,0,ClntInfoTp5,STRING,1,0",
+				"항목값,D1항목값,0,ItemVal1,STRING,50,0",
+				"개인정보제공동의여부6,D1개인정보제공동의여부6,0,ClntInfoTp6,STRING,1,0",
+				"항목값,D2항목값,0,ItemVal2,STRING,50,0",
+				"개인정보제공동의여부7,D1개인정보제공동의여부7,0,ClntInfoTp7,STRING,1,0",
+				"개인정보제공동의여부8,D1개인정보제공동의여부8,0,ClntInfoTp8,STRING,1,0",
+				"개인정보제공동의여부9,D1개인정보제공동의여부9,0,ClntInfoTp9,STRING,1,0",
+				"개인정보제공동의여부10,D1개인정보제공동의여부10,0,ClntInfoTp10,STRING,1,0",
+				"항목값,D3항목값,0,ItemVal3,STRING,50,0",
+				"개인정보제공동의여부11,D1개인정보제공동의여부11,0,ClntInfoTp11,STRING,1,0",
+				"개인정보제공동의여부12,D1개인정보제공동의여부12,0,ClntInfoTp12,STRING,1,0",
+				"개인정보제공동의여부13,D1개인정보제공동의여부13,0,ClntInfoTp13,STRING,1,0",
+				"개인정보제공동의여부14,D1개인정보제공동의여부14,0,ClntInfoTp14,STRING,1,0",
+				"개인정보제공동의여부15,D1개인정보제공동의여부15,0,ClntInfoTp15,STRING,1,0",
+				"개인정보제공동의여부16,D1개인정보제공동의여부16,0,ClntInfoTp16,STRING,1,0",
+				"개인정보제공동의여부17,D1개인정보제공동의여부17,0,ClntInfoTp17,STRING,1,0",
+				"개인정보제공동의여부18,D1개인정보제공동의여부18,0,ClntInfoTp18,STRING,1,0",
+				"개인정보제공동의여부19,D1개인정보제공동의여부19,0,ClntInfoTp19,STRING,1,0",
+				"개인정보제공동의여부20,D1개인정보제공동의여부20,0,ClntInfoTp20,STRING,1,0",
+				"개인정보제공동의여부21,D1개인정보제공동의여부21,0,ClntInfoTp21,STRING,1,0",
+				"개인정보제공동의여부22,D1개인정보제공동의여부22,0,ClntInfoTp22,STRING,1,0",
+				"개인정보제공동의여부23,D1개인정보제공동의여부23,0,ClntInfoTp23,STRING,1,0",
+				"개인정보제공동의여부24,D1개인정보제공동의여부24,0,ClntInfoTp24,STRING,1,0",
+				"개인정보제공동의여부25,D1개인정보제공동의여부25,0,ClntInfoTp25,STRING,1,0",
+				"개인정보제공동의여부26,D1개인정보제공동의여부26,0,ClntInfoTp26,STRING,1,0",
+				"개인정보제공동의여부27,D1개인정보제공동의여부27,0,ClntInfoTp27,STRING,1,0",
+				"개인정보제공동의여부28,D1개인정보제공동의여부28,0,ClntInfoTp28,STRING,1,0",
+				"개인정보제공동의여부29,D1개인정보제공동의여부29,0,ClntInfoTp29,STRING,1,0",
+				"개인정보제공동의여부30,D1개인정보제공동의여부30,0,ClntInfoTp30,STRING,1,0",
+				"개인정보제공동의여부31,D1개인정보제공동의여부31,0,ClntInfoTp31,STRING,1,0",
+				"개인정보제공동의여부32,D1개인정보제공동의여부32,0,ClntInfoTp32,STRING,1,0",
+				"개인정보제공동의여부33,D1개인정보제공동의여부33,0,ClntInfoTp33,STRING,1,0",
+				"개인정보제공동의여부34,D1개인정보제공동의여부34,0,ClntInfoTp34,STRING,1,0",
+				"개인정보제공동의여부35,D1개인정보제공동의여부35,0,ClntInfoTp35,STRING,1,0",
+				"개인정보제공동의여부36,D1개인정보제공동의여부36,0,ClntInfoTp36,STRING,1,0",
+				"개인정보제공동의여부37,D1개인정보제공동의여부37,0,ClntInfoTp37,STRING,1,0",
+				"개인정보제공동의여부38,D1개인정보제공동의여부38,0,ClntInfoTp38,STRING,1,0",
+				"개인정보제공동의여부39,D1개인정보제공동의여부39,0,ClntInfoTp39,STRING,1,0",
+				"개인정보제공동의여부40,D1개인정보제공동의여부40,0,ClntInfoTp40,STRING,1,0",
+				"개인정보제공동의여부41,D1개인정보제공동의여부41,0,ClntInfoTp41,STRING,1,0",
+				"개인정보제공동의여부42,D1개인정보제공동의여부42,0,ClntInfoTp42,STRING,1,0",
+				"개인정보제공동의여부43,D1개인정보제공동의여부43,0,ClntInfoTp43,STRING,1,0",
+				"개인정보제공동의여부44,D1개인정보제공동의여부44,0,ClntInfoTp44,STRING,1,0",
+				"개인정보제공동의여부45,D1개인정보제공동의여부45,0,ClntInfoTp45,STRING,1,0",
+				"개인정보제공동의여부46,D1개인정보제공동의여부46,0,ClntInfoTp46,STRING,1,0",
+				"개인정보제공동의여부47,D1개인정보제공동의여부47,0,ClntInfoTp47,STRING,1,0",
+				"개인정보제공동의여부48,D1개인정보제공동의여부48,0,ClntInfoTp48,STRING,1,0",
+				"개인정보제공동의여부49,D1개인정보제공동의여부49,0,ClntInfoTp49,STRING,1,0",
+				"개인정보제공동의여부50,D1개인정보제공동의여부50,0,ClntInfoTp50,STRING,1,0"				
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"일자1,D1일자1,0,Dt1,STRING,8,0",
+				"일자2,D1일자2,0,Dt2,STRING,8,0"				
+			]
+		}
+	}
+}

@@ -1,0 +1,42 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드 매매 취소",
+	"name": "SOFFT131",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"거래구분,D1거래구분,0,TrdTp,STRING,1,0",
+				"처리지점번호,D1처리지점번호,0,TrxBrnNo,STRING,3,0",
+				"투신국내외구분,D1투신국내외구분,0,IvtrstIadTp,STRING,1,0",
+				"주문일,D1주문일,0,OrdDt,STRING,8,0",
+				"주문번호,D1주문번호,0,OrdNo,NUMSTRING,10,0",
+				"펀드매매처리구분,D1펀드매매처리구분,0,FndtdTrxTp,STRING,1,0",
+				"상대계좌번호,D1상대계좌번호,0,OppAcntNo,STRING,20,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"거래일자,D1거래일자,0,TrdDate,STRING,8,0",
+				"거래번호,D1거래번호,0,TrdNo,NUMSTRING,10,0",
+				"출납번호,D1출납번호,0,Inouno,NUMSTRING,10,0",
+				"매수금액,D1매수금액,0,BuyAmt,NUMSTRING,16,0",
+				"매수수량,D1매수수량,0,BuyQty,NUMSTRING,16,0",
+				"유가증권전잔수량,D1유가증권전잔수량,0,SecBfbalQty,NUMSTRING,16,0",
+				"유가증권금잔수량,D1유가증권금잔수량,0,SecCrbalQty,NUMSTRING,16,0",
+				"기준가적용일,D1기준가적용일,0,BasePrcAppDt,STRING,8,0",
+				"결제일,D1결제일,0,SettDt,STRING,8,0",
+				"판매수수료,D1판매수수료,0,MchndCmsnAmt,NUMSTRING,16,0",
+				"매매기준가,D1매매기준가,0,BnsBasePrc,NUMSTRING,20,10",
+				"과표기준가,D1과표기준가,0,BoaBasePrc,NUMSTRING,20,10",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"투신펀드일련번호,D1투신펀드일련번호,0,IvstfndSeqno,NUMSTRING,10,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,39 @@
+{
+	"meta": "PSACCTR,계정계 일반,주민등록번호별 전금융기관 세금우대등록 현황",
+	"name": "SACMT192",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"최종전문번호,D1최종전문번호,0,LastTgno,STRING,10,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"생계형가입구분,D1생계형가입구분,0,LhfrmJoinCodeNm,STRING,40,0",
+				"가입총액,D1가입총액,0,JoinTotamt,NUMSTRING,16,0",
+				"한도잔여금액,D1한도잔여금액,0,LmtRmndAmt,NUMSTRING,16,0",
+				"중복가입여부,D1중복가입여부,0,DupJoinNm,STRING,40,0",
+				"등록건수,D1등록건수,0,RegCnt,NUMSTRING,10,0"
+			]
+		},
+		"OutBlock2": {
+			"occurs": 10,
+			"format": [
+				"계좌상태명,D1계좌상태명,0,AcntStatNm,STRING,40,0",
+				"지점명,D1지점명,0,BrnNm,STRING,40,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"가입상품명,D1가입상품명,0,JoinPrdtNm,STRING,40,0",
+				"계좌개설일,D1계좌개설일,0,AcntOpnDt,STRING,8,0",
+				"세금우대가입금액,D1세금우대가입금액,0,TaxPrvlgJoinAmt,NUMSTRING,16,0",
+				"만기일,D1만기일,0,DueDt,STRING,8,0",
+				"해지일,D1해지일,0,AbndDt,STRING,8,0",
+				"이자금액,D1이자금액,0,IntrstAmt,NUMSTRING,16,0"
+			]
+		}
+	}
+}

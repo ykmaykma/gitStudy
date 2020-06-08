@@ -1,0 +1,29 @@
+{
+	"meta": "PSACCTR,계정계 일반,CMS약정 및 일간자동매수서비스약정 계좌 리스트 조회(MTS)",
+	"name": "SACMQ619",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 100,
+			"format": [
+				"서브계좌번호,D1서브계좌번호,0,SubAcntNo,STRING,20,0",
+				"서브계좌명,D1서브계좌명,0,SubAcntNm,STRING,40,0",
+				"투신펀드일련번호,D1투신펀드일련번호,0,IvstfndSeqno,NUMSTRING,10,0",
+				"펀드코드,D1펀드코드,0,FundCode,STRING,20,0",
+				"펀드명,D1펀드명,0,FundNm,STRING,40,0",
+				"납입방법코드,D1납입방법코드,0,PayMthdCode,STRING,2,0",
+				"납입방법명,D1납입방법명,0,PayMthdNm,STRING,40,0",
+				"서비스종류코드,D1서비스종류코드,0,SvcKindCode,STRING,4,0",
+				"서비스종류명,D1서비스종류명,0,SvcKindNm,STRING,40,0"
+			]
+		}
+	}
+}

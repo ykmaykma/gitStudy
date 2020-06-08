@@ -1,0 +1,24 @@
+{
+	"meta": "PSACCTR,계정계 일반,은행예금주성명조회",
+	"name": "SDPKT120",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"은행코드,D1은행코드,0,BnkCode,STRING,3,0",
+				"은행계좌번호,D1은행계좌번호,0,BnkAcntNo,STRING,20,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"은행명,D1은행명,0,BnkNm,STRING,40,0",
+				"은행지점명,D1은행지점명,0,BnkBrnNm,STRING,40,0",
+				"예금주명,D1예금주명,0,DpsPsnNm,STRING,40,0",
+				"은행응답코드,D1은행응답코드,0,BnkRspnsCode,STRING,4,0",
+				"은행메시지내용,D1은행메시지내용,0,BnkMsgCnts,STRING,100,0"
+			]
+		}
+	}
+}

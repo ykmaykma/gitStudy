@@ -1,0 +1,29 @@
+{
+	"meta": "PSACCTR,계정계 일반,HTS 사용자ID 정보 조회",
+	"name": "SBPGQ193",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"상품유형코드,D1상품유형코드,0,PdptnCode,STRING,2,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"사용자명,D1사용자명,0,UserNm,STRING,40,0",
+				"사용자ID,D1사용자ID,0,UserId,STRING,16,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"사용자ID,D1사용자ID,0,UserId,STRING,16,0",
+				"전자금융거래매체신청일,D1전자금융거래매체신청일,0,ElecfnTrdmdaPrslDt,STRING,8,0",
+				"실명확인방법코드,D1실명확인방법코드,0,RmnCnfMthdCode,STRING,2,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"고객명,D1고객명,0,ClntNm,STRING,40,0"
+			]
+		}
+	}
+}

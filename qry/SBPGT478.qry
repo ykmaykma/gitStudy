@@ -1,0 +1,14 @@
+{
+	"meta": "PSACCTR,계정계 일반,HTS사용자비밀번호초기화 (사용자)",
+	"name": "SBPGT478",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"변경로그인비밀번호,D1변경로그인비밀번호,0,ChgLoginPwd,STRING,32,0",
+				"확인로그인비밀번호,D1확인로그인비밀번호,0,CnfLoginPwd,STRING,32,0"
+			]
+		}
+	},
+	"output": {}
+}

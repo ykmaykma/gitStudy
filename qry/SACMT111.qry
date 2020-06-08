@@ -1,0 +1,28 @@
+{
+	"meta": "PSACCTR,계정계 일반,투자자확인서 등록/정정",
+	"name": "SACMT111",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"확인구분,D1확인구분,0,CnfTp,STRING,1,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"종목번호,D1종목번호,0,IsuNo,STRING,12,0",
+				"처리일,D1처리일,0,TrxDt,STRING,8,0",
+				"처리일련번호,D1처리일련번호,0,TrxSeqno,NUMSTRING,10,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"종목명,D1종목명,0,IsuNm,STRING,40,0",
+				"처리일련번호,D1처리일련번호,0,TrxSeqno,NUMSTRING,10,0"
+			]
+		}
+	}
+}

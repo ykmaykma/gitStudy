@@ -1,0 +1,24 @@
+  {
+	"meta": "에버세이프검증 3세대",
+	"name": "EVESF002",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"타입,D1타입,0,,STRING,1,0",
+				"토큰길이,D1토큰길이,0,,STRING,4,0",
+				"토큰,D1토큰,0,,STRING,1024,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"메세지,D1메세지,0,,STRING,1024,0",
+				"메시지타입,D1메시지타입,0,,STRING,64,0",
+				"타입,D1타입,0,,STRING,1,0",
+				"메시지길이,D1메시지길이,0,,STRING,4,0"
+			]
+		}
+	}
+}

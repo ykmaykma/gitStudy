@@ -1,0 +1,26 @@
+{
+	"meta": "PSACCTR,계정계 일반,비대면계좌개설단계설정및조회",
+	"name": "SACMT635",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"디바이스고유번호,D1디바이스고유번호,0,DevUniqNo,STRING,40,0",
+				"처리상태코드,D1처리상태코드,0,TrxStatCode,STRING,2,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"비대면업무구분,D1비대면업무구분,0,AfirTp,STRING,1,0",
+				"처리상태코드,D1처리상태코드,0,TrxStatCode,STRING,2,0",
+				"일,D1일,0,date,STRING,8,0",
+				"등록일,D1등록일,0,RegDt,STRING,8,0",
+				"처리코드,D1처리코드,0,,STRING,2,0"
+			]
+		}
+	}
+}

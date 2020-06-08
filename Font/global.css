@@ -1,0 +1,55 @@
+body
+{
+	-webkit-touch-callout: none;
+	font-size: 22px;
+	font-family: 'APM';
+	font-weight:400;
+}
+
+input, textarea, button
+{
+	border-radius: 0px;
+	font-size: 22px;
+	font-family: 'APM';
+}
+
+span, button
+{
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+}
+
+/*
+input:disabled
+{
+	background-color: rgba(186,186,187,.35) !important;
+ 	-webkit-box-shadow: 0 0 2px rgba(0,0,0,.75), inset 1px 1px 4px rgba(0,0,0,.55) !important;
+}
+*/
+
+table
+{
+	/*faster than the layout auto*/
+	table-layout: fixed;
+}
+
+::-webkit-input-placeholder
+{
+	color:#888888;
+}
+
+.bold_style
+{
+	font-weight:bold !important;
+}
+
+/*구글맵링크버튼 숨기기*/
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}

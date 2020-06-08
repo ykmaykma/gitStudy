@@ -1,0 +1,47 @@
+{
+	"meta": "PSACCTR,계정계 일반,계좌 사고 등록 및 해지 내역",
+	"name": "SACMQ603",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0",
+				"시작계좌번호,D1시작계좌번호,0,SrtAcntNo,STRING,20,0",
+				"조회지점번호,D1조회지점번호,0,QryBrnNo,STRING,3,0",
+				"조회시작일,D1조회시작일,0,QrySrtDt,STRING,8,0",
+				"조회종료일,D1조회종료일,0,QryEndDt,STRING,8,0",
+				"상품유형코드,D1상품유형코드,0,PdptnCode,STRING,2,0",
+				"사고유형코드,D1사고유형코드,0,AcdPtnCode,STRING,2,0",
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"지점명,D1지점명,0,BrnNm,STRING,40,0"
+			]
+		},
+		"OutBlock2": {
+			"occurs": 99999,
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"사고등록일,D1사고등록일,0,AcdRegDt,STRING,8,0",
+				"등록구분,D1등록구분,0,RegTpNm,STRING,20,0",
+				"사고유형,D1사고유형,0,AcdPtnNm,STRING,40,0",
+				"사고접수경로,D1사고접수경로,0,AcdRcptPtnNm,STRING,40,0",
+				"기타사고등록사유,D1기타사고등록사유,0,EtcAcdRegRsn,STRING,100,0",
+				"해지사유,D1해지사유,0,AbndRsn,STRING,100,0",
+				"기타사고해지사유,D1기타사고해지사유,0,EtcAcdAbndRsn,STRING,100,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"변경지점번호,D1변경지점번호,0,ChgBrnNo,STRING,3,0",
+				"변경사용자ID,D1변경사용자ID,0,ChgUserId,STRING,16,0",
+				"변경일시,D1변경일시,0,ChgDttm,STRING,17,0",
+				"변경단말번호,D1변경단말번호,0,ChgTermNo,STRING,3,0",
+				"계좌상태코드,D1계좌상태코드,0,AcntStatCode,STRING,2,0",
+				"계좌상태명,D1계좌상태명,0,AcntStatNm,STRING,40,0"
+			]
+		}
+	}
+}

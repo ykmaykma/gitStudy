@@ -1,0 +1,55 @@
+{
+	"meta": "PSACCTR,계정계 일반,서브계좌 개설 및 변경",
+	"name": "SACMT203",
+	"queryType": ".STRT",
+	"input": {
+	    "InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"상위계좌번호,D1상위계좌번호,0,HirnkAcntNo,STRING,20,0",
+				"계좌비밀번호,D1계좌비밀번호,0,AcntPwd,STRING,8,0",
+				"계좌한글부기명,D1계좌한글부기명,0,AcntHanglAlias,STRING,40,0",
+				"계좌영문부기명,D1계좌영문부기명,0,AcntEngAlias,STRING,40,0",
+				"관리사원번호,D1관리사원번호,0,MgempNo,STRING,9,0",
+				"권유자사원번호,D1권유자사원번호,0,CnvsrEmpNo,STRING,9,0"
+			]
+		},
+		"InBlock2": {
+			"format": [
+				"상품상세코드,D1상품상세코드,0,PrdtDtlCode,STRING,2,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"납입방법코드,D1납입방법코드,0,PayMthdCode,STRING,2,0",
+				"계약기간월수,D1계약기간월수,0,CvntTermMthQty,NUMSTRING,6,0",
+				"월납입일,D1월납입일,0,MthPayDt,STRING,2,0",
+				"납입단위금액,D1납입단위금액,0,PayUnitAmt,NUMSTRING,16,0",
+				"과세유형코드,D1과세유형코드,0,TaxchrPtnCode,STRING,2,0",
+				"분리과세여부,D1분리과세여부,0,SprtaxYn,STRING,1,0",
+				"결산처리구분,D1결산처리구분,0,ClrgTrxTp,STRING,1,0",
+				"운용사특수관계여부,D1운용사특수관계여부,0,OpfirmSprelYn,STRING,1,0",
+				"생계형가입코드,D1생계형가입코드,0,LhfrmJoinCode,STRING,2,0",
+				"투자설명여부,D1투자설명여부,0,InvstDescrYn,STRING,1,0",
+				"연금지급구분,D1연금지급구분,0,AnutyGivTp,STRING,1,0",
+				"연금지급기간값,D1연금지급기간값,0,AnutyGivTermVal,NUMSTRING,6,0",
+				"연금지급시작일,D1연금지급시작일,0,AnutyGivSrtDt,STRING,8,0",
+				"연금지급주기구분,D1연금지급주기구분,0,AnutyGivCyclTp,STRING,1,0",
+				"연기금코드,D1연기금코드,0,PnfndCode,STRING,12,0",
+				"만기연장여부,D1만기연장여부,0,DueExtndYn,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"조회계좌번호,D1조회계좌번호,0,QryAcntNo,STRING,20,0",
+				"서브계좌번호,D1서브계좌번호,0,SubAcntNo,STRING,20,0",
+				"계좌일련번호,D1계좌일련번호,0,SubAcntSeqno,STRING,3,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"만기일,D1만기일,0,DueDt,STRING,8,0",
+				"계좌개설일,D1계좌개설일,0,AcntOpnDt,STRING,8,0",
+				"관리지점번호,D1관리지점번호,0,MgmtBrnNo,STRING,3,0",
+				"CMS약정여부,D1CMS약정여부,0,CmsCtrctYn,STRING,1,0"
+			]
+		}
+	}
+}

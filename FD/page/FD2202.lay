@@ -1,0 +1,8 @@
+<div class="APage-Style ui-droppable" data-base="APage" data-class="FD2202" data-flag="1110" data-max-abutton="1" data-max-alabel="1" data-max-aview="1" style="width: 100%; height: 100%;">
+    <div class="AView-Style ui-droppable header" data-base="AView" data-class="AView" data-flag="1011" data-style="header" id="FD2202--TopUpperView" style="background-color: rgb(255, 255, 255); left: 0px; top: 0px; position: absolute;">
+        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD2202--Label1" style="width: 480px; height: 100%; left: 80px; position: absolute; text-align: center;"><span class="head_tit" data-style="head_tit" style="color: rgb(34, 34, 59);">펀드계좌정보</span></span>
+        <button class="AButton-Style btn_back AButton-normal" data-base="AButton" data-bgcolor="rgba(0, 0, 0, 0)||" data-class="AButton" data-flag="0001" data-listener-click="FD2202:onBackBtnClick" data-state="0" data-style="btn_back|btn_back|btn_back" id="FD2202--BackBtn" style="width: 80px; height: 100%; left: 0px; top: 0px; position: absolute; background-color: rgba(0, 0, 0, 0);"></button>
+    </div>
+    <div class="AView-Style ui-droppable BG_013" data-base="AView" data-class="AView" data-flag="1011" data-load-url="FD/view/FD0000_V00.lay" data-style="BG_013" id="FD2202--AccView" style="width: 100%; height: 95px; background-color: rgb(255, 255, 255); left: 0px; top: 89px; position: absolute;"></div>
+    <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-sgap-height="0px" id="FD2202--CenterView" style="width: 100%; height: 954px; background-color: rgb(255, 255, 255); left: 0px; top: 184px; position: absolute;"></div>
+</div>

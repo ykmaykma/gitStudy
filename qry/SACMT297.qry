@@ -1,0 +1,32 @@
+{
+	"meta": "PSACCTR,계정계 일반,연금수령개시신청",
+	"name": "SACMT297",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"연금지급주기구분,D1연금지급주기구분,0,AnutyGivCyclTp,STRING,1,0",
+				"일,D1일,0,OtptDate,STRING,2,0",
+				"지급계좌번호,D1지급계좌번호,0,GivAcntNo,STRING,20,0",
+				"지급구분,D1지급구분,0,GivTp,STRING,1,0",
+				"연금수령개시일,D1연금수령개시일,0,AnutyAcptOpnDt,STRING,8,0",
+				"수령액,D1수령액,0,AcptAmt,NUMSTRING,16,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"당해년도연금수령한도금액,D1당해년도연금수령한도금액,0,TyrAnutyAcptLmtAmt,NUMSTRING,16,0",
+				"금액,D1금액,0,Amt,NUMSTRING,16,0",
+				"연금개시예정일,D1연금개시예정일,0,AnutyOpnPrergDt,STRING,8,0",
+				"당해년도연금수령연차,D1당해년도연금수령연차,0,TyrAnutyAcptAnord,NUMSTRING,6,0",
+				"연금지급일,D1연금지급일,0,AnutyGivDt,STRING,8,0",
+				"연금개시신청일,D1연금개시신청일,0,AnutyOpnPrslDt,STRING,8,0"
+			]
+		}
+	}
+}

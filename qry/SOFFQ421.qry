@@ -1,0 +1,57 @@
+{
+	"meta": "PSACCTR,계정계 일반,판매펀드현황",
+	"name": "SOFFQ421",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"운용사코드,D1운용사코드,0,OpfirmCode,STRING,3,0",
+				"기준일,D1기준일,0,BaseDt,STRING,8,0",
+				"투신펀드유형구분,D1투신펀드유형구분,0,IvstfndPtnTp,STRING,1,0",
+				"간접투자코드,D1간접투자코드,0,IndrcInvstCode,STRING,2,0",
+				"가입자격구분,D1가입자격구분,0,JoinQlfcTp,STRING,1,0",
+				"투자기간코드,D1투자기간코드,0,InvstTermCode,STRING,2,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"투신상세코드,D1투신상세코드,0,IvtrstDtlCode,STRING,2,0",
+				"투자방식코드,D1투자방식코드,0,InvstMthdCode,STRING,2,0",
+				"구분,D1구분,0,Tp,STRING,1,0",
+				"투자등급코드,D1투자등급코드,0,InvstGrdCode,STRING,2,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"구분명1,D1구분명1,0,TpNm1,STRING,40,0",
+				"간접투자명,D1간접투자명,0,IndrcInvstNm,STRING,40,0",
+				"투자기간,D1투자기간,0,InvstTermNm,STRING,40,0",
+				"운용사명,D1운용사명,0,OpfirmNm,STRING,50,0",
+				"설정일,D1설정일,0,SetupDt,STRING,8,0",
+				"가입자명,D1가입자명,0,SbsrNm,STRING,40,0",
+				"비고,D1비고,0,Rmk,STRING,100,0",
+				"매매기준가,D1매매기준가,0,BnsBasePrc,NUMSTRING,20,10",
+				"일수익률,D1일수익률,0,DayErnrat,NUMSTRING,12,6",
+				"주수익률,D1주수익률,0,WeekErnrat,NUMSTRING,12,6",
+				"수익률1,D1수익률1,0,Ernrat1,NUMSTRING,12,6",
+				"수익률3,D1수익률3,0,Ernrat3,NUMSTRING,12,6",
+				"수익률6,D1수익률6,0,Ernrat6,NUMSTRING,12,6",
+				"수익률12,D1수익률12,0,Ernrat12,NUMSTRING,12,6",
+				"수익률,D1수익률,0,ErnRat,NUMSTRING,12,6",
+				"증권예탁원펀드코드,D1증권예탁원펀드코드,0,KsdFundCode,STRING,12,0",
+				"투신상세코드,D1투신상세코드,0,IvtrstDtlCode,STRING,2,0",
+				"위험도코드,D1위험도코드,0,FundRiskCode,STRING,2,0",
+				"위험구분,D1위험구분,0,RiskTpNm,STRING,40,0",
+				"펀드종류코드,D1펀드종류코드,0,FundKindCode,STRING,2,0",
+				"비고10,D1비고10,0,Rmk10,STRING,20,0",
+				"비고9,D1비고9,0,Rmk9,STRING,20,0",
+				"월지급펀드여부,D1월지급펀드여부,0,MonPayFundYn,STRING,1,0",
+				"총보수율,D1총보수율,0,TotRwrdRat,NUMSTRING,17,10",
+				"클래스상세 전체명,D1클래스상세 전체명,0,ClssDtlFullNm,STRING,100,0"
+			]
+		}
+	}
+}

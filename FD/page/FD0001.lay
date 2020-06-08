@@ -1,0 +1,9 @@
+<div data-max-aradiobutton="1" data-max-alistview="1" class="APage-Style ui-droppable" data-base="APage" data-max-agrid="1" data-flag="1110" data-class="FD0001" data-max-abutton="7" data-max-alabel="21" data-max-atabview="1" data-max-aview="9" data-max-awebview="1" data-max-exarrow="1" data-max-excomparechart="1" data-max-exjisoochart="1" data-max-exstocklabel="2" data-max-extriangle="2" id="FD0001--FD0001" style="width: 100%; height: 100%; border: 0px none rgb(255, 255, 255);">
+    <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-group="loginView" data-sgap-height="0px" id="FD0001--loginView" style="width: 100%; height: 1138px; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; position: absolute; border: 0px solid rgb(255, 255, 255);"></div>
+    <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD0001--VerLbl" style="width: 100px; height: 25px; top: 10px; position: absolute; text-align: left; left: 10px;">
+        <span></span>
+    </span>
+    <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD0001--Label2" style="width: 100%; height: 70px; left: 0px; top: 0px; position: absolute; text-align: center;">
+        <span class="SZ30" data-style="SZ30"></span>
+    </span>
+</div>

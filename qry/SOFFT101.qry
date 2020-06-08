@@ -1,0 +1,49 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드 기준가 등록",
+	"name": "SOFFT101",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"기준일,D1기준일,0,BaseDt,STRING,8,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"매매기준가,D1매매기준가,0,BnsBasePrc,NUMSTRING,20,10",
+				"과표기준가,D1과표기준가,0,BoaBasePrc,NUMSTRING,20,10",
+				"소득구분,D1소득구분,0,IncmTp,STRING,1,0",
+				"모집매도시작일,D1모집매도시작일,0,OfrSellSrtDt,STRING,8,0",
+				"모집매도종료일,D1모집매도종료일,0,OfrSellEndDt,STRING,8,0",
+				"세금우대과표기준가,D1세금우대과표기준가,0,TaxPrvlgBoaPrc,NUMSTRING,20,10",
+				"비거주과표기준가,D1비거주과표기준가,0,NrsdnBoaPrc,NUMSTRING,20,10",
+				"펀드설정원본,D1펀드설정원본,0,FundSetupOrgAmt,NUMSTRING,17,0",
+				"펀드순자산총액,D1펀드순자산총액,0,FundNetAstTotAmt,NUMSTRING,20,2",
+				"적용법률구분(\"1\",D1적용법률구분(\"1\",0,AppJraffaTp,STRING,1,0",
+				"수정과표기준가,D1수정과표기준가,0,AltrBoaBasePrc,NUMSTRING,20,10"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"전일매매기준가,D1전일매매기준가,0,PrdayBnsBasePrc,NUMSTRING,20,10",
+				"당일매매기준가,D1당일매매기준가,0,ThdayBnsBasePrc,NUMSTRING,20,10",
+				"기준가증감,D1기준가증감,0,BasePrcIncdec,NUMSTRING,10,2",
+				"매도과표기준가,D1매도과표기준가,0,PrdayBoaBasePrc,NUMSTRING,20,10",
+				"매도과표기준가,D1매도과표기준가,0,ThdayBoaBasePrc,NUMSTRING,20,10",
+				"과표가증감,D1과표가증감,0,BoaPrcIncdec,NUMSTRING,10,2",
+				"모집매도시작일,D1모집매도시작일,0,OfrSellSrtDt,STRING,8,0",
+				"모집매도종료일,D1모집매도종료일,0,OfrSellEndDt,STRING,8,0",
+				"세금우대과표기준가,D1세금우대과표기준가,0,TaxPrvlgBoaPrc,NUMSTRING,20,10",
+				"소득구분명,D1소득구분명,0,IncmTpNm,STRING,40,0",
+				"운용사명,D1운용사명,0,OpfirmNm,STRING,50,0",
+				"과표기준가,D1과표기준가,0,BoaBasePrc,NUMSTRING,20,10",
+				"비거주과표기준가,D1비거주과표기준가,0,NrsdnBoaPrc,NUMSTRING,20,10",
+				"펀드설정원본,D1펀드설정원본,0,FundSetupOrgAmt,NUMSTRING,17,0",
+				"펀드순자산총액,D1펀드순자산총액,0,FundNetAstTotAmt,NUMSTRING,20,2",
+				"적용법률구분(\"1\",D1적용법률구분(\"1\",0,AppJraffaTp,STRING,1,0",
+				"수정과표기준가,D1수정과표기준가,0,AltrBoaBasePrc,NUMSTRING,20,10"
+			]
+		}
+	}
+}

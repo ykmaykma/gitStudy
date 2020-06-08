@@ -1,0 +1,29 @@
+{
+	"meta": "PSACCTR,계정계 일반,대포통장 명의인 정보 조회",
+	"name": "SACMT148",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"실명확인번호,D1실명확인번호,0,,STRING,13,0",
+				"최종전문번호,D1최종전문번호,0,,STRING,10,0"				
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"명의인_성명,D1명의인_성명,0,,STRING,40,0",
+				"등록건수,D1등록건수,0,,NUMSTRING,10,0"
+			]
+		},
+		"OutBlock2": {
+			"format": [
+				"지점코드,D1지점코드,0,,STRING,7,0",
+				"기관명,D1기관명,0,,STRING,40,0",
+				"등록일,D1등록일,0,,STRING,8,0",
+				"계좌번호,D1계좌번호,0,,STRING,20,0"
+			]
+		}
+	}
+}

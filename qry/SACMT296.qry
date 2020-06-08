@@ -1,0 +1,40 @@
+{
+	"meta": "PSACCTR,계정계 일반,신연금저축 한도 정정",
+	"name": "SACMT296",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"입력비밀번호,D1입력비밀번호,0,InptPwd,STRING,8,0",
+				"상품유형코드,D1상품유형코드,0,PdptnCode,STRING,2,0",
+				"상품상세코드,D1상품상세코드,0,PrdtDtlCode,STRING,2,0"
+			]
+		},
+		"InBlock2": {
+			"format": [
+				"투자신탁투자자분류코드,D1투자신탁투자자분류코드,0,IvtrstInvstrClssCode,STRING,4,0",
+				"납입단위금액,D1납입단위금액,0,PayUnitAmt,NUMSTRING,16,0",
+				"계약기간월수,D1계약기간월수,0,CvntTermMthQty,NUMSTRING,6,0",
+				"연금지급시작일,D1연금지급시작일,0,AnutyGivSrtDt,STRING,8,0",
+				"최초매수일,D1최초매수일,0,FstBuyDt,STRING,8,0",
+				"원장통보주소유형코드,D1원장통보주소유형코드,0,LedgSdinfAddrPtnCode,STRING,2,0",
+				"매매보고서통보코드,D1매매보고서통보코드,0,BnsAcptAddrPtnCode,STRING,2,0",
+				"계좌기산일,D1계좌기산일,0,AcntCntfrDt,STRING,8,0",
+				"가입일선택구분,D1가입일선택구분,0,JoinDtChoicTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"상품상세명,D1상품상세명,0,PrdtDtlNm,STRING,40,0",
+				"종합계좌번호,D1종합계좌번호,0,IntaccNo,STRING,20,0",
+				"만기일,D1만기일,0,DueDt,STRING,8,0",
+				"계약금액,D1계약금액,0,CvntAmt,NUMSTRING,16,0",
+				"코펙스계좌번호,D1코펙스계좌번호,0,KfxAcntNo,STRING,20,0",
+				"승인방식코드,D1승인방식코드,0,AgrmMthdCode,STRING,2,0"
+			]
+		}
+	}
+}

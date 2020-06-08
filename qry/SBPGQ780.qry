@@ -1,0 +1,17 @@
+{
+	"meta": "전자서명본인확인대상목록",
+	"name": "SBPGQ780",
+	"queryType": ".STRT",
+	"input": {},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"서비스ID,D1서비스ID,0,SvcId,STRING,8,0",
+				"전자서명구분,D1전자서명구분,0,DigisigTp,STRING,1,0",
+				"사용구분,D1사용구분,0,UseTp,STRING,1,0",
+				"본인확인유형구분,D1본인확인유형구분,0,OnesfCnfPtnTp,STRING,1,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,21 @@
+{
+	"meta": "PSACCTR,계정계 일반,WTS계좌번호검증조회",
+	"name": "SOFFQ517",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"고객번호,D1고객번호,0,ClntNo,STRING,20,0"
+			]
+		}
+	}
+}

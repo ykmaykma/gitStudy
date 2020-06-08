@@ -1,0 +1,41 @@
+{
+	"meta": "PSACCTR,계정계 일반,연금저축계좌 납입내역관리",
+	"name": "SDPAT019",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0"
+			]
+		},
+		"InBlock2": {
+			"format": [
+				"undefined,D1undefined,0,undefined,,NaN,undefined",
+				"납입년도,D1납입년도,0,PayYear,STRING,4,0",
+				"납입금액,D1납입금액,0,PayAmt,NUMSTRING,16,0",
+				"과세제외금액,D1과세제외금액,0,TaxchrExcpAmt,NUMSTRING,16,0",
+				"과세제외금액출금,D1과세제외금액출금,0,TaxchrExcpAmtMnyout,NUMSTRING,16,0",
+				"소득공제금액,D1소득공제금액,0,IncmDedctAmt,NUMSTRING,17,0",
+				"소득공제금액출금,D1소득공제금액출금,0,IncmDedctAmtMnyout,NUMSTRING,16,0",
+				"이연퇴직소득,D1이연퇴직소득,0,DfrRetirIncm,NUMSTRING,16,0",
+				"이연퇴직소득출금,D1이연퇴직소득출금,0,DfrRetirIncmMnyout,NUMSTRING,16,0",
+				"이연퇴직소득세,D1이연퇴직소득세,0,DfrRetirIctax,NUMSTRING,16,0",
+				"이연퇴직소득세출금,D1이연퇴직소득세출금,0,DfrRetirIctaxMnyout,NUMSTRING,16,0",
+				"개인부담금납입여부,D1개인부담금납입여부,0,PsnlCtribPayYn,STRING,1,0",
+				"인출금액,D1인출금액,0,PsnOutAmt,NUMSTRING,16,0",
+				"기타금액,D1기타금액,0,EtcAmt,NUMSTRING,16,0",
+				"확인금액,D1확인금액,0,CnfAmt,NUMSTRING,16,0"
+			],
+			"occurs": 50
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0"
+			]
+		}
+	}
+}

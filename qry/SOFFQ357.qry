@@ -1,0 +1,28 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드기준가조회(일별)",
+	"name": "SOFFQ357",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"조회일,D1조회일,0,QryDt,STRING,8,0",
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"기준일자,D1기준일자,0,BaseDate,STRING,8,0",
+				"기준가,D1기준가,0,BasePrc,NUMSTRING,13,2",
+				"기준가증감,D1기준가증감,0,BasePrcIncdec,NUMSTRING,10,2",
+				"과표기준가,D1과표기준가,0,BoaBasePrc,NUMSTRING,20,10",
+				"누적계좌수익률,D1누적계좌수익률,0,AcmAcntErnrat,NUMSTRING,9,2",
+				"년환산수익율,D1년환산수익율,0,YearConvErnRat,NUMSTRING,9,2",
+				"비거주과표기준가,D1비거주과표기준가,0,NrsdnBoaPrc,NUMSTRING,20,10"
+			]
+		}
+	}
+}

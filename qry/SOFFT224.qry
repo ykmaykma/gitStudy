@@ -1,0 +1,24 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드예약매매취소",
+	"name": "SOFFT224",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"신청일,D1신청일,0,PrslDt,STRING,8,0",
+				"일련번호,D1일련번호,0,Seqno,NUMSTRING,10,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"펀드명,D1펀드명,0,FundNm,STRING,40,0",
+				"주문일,D1주문일,0,OrdDt,STRING,8,0"
+			]
+		}
+	}
+}

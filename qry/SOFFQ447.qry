@@ -1,0 +1,56 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드고객자산현황",
+	"name": "SOFFQ447",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"기준일,D1기준일,0,BaseDt,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"원금합계금액,D1원금합계금액,0,PramtSumAmt,NUMSTRING,16,0",
+				"평가금액합계,D1평가금액합계,0,EvalAmtSum,NUMSTRING,17,0",
+				"평가수익률,D1평가수익률,0,EvalErnrat,NUMSTRING,12,6"
+			]
+		},
+		"OutBlock2": {
+			"occurs": 99999,
+			"format": [
+				"계좌일련번호,D1계좌일련번호,0,SubAcntSeqno,STRING,3,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"펀드명,D1펀드명,0,FundNm,STRING,40,0",
+				"원금액,D1원금액,0,OrgAmt,NUMSTRING,16,0",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0",
+				"수익금액,D1수익금액,0,ErnAmt,NUMSTRING,16,0",
+				"수익률,D1수익률,0,ErnRat,NUMSTRING,12,6",
+				"펀드잔고수량,D1펀드잔고수량,0,FundBalQty,NUMSTRING,20,5",
+				"매매기준가,D1매매기준가,0,BnsBasePrc,NUMSTRING,20,10",
+				"기준가증감,D1기준가증감,0,BasePrcIncdec,NUMSTRING,10,2",
+				"투신상세코드,D1투신상세코드,0,IvtrstDtlCode,STRING,2,0",
+				"투신상세명,D1투신상세명,0,IvtrstDtlNm,STRING,40,0",
+				"출금가능금액,D1출금가능금액,0,MnyoutAbleAmt,NUMSTRING,16,0",
+				"과표기준가,D1과표기준가,0,BoaBasePrc,NUMSTRING,20,10",
+				"원금액1,D1원금액1,0,OrgAmt1,NUMSTRING,16,0",
+				"수익금액,D1수익금액,0,ErnAmt1,NUMSTRING,16,0",
+				"수익률1,D1수익률1,0,Ernrat1,NUMSTRING,12,6",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"납입방법코드,D1납입방법코드,0,PayMthdCode,STRING,2,0",
+				"관리지점번호,D1관리지점번호,0,MgmtBrnNo,STRING,3,0",
+				"계좌개설일,D1계좌개설일,0,AcntOpnDt,STRING,8,0",
+				"펀드설정원본,D1펀드설정원본,0,FundSetupOrgAmt,NUMSTRING,17,0",
+				"펀드순자산총액,D1펀드순자산총액,0,FundNetAstTotAmt,NUMSTRING,20,2",
+				"총보수율,D1총보수율,0,TotRwrdRat,NUMSTRING,17,10",
+				"HTS매매가능여부,D1HTS매매가능여부,0,HtsBnsAbleYn,STRING,1,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"meta": "PSACCTR,계정계 일반,고객신원확인정보 등록/정정/삭제/조회",
+	"name": "SACMT188",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"질문1,D1질문1,0,Quest1,STRING,1,0",
+				"질문2,D1질문2,0,Quest2,STRING,1,0",
+				"질문3,D1질문3,0,Quest3,STRING,1,0",
+				"질문4,D1질문4,0,Quest4,STRING,1,0",
+				"질문5,D1질문5,0,Quest5,STRING,1,0",
+				"질문6,D1질문6,0,Quest6,STRING,1,0",
+				"질문7,D1질문7,0,Quest7,STRING,1,0",
+				"질문8,D1질문8,0,Quest8,STRING,1,0",
+				"구분문자9,D1구분문자9,0,TpText9,STRING,1,0",
+				"구분문자10,D1구분문자10,0,TpText10,STRING,1,0",
+				"설명1,D1설명1,0,Descr1,STRING,100,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"고객명,D1고객명,0,ClntNm,STRING,40,0"
+			]
+		}
+	}
+}

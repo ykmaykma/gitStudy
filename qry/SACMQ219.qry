@@ -1,0 +1,65 @@
+{
+	"meta": "PSACCTR,계정계 일반,위탁계좌정보 조회",
+	"name": "SACMQ219",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"입력비밀번호,D1입력비밀번호,0,InptPwd,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"상품상세명,D1상품상세명,0,PrdtDtlNm,STRING,40,0",
+				"계좌상태명,D1계좌상태명,0,AcntStatNm,STRING,40,0",
+				"계좌한글부기명,D1계좌한글부기명,0,AcntHanglAlias,STRING,40,0",
+				"특이구분,D1특이구분,0,UnuslAcntClssNm,STRING,40,0",
+				"주식채권구분,D1주식채권구분,0,TrdSecPtnNm,STRING,40,0",
+				"증거금징수유형명,D1증거금징수유형명,0,MgnLevyPtnNm,STRING,40,0",
+				"수수료등급코드명,D1수수료등급코드명,0,BnsCmsnAmtGrdCodeNm,STRING,40,0",
+				"수수료등급코드명,D1수수료등급코드명,0,SettCmsnAmtGrdCodeNm,STRING,40,0",
+				"관리사원명,D1관리사원명,0,MgempNm,STRING,40,0",
+				"집계지점명,D1집계지점명,0,AgrgtBrnNm,STRING,40,0",
+				"계좌개설일,D1계좌개설일,0,AcntOpnDt,STRING,8,0",
+				"최종거래일,D1최종거래일,0,LastTrdDt,STRING,8,0",
+				"전입일,D1전입일,0,TrsfrDt,STRING,8,0",
+				"전입계좌번호,D1전입계좌번호,0,TrsfrAcntNo,STRING,20,0",
+				"전출일,D1전출일,0,BfOutDt,STRING,8,0",
+				"전출계좌번호,D1전출계좌번호,0,BfOutAcntNo,STRING,20,0",
+				"계좌통폐합일,D1계좌통폐합일,0,AcntCncDt,STRING,8,0",
+				"계좌통폐합해지일,D1계좌통폐합해지일,0,AcntCncAbndDt,STRING,8,0",
+				"잡수익처리일,D1잡수익처리일,0,MisincTrxDt,STRING,8,0",
+				"HTS등록일,D1HTS등록일,0,HtsRegDt,STRING,8,0",
+				"관리사원번호,D1관리사원번호,0,MgempNo,STRING,9,0",
+				"관리지점명,D1관리지점명,0,MgmtBrnNm,STRING,40,0",
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"대체약정여부,D1대체약정여부,0,BkeepCtrctYn,STRING,1,0",
+				"자동대체약정여부,D1자동대체약정여부,0,AbkpCtrctYn,STRING,1,0",
+				"선물연계지정여부,D1선물연계지정여부,0,FutsLnkDsgnYn,STRING,1,0",
+				"청약자금대출약정여부,D1청약자금대출약정여부,0,AplLoanCtrctYn,STRING,1,0",
+				"자동입금입고계좌지정여부,D1자동입금입고계좌지정여부,0,AutoInAcntDsgnYn,STRING,1,0",
+				"기타자금대출약정여부,D1기타자금대출약정여부,0,EmLoanCtrctYn,STRING,1,0",
+				"매도대금담보대출약정여부,D1매도대금담보대출약정여부,0,CslLoanCtrctYn,STRING,1,0",
+				"매입자금대출약정여부,D1매입자금대출약정여부,0,PmLoanCtrctYn,STRING,1,0",
+				"신용계좌여부,D1신용계좌여부,0,CrdtAcntYn,STRING,1,0",
+				"종합매매약관확인여부,D1종합매매약관확인여부,0,SyntrdStplCnfYn,STRING,1,0",
+				"상위계좌번호,D1상위계좌번호,0,HirnkAcntNo,STRING,20,0",
+				"사절원여부명,D1사절원여부명,0,RfslYnNm,STRING,40,0",
+				"거래세과세,D1거래세과세,0,TrtaxTaxchrYnNm,STRING,40,0",
+				"채무불이행상태,D1채무불이행상태,0,DebtUnMigrtStatNm,STRING,40,0",
+				"전입지점번호,D1전입지점번호,0,TrsfrBrnNo,STRING,3,0",
+				"전출지점번호,D1전출지점번호,0,TrnsfBrnNo,STRING,3,0",
+				"통장개설일,D1통장개설일,0,PsbOpnDt,STRING,8,0",
+				"권유사원번호,D1권유사원번호,0,CnvsEmpNo,STRING,9,0",
+				"권유사원명,D1권유사원명,0,CnvsEmpNm,STRING,40,0",
+				"위탁투자자분류코드,D1위탁투자자분류코드,0,CsgnInvstrClssCode,STRING,4,0",
+				"위탁투자자분류,D1위탁투자자분류,0,CsgnInvstrClssCodeNm,STRING,40,0",
+				"거래소계좌분류코드,D1거래소계좌분류코드,0,KrxAcntClssCode,STRING,2,0",
+				"계좌분류명,D1계좌분류명,0,AcntClssNm,STRING,40,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,104 @@
+{
+	"meta": "PSACCTR,계정계 일반,신연금저축계좌 인출가능금액 조회",
+	"name": "SDPAQ070",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"금액,D1금액,0,Amt,NUMSTRING,16,0",
+				"세금징수구분,D1세금징수구분,0,TaxLevyTp,STRING,1,0",
+				"출금유형코드,D1출금유형코드,0,MnyoutPtnCode,STRING,2,0",
+				"해지구분,D1해지구분,0,AbndTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"구분명1,D1구분명1,0,TpNm1,STRING,40,0",
+				"당해년도연금수령한도금액,D1당해년도연금수령한도금액,0,TyrAnutyAcptLmtAmt,NUMSTRING,16,0",
+				"당해년도연금수령연차,D1당해년도연금수령연차,0,TyrAnutyAcptAnord,NUMSTRING,6,0",
+				"구분명3,D1구분명3,0,TpNm3,STRING,40,0",
+				"예수금,D1예수금,0,Dps,NUMSTRING,16,0",
+				"증거금현금,D1증거금현금,0,MgnMny,NUMSTRING,16,0",
+				"출금가능금액,D1출금가능금액,0,MnyoutAbleAmt,NUMSTRING,16,0",
+				"투신펀드평가금액,D1투신펀드평가금액,0,IvstfndEvalAmt,NUMSTRING,16,0",
+				"금액10,D1금액10,0,Amt10,NUMSTRING,16,0",
+				"금액11,D1금액11,0,Amt11,NUMSTRING,16,0",
+				"금액12,D1금액12,0,Amt12,NUMSTRING,16,0",
+				"금액20,D1금액20,0,Amt20,NUMSTRING,16,0",
+				"금액21,D1금액21,0,Amt21,NUMSTRING,16,0",
+				"금액22,D1금액22,0,Amt22,NUMSTRING,16,0",
+				"금액30,D1금액30,0,Amt30,NUMSTRING,16,0",
+				"금액31,D1금액31,0,Amt31,NUMSTRING,16,0",
+				"금액32,D1금액32,0,Amt32,NUMSTRING,16,0",
+				"금액40,D1금액40,0,Amt40,NUMSTRING,16,0",
+				"금액41,D1금액41,0,Amt41,NUMSTRING,16,0",
+				"금액42,D1금액42,0,Amt42,NUMSTRING,16,0",
+				"금액50,D1금액50,0,Amt50,NUMSTRING,16,0",
+				"금액51,D1금액51,0,Amt51,NUMSTRING,16,0",
+				"금액52,D1금액52,0,Amt52,NUMSTRING,16,0",
+				"계좌기산일,D1계좌기산일,0,AcntCntfrDt,STRING,8,0",
+				"납입기간만료일,D1납입기간만료일,0,PayTermXpirDt,STRING,8,0",
+				"연금개시예정일,D1연금개시예정일,0,AnutyOpnPrergDt,STRING,8,0",
+				"납입한도금액,D1납입한도금액,0,PayLmtAmt,NUMSTRING,16,0",
+				"당해년도기수령금액,D1당해년도기수령금액,0,TyrAlrdyAcptAmt,NUMSTRING,16,0"
+			]
+		},
+		"OutBlock2": {
+			"format": [
+				"세율1,D1세율1,0,TaxRat1,NUMSTRING,7,4",
+				"세율2,D1세율2,0,TaxRat2,NUMSTRING,7,4",
+				"세율4,D1세율4,0,TaxRat4,NUMSTRING,7,4",
+				"세율3,D1세율3,0,TaxRat3,NUMSTRING,7,4",
+				"세율5,D1세율5,0,TaxRat5,NUMSTRING,7,4",
+				"소득세,D1소득세,0,Ictax1,NUMSTRING,16,0",
+				"소득세,D1소득세,0,Ictax2,NUMSTRING,16,0",
+				"소득세,D1소득세,0,Ictax4,NUMSTRING,16,0",
+				"소득세,D1소득세,0,Ictax3,NUMSTRING,16,0",
+				"소득세,D1소득세,0,Ictax5,NUMSTRING,16,0",
+				"주민세,D1주민세,0,Ihtax1,NUMSTRING,16,0",
+				"주민세,D1주민세,0,Ihtax2,NUMSTRING,16,0",
+				"주민세,D1주민세,0,Ihtax4,NUMSTRING,16,0",
+				"주민세,D1주민세,0,Ihtax3,NUMSTRING,16,0",
+				"주민세,D1주민세,0,Ihtax5,NUMSTRING,16,0",
+				"금액101,D1금액101,0,Amt101,NUMSTRING,16,0",
+				"금액102,D1금액102,0,Amt102,NUMSTRING,16,0",
+				"금액104,D1금액104,0,Amt104,NUMSTRING,16,0",
+				"금액144,D1금액144,0,Amt144,NUMSTRING,16,0",
+				"금액103,D1금액103,0,Amt103,NUMSTRING,16,0",
+				"금액105,D1금액105,0,Amt105,NUMSTRING,16,0",
+				"해지가산과표금액,D1해지가산과표금액,0,AbndAddBoaAmt,NUMSTRING,16,0",
+				"해지가산소득세율(2%),D1해지가산소득세율(2%),0,AbndAddIctaxRat,NUMSTRING,9,6",
+				"해지가산소득세,D1해지가산소득세,0,AbndAddIctax,NUMSTRING,16,0",
+				"해지가산지방소득세,D1해지가산지방소득세,0,AbndAddIhtax,NUMSTRING,16,0"
+			]
+		},
+		"OutBlock3": {
+			"format": [
+				"구분명2,D1구분명2,0,TpNm2,STRING,40,0",
+				"금액,D1금액,0,Amt,NUMSTRING,16,0",
+				"금액1,D1금액1,0,Amt1,NUMSTRING,16,0",
+				"과세제외금액,D1과세제외금액,0,TaxchrExcpAmt,NUMSTRING,16,0",
+				"기타소득과세대상금액,D1기타소득과세대상금액,0,EtcIncmTaxchrObjAmt,NUMSTRING,16,0",
+				"퇴직소득과세대상금액,D1퇴직소득과세대상금액,0,RetirIncmTaxchrObjAmt,NUMSTRING,16,0",
+				"합계금액99,D1합계금액99,0,SumAmt99,NUMSTRING,16,0"
+			]
+		},
+		"OutBlock4": {
+			"occurs": 30,
+			"format": [
+				"납입년도,D1납입년도,0,PayYear,STRING,4,0",
+				"납입금액,D1납입금액,0,PayAmt,NUMSTRING,16,0",
+				"과세제외금액,D1과세제외금액,0,TaxchrExcpAmt,NUMSTRING,16,0",
+				"과세제외금액출금,D1과세제외금액출금,0,TaxchrExcpAmtMnyout,NUMSTRING,16,0",
+				"소득공제금액,D1소득공제금액,0,IncmDedctAmt,NUMSTRING,17,0",
+				"소득공제금액출금,D1소득공제금액출금,0,IncmDedctAmtMnyout,NUMSTRING,16,0",
+				"인출금액,D1인출금액,0,PsnOutAmt,NUMSTRING,16,0",
+				"기타금액,D1기타금액,0,EtcAmt,NUMSTRING,16,0"
+			]
+		}
+	}
+}

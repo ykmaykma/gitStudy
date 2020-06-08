@@ -1,0 +1,152 @@
+{
+	"meta": "PSACCTR,계정계 일반,계좌 예수금 상세조회",
+	"name": "SDPAQ001",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"계좌상태명,D1계좌상태명,0,AcntStatNm,STRING,40,0",
+				"상품유형코드,D1상품유형코드,0,PdptnCode,STRING,2,0"
+			]
+		},
+		"OutBlock2": {
+			"format": [
+				"예수금잔고금액,D1예수금잔고금액,0,DpsBalAmt,NUMSTRING,16,0",
+				"증거금현금,D1증거금현금,0,MgnMny,NUMSTRING,16,0",
+				"담보현금액,D1담보현금액,0,PldgCurAmt,NUMSTRING,16,0",
+				"추가신용담보현금,D1추가신용담보현금,0,AddCrdtPldgMny,NUMSTRING,16,0",
+				"미수확보금액,D1미수확보금액,0,RcvblEnsrAmt,NUMSTRING,16,0",
+				"미수유가횟수,D1미수유가횟수,0,RcsecCnt,NUMSTRING,10,0",
+				"대용금액,D1대용금액,0,SubstAmt,NUMSTRING,16,0",
+				"대용증거금액,D1대용증거금액,0,SubstMgn,NUMSTRING,16,0",
+				"담보대용금액,D1담보대용금액,0,PldgSubstAmt,NUMSTRING,16,0",
+				"추가신용담보대용,D1추가신용담보대용,0,AddCrdtPldgSubst,NUMSTRING,16,0",
+				"권리대용금액,D1권리대용금액,0,RgtsbAmt,NUMSTRING,16,0",
+				"수표금액,D1수표금액,0,ChckAmt,NUMSTRING,16,0",
+				"미결제기타수표금액,D1미결제기타수표금액,0,UnSettEtcChckAmt,NUMSTRING,16,0",
+				"신용담보재사용금액,D1신용담보재사용금액,0,CrdtPldgRuseAmt,NUMSTRING,16,0",
+				"신용설정보증금,D1신용설정보증금,0,Imreq,NUMSTRING,16,0",
+				"처분제한금액,D1처분제한금액,0,DpslRestrcAmt,NUMSTRING,16,0",
+				"인출가능금액,D1인출가능금액,0,PsnOutAbleAmt,NUMSTRING,16,0",
+				"자기융자금액,D1자기융자금액,0,SfaccMloanAmt,NUMSTRING,16,0",
+				"유통융자금액,D1유통융자금액,0,MktcplMloanAmt,NUMSTRING,16,0",
+				"융자총액,D1융자총액,0,MloanTotamt,NUMSTRING,16,0",
+				"자기대주금액,D1자기대주금액,0,SfaccSloanAmt,NUMSTRING,16,0",
+				"유통대주금액,D1유통대주금액,0,MktcplSloanAmt,NUMSTRING,16,0",
+				"대주총액,D1대주총액,0,SloanTotamt,NUMSTRING,16,0",
+				"현금미수금액,D1현금미수금액,0,MnyrclAmt,NUMSTRING,16,0",
+				"이자미납금액,D1이자미납금액,0,IntrstDlinqAmt,NUMSTRING,16,0",
+				"기타대여금,D1기타대여금,0,Etclnd,NUMSTRING,16,0",
+				"(구)미상환금액,D1(구)미상환금액,0,OldUnRfundAmt,NUMSTRING,16,0",
+				"예탁담보대출평가금액,D1예탁담보대출평가금액,0,DpspdgLoanEvalAmt,NUMSTRING,16,0",
+				"예탁담보대출가능한도,D1예탁담보대출가능한도,0,DpspdgLoanAbleLmt,NUMSTRING,16,0",
+				"예탁담보대출잔고,D1예탁담보대출잔고,0,DpspdgLoanBal,NUMSTRING,16,0",
+				"예탁담보대출가능금액,D1예탁담보대출가능금액,0,DpspdgLoanAbleAmt,NUMSTRING,16,0",
+				"예탁담보대출이자미납금,D1예탁담보대출이자미납금,0,DpspdgLoanIntdltAmt,NUMSTRING,16,0",
+				"매입자금대출평가금액,D1매입자금대출평가금액,0,PmLoanEvalAmt,NUMSTRING,16,0",
+				"매입자금대출가능한도,D1매입자금대출가능한도,0,PmLoanAbleLmt,NUMSTRING,16,0",
+				"매입자금대출잔고,D1매입자금대출잔고,0,PmLoanBal,NUMSTRING,16,0",
+				"매입자금대출가능금액,D1매입자금대출가능금액,0,PmLoanAbleAmt,NUMSTRING,16,0",
+				"매입자금대출이자미납금,D1매입자금대출이자미납금,0,PmLoanIntdltAmt,NUMSTRING,16,0",
+				"매수정산금(D+1),D1매수정산금(D+1),0,BuyAdjstAmtD1,NUMSTRING,16,0",
+				"매도정산금(D+1),D1매도정산금(D+1),0,SellAdjstAmtD1,NUMSTRING,16,0",
+				"변제소요금(D+1),D1변제소요금(D+1),0,RepayRqrdAmtD1,NUMSTRING,16,0",
+				"추정예수금(D+1),D1추정예수금(D+1),0,PrsmptDpsD1,NUMSTRING,16,0",
+				"추정인출가능금(D+1),D1추정인출가능금(D+1),0,PrsmptMnyoutAbleAmtD1,NUMSTRING,16,0",
+				"매수정산금(D+2),D1매수정산금(D+2),0,BuyAdjstAmtD2,NUMSTRING,16,0",
+				"매도정산금(D+2),D1매도정산금(D+2),0,SellAdjstAmtD2,NUMSTRING,16,0",
+				"변제소요금(D+2),D1변제소요금(D+2),0,RepayRqrdAmtD2,NUMSTRING,16,0",
+				"추정예수금(D+2),D1추정예수금(D+2),0,PrsmptDpsD2,NUMSTRING,16,0",
+				"추정인출가능금(D+2),D1추정인출가능금(D+2),0,PrsmptMnyoutAbleAmtD2,NUMSTRING,16,0",
+				"현금재사용사용금액,D1현금재사용사용금액,0,MnyRuseUseAmt,NUMSTRING,16,0",
+				"현금재사용사용금액1,D1현금재사용사용금액1,0,MnyRuseUseAmt1,NUMSTRING,16,0",
+				"대용재사용사용금액,D1대용재사용사용금액,0,SubstRuseUseAmt,NUMSTRING,16,0",
+				"대용재사용사용금액1,D1대용재사용사용금액1,0,SubstRuseUseAmt1,NUMSTRING,16,0"
+			]
+		},
+		"OutBlock3": {
+			"format": [
+				"상품유형명,D1상품유형명,0,PdptnNm,STRING,40,0",
+				"납입방법명,D1납입방법명,0,PayMthdNm,STRING,40,0",
+				"납입금액,D1납입금액,0,PayAmt,NUMSTRING,16,0",
+				"계약금액,D1계약금액,0,CvntAmt,NUMSTRING,16,0",
+				"개설일,D1개설일,0,OpnDt,STRING,8,0",
+				"만기일,D1만기일,0,DueDt,STRING,8,0",
+				"해지일,D1해지일,0,AbndDt,STRING,8,0",
+				"계좌통폐합일,D1계좌통폐합일,0,AcntCncDt,STRING,8,0",
+				"최종납입일,D1최종납입일,0,LastPayDt,STRING,8,0",
+				"납입총액,D1납입총액,0,PayTotamt,NUMSTRING,16,0",
+				"납입횟수,D1납입횟수,0,PayCnt,NUMSTRING,10,0",
+				"추가납입가능금액,D1추가납입가능금액,0,AddPayAbleAmt,NUMSTRING,16,0",
+				"예수금총액,D1예수금총액,0,DpsTotamt,NUMSTRING,16,0",
+				"저축예수금,D1저축예수금,0,SavDps,NUMSTRING,16,0",
+				"비저축예수금,D1비저축예수금,0,NSavDps,NUMSTRING,16,0",
+				"수표금액,D1수표금액,0,ChckAmt,NUMSTRING,16,0",
+				"기타대여금액,D1기타대여금액,0,EtclndAmt,NUMSTRING,16,0",
+				"주문증거금액,D1주문증거금액,0,OrdMgn,NUMSTRING,16,0",
+				"주문수수료,D1주문수수료,0,OrdCms,NUMSTRING,16,0",
+				"주문가능금액,D1주문가능금액,0,OrdAbleAmt,NUMSTRING,16,0",
+				"인출가능금액,D1인출가능금액,0,PsnOutAbleAmt,NUMSTRING,16,0",
+				"매수정산금(D+1),D1매수정산금(D+1),0,BuyAdjstAmtD1,NUMSTRING,16,0",
+				"매도정산금(D+1),D1매도정산금(D+1),0,SellAdjstAmtD1,NUMSTRING,16,0",
+				"변제소요금(D+1),D1변제소요금(D+1),0,RepayRqrdAmtD1,NUMSTRING,16,0",
+				"추정예수금(D+1),D1추정예수금(D+1),0,PrsmptDpsD1,NUMSTRING,16,0",
+				"매수정산금(D+2),D1매수정산금(D+2),0,BuyAdjstAmtD2,NUMSTRING,16,0",
+				"매도정산금(D+2),D1매도정산금(D+2),0,SellAdjstAmtD2,NUMSTRING,16,0",
+				"변제소요금(D+2),D1변제소요금(D+2),0,RepayRqrdAmtD2,NUMSTRING,16,0",
+				"추정예수금(D+2),D1추정예수금(D+2),0,PrsmptDpsD2,NUMSTRING,16,0"
+			]
+		},
+		"OutBlock4": {
+			"format": [
+				"상품유형명,D1상품유형명,0,PdptnNm,STRING,40,0",
+				"개설일,D1개설일,0,OpnDt,STRING,8,0",
+				"계좌통폐합일,D1계좌통폐합일,0,AcntCncDt,STRING,8,0",
+				"실명확인구분,D1실명확인구분,0,RmnCnfTpNm,STRING,20,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"주문금액,D1주문금액,0,OrdAmt,NUMSTRING,16,0",
+				"예수금총액,D1예수금총액,0,DpsTotamt,NUMSTRING,16,0",
+				"수표금액,D1수표금액,0,ChckAmt,NUMSTRING,16,0",
+				"기타수표금액,D1기타수표금액,0,EtcChckAmt,NUMSTRING,16,0",
+				"기타대여금액,D1기타대여금액,0,EtclndAmt,NUMSTRING,16,0",
+				"인출가능금액,D1인출가능금액,0,PsnOutAbleAmt,NUMSTRING,16,0",
+				"기타자금대출약정여부,D1기타자금대출약정여부,0,EmLoanCtrctYn,STRING,1,0",
+				"대출이자등급코드,D1대출이자등급코드,0,LoanIntrstGrdCode,STRING,2,0",
+				"대출금액,D1대출금액,0,LoanAmt,NUMSTRING,16,0",
+				"이자미납금액,D1이자미납금액,0,IntrstDlinqAmt,NUMSTRING,16,0",
+				"대출약정한도금액,D1대출약정한도금액,0,LoanCtrctLmtAmt,NUMSTRING,16,0",
+				"이자가계산금액,D1이자가계산금액,0,IntrstPrcCompAmt,NUMSTRING,16,0"
+			]
+		},
+		"OutBlock5": {
+			"format": [
+				"예탁총액,D1예탁총액,0,DpstgTotamt,NUMSTRING,16,0",
+				"예탁현금,D1예탁현금,0,DpstgMny,NUMSTRING,16,0",
+				"예탁대용,D1예탁대용,0,DpstgSubst,NUMSTRING,16,0",
+				"충당예탁금총액,D1충당예탁금총액,0,FilupDpsamtTotamt,NUMSTRING,16,0",
+				"충당예수금,D1충당예수금,0,FilupDps,NUMSTRING,16,0",
+				"선물손익금액,D1선물손익금액,0,FutsPnlAmt,NUMSTRING,16,0",
+				"인출가능총금액,D1인출가능총금액,0,PsnOutAbleTotAmt,NUMSTRING,15,0",
+				"인출가능현금액,D1인출가능현금액,0,PsnOutAbleCurAmt,NUMSTRING,16,0",
+				"인출가능대용금액,D1인출가능대용금액,0,PsnOutAbleSubstAmt,NUMSTRING,16,0",
+				"증거금총액,D1증거금총액,0,MgnTotamt,NUMSTRING,16,0",
+				"증거금현금,D1증거금현금,0,MgnMny,NUMSTRING,16,0",
+				"주문가능총금액,D1주문가능총금액,0,OrdAbleTotAmt,NUMSTRING,15,0",
+				"주문가능금액,D1주문가능금액,0,OrdAbleAmt,NUMSTRING,16,0",
+				"추가증거금총액,D1추가증거금총액,0,AddMgnTotamt,NUMSTRING,15,0",
+				"추가증거금액,D1추가증거금액,0,AddMgn,NUMSTRING,16,0",
+				"수표입금액,D1수표입금액,0,ChckMnyinAmt,NUMSTRING,17,0",
+				"외화예수금,D1외화예수금,0,FcurrDps,NUMSTRING,17,4"
+			]
+		}
+	}
+}

@@ -1,0 +1,26 @@
+{
+	"meta": "휴대폰 명의인본인인증 등록",
+	"name": "SACMT722",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [				
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"이동전화식별번호,D1이동전화식별번호,0,MoveTelIdfyNo,STRING,4,0",
+				"이동전화국번호,D1이동전화국번호,0,MoveTelExno,STRING,4,0",
+				"이동전화일련번호,D1이동전화일련번호,0,MoveTelSeqno,STRING,4,0",
+				"구분,D1구분,0,Tp,STRING,1,0",
+				"고객명,D1고객명,0,ClntNm,STRING,40,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"확인여부,D1확인여부,0,CnfYn,STRING,1,0",
+				"응답코드,D1응답코드,0,RspnsCode,STRING,4,0",
+				"부가서비스명,D1부가서비스명,0,AdsrvNm,STRING,100,0"
+			]
+		}
+	}
+}

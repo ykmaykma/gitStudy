@@ -1,0 +1,32 @@
+{
+	"meta": "PSACCTR,계정계 일반,계좌 비밀번호 조회",
+	"name": "SACMT206",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"종합계좌번호,D1종합계좌번호,0,IntaccNo,STRING,20,0",
+				"지점비밀번호,D1지점비밀번호,0,BrnPwd,STRING,8,0",
+				"등록사유내용,D1등록사유내용,0,RegRsnCnts,STRING,100,0",
+				"현재계좌비밀번호,D1현재계좌비밀번호,0,NowAcntPwd,STRING,8,0",
+				"변경계좌비밀번호,D1변경계좌비밀번호,0,ChgAcntPwd,STRING,8,0",
+				"확인계좌비밀번호,D1확인계좌비밀번호,0,CnfAcntPwd,STRING,8,0",
+				"승인요청일,D1승인요청일,0,AgrmReqstDt,STRING,8,0",
+				"승인자추가메시지,D1승인자추가메시지,0,AgrmAddMsg,STRING,100,0",
+				"승인사용자명,D1승인사용자명,0,AgrmUserNm,STRING,40,0",
+				"승인처리ID,D1승인처리ID,0,AgrmTrxId,STRING,8,0",
+				"최종승인자ID,D1최종승인자ID,0,LastAgrmUserId,STRING,16,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"고객번호,D1고객번호,0,ClntNo,STRING,20,0",
+				"승인방식코드,D1승인방식코드,0,AgrmMthdCode,STRING,2,0"
+			]
+		}
+	}
+}

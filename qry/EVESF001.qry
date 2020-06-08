@@ -1,0 +1,22 @@
+{
+	"meta": "에버세이프검증",
+	"name": "EVESF001",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"세션ID,D1세션ID,0,,STRING,36,0",
+				"세션TOKEN,D1세션TOKEN,0,,STRING,36,0",
+				"디바이스ID,D1디바이스ID,0,,STRING,36,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"결과코드,D1결과코드,0,,STRING,1,0",
+				"통신결과코드,D1통신결과코드,0,,STRING,100,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,18 @@
+/***************************** project Font > adding new font style **************************/
+@font-face
+{
+	font-family: 'APB';
+	src: url('ASSETPLUS-Bold.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'APM';
+	src: url('ASSETPLUS-Medium.ttf') format('truetype');
+}
+
+@font-face
+{
+	font-family: 'APL';
+	src: url('ASSETPLUS-Light.ttf') format('truetype');
+}

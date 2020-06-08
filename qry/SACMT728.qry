@@ -1,0 +1,25 @@
+{
+	"meta": "PSACCTR,계정계 일반,명의확인 SMS인증",
+	"name": "SACMT728",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"계좌번호,D1계좌번호,0,AccountNo,STRING,6,0",
+				"이동전화식별번호,D1이동전화식별번호,0,MoveTelIdfyNo,STRING,4,0",
+				"이동전화국번호,D1이동전화국번호,0,MoveTelExno,STRING,4,0",
+				"이동전화일련번호,D1이동전화일련번호,0,MoveTelSeqno,STRING,4,0",
+				"NICE기관코드,D1NICE기관코드,0,NiceIttCode,STRING,9,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"응답코드,D1응답코드,0,RspnsCode,STRING,4,0",
+				"부가서비스명,D1부가서비스명,0,AdsrvNm,STRING,100,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,31 @@
+{
+	"meta": "PSACCTR,계정계 일반,수익증권펀드거래일조회",
+	"name": "SOFFQ559",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"기준일,D1기준일,0,BaseDt,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"체결일,D1체결일,0,ExecDt,STRING,8,0",
+				"결제일,D1결제일,0,SettDt,STRING,8,0",
+				"시간외매매종료시각,D1시간외매매종료시각,0,OttEndTime,STRING,9,0"
+			]
+		},
+		"OutBlock2": {
+			"format": [
+				"체결일,D1체결일,0,ExecDt,STRING,8,0",
+				"결제일,D1결제일,0,SettDt,STRING,8,0",
+				"시간외매매종료시각,D1시간외매매종료시각,0,OttEndTime,STRING,9,0",
+				"기준일,D1기준일,0,BaseDt,STRING,8,0",
+				"기준일자,D1기준일자,0,Basedate,STRING,8,0"
+			]
+		}
+	}
+}

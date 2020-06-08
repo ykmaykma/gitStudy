@@ -1,0 +1,41 @@
+{
+	"meta": "PSACCTR,계정계 일반,연금개시신청내역 조회",
+	"name": "SACAQ297",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"시작일,D1시작일,0,SrtDt,STRING,8,0",
+				"종료일,D1종료일,0,EndDt,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 20,
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"연금개시신청일,D1연금개시신청일,0,AnutyOpnPrslDt,STRING,8,0",
+				"연금개시일,D1연금개시일,0,AnutyOpnDt,STRING,8,0",
+				"연금지급일,D1연금지급일,0,AnutyGivDt,STRING,8,0",
+				"최초연금지급일,D1최초연금지급일,0,FstAnutyGivDt,STRING,8,0",
+				"연결계좌번호,D1연결계좌번호,0,ConnAcntNo,STRING,20,0",
+				"연금개시신청여부,D1연금개시신청여부,0,AnutyOpnPrslYn,STRING,1,0",
+				"여부명,D1여부명,0,YnNm1,STRING,10,0",
+				"연금지급주기구분,D1연금지급주기구분,0,AnutyGivCyclTp,STRING,1,0",
+				"지급주기명,D1지급주기명,0,GivMainInscr,STRING,40,0",
+				"월지급일,D1월지급일,0,MthGivDt,STRING,2,0",
+				"연금지급방법,D1연금지급방법,0,AnutyGivMthdTp,STRING,1,0",
+				"구분명1,D1구분명1,0,TpNm1,STRING,40,0",
+				"연금개시여부,D1연금개시여부,0,AnutyOpnYn,STRING,1,0",
+				"당해년도연금수령연차,D1당해년도연금수령연차,0,TyrAnutyAcptAnord,NUMSTRING,6,0",
+				"당해년도연금수령한도금액,D1당해년도연금수령한도금액,0,TyrAnutyAcptLmtAmt,NUMSTRING,16,0",
+				"희망 연금수령액(연),D1희망 연금수령액(연),0,WishAnutyAcptAmt,NUMSTRING,16,0",
+				"당해년도 지급개월기간,D1당해년도 지급개월기간,0,TyrGivMonthTerm,NUMSTRING,6,0",
+				"금액,D1금액,0,Amt,NUMSTRING,16,0",
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0"
+			]
+		}
+	}
+}

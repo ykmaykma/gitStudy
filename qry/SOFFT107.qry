@@ -1,0 +1,36 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드 판매상품 정보등록",
+	"name": "SOFFT107",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0"
+			]
+		},
+		"InBlock2": {
+			"format": [
+				"투신국내외구분,D1투신국내외구분,0,IvtrstIadTp,STRING,1,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"이용사번호,D1이용사번호,0,FirmNo,STRING,3,0",
+				"펀드내용,D1펀드내용,0,FundCnts,STRING,300,0",
+				"투자기간일수,D1투자기간일수,0,InvstTermCnts,STRING,50,0",
+				"환매수수료내용,D1환매수수료내용,0,RpCmsnAmtCnts,STRING,200,0",
+				"보수내용,D1보수내용,0,RwrdCnts,STRING,100,0",
+				"운용전략내용,D1운용전략내용,0,OpStrtgCnts,STRING,600,0",
+				"위험관리전략내용,D1위험관리전략내용,0,RkmgtStrtgCnts,STRING,600,0",
+				"가입대상명,D1가입대상명,0,JoinObjNm,STRING,50,0",
+				"목표수익률,D1목표수익률,0,TrgtErnrat,NUMSTRING,12,6",
+				"펀드운용역명,D1펀드운용역명,0,FundOpRoleNm,STRING,50,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"설정일,D1설정일,0,SetupDt,STRING,8,0",
+				"운용사명,D1운용사명,0,OpfirmNm,STRING,50,0"
+			]
+		}
+	}
+}

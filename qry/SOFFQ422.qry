@@ -1,0 +1,51 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드상세정보",
+	"name": "SOFFQ422",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"펀드유형명,D1펀드유형명,0,FundPtnNm,STRING,40,0",
+				"운용사명,D1운용사명,0,OpfirmNm,STRING,50,0",
+				"수탁회사명,D1수탁회사명,0,TrstcoNm,STRING,50,0",
+				"설정일,D1설정일,0,SetupDt,STRING,8,0",
+				"설정수량,D1설정수량,0,SetupQty,NUMSTRING,16,0",
+				"대상자명,D1대상자명,0,ObjPsnNm,STRING,40,0",
+				"투신상세명,D1투신상세명,0,IvtrstDtlNm,STRING,40,0",
+				"납입방법명,D1납입방법명,0,PayMthdNm,STRING,40,0",
+				"운용방법코드명,D1운용방법코드명,0,OpMthdCodeNm,STRING,50,0",
+				"수수료유형코드명1,D1수수료유형코드명1,0,CmsnAmtPtnCodeNm1,STRING,40,0",
+				"수수료유형코드명2,D1수수료유형코드명2,0,CmsnAmtPtnCodeNm2,STRING,40,0",
+				"펀드보수명1,D1펀드보수명1,0,FndRwrdNm1,STRING,40,0",
+				"펀드보수명2,D1펀드보수명2,0,FndRwrdNm2,STRING,40,0",
+				"펀드보수명3,D1펀드보수명3,0,FndRwrdNm3,STRING,40,0",
+				"펀드보수명4,D1펀드보수명4,0,FndRwrdNm4,STRING,40,0",
+				"매입기준일명1,D1매입기준일명1,0,BuyBaseDtNm1,STRING,100,0",
+				"매입기준일명2,D1매입기준일명2,0,BuyBaseDtNm2,STRING,100,0",
+				"환매기준일명1,D1환매기준일명1,0,SellBaseDtnm1,STRING,100,0",
+				"환매기준일명2,D1환매기준일명2,0,SellBaseDtnm2,STRING,100,0",
+				"펀드설명,D1펀드설명,0,FundDescr,STRING,100,0",
+				"통화코드,D1통화코드,0,CrcyCode,STRING,3,0",
+				"가입금액,D1가입금액,0,OpnmkFdamt,NUMSTRING,16,0",
+				"결산주기월수,D1결산주기월수,0,ClrgCyclMthQty,NUMSTRING,6,0",
+				"결산일,D1결산일,0,ClrgDt,STRING,8,0",
+				"위험도코드,D1위험도코드,0,FundRiskCode,STRING,2,0",
+				"위험구분,D1위험구분,0,RiskTpNm,STRING,40,0",
+				"펀드설명40,D1펀드설명40,0,FundDescr40,STRING,40,0",
+				"펀드종류코드,D1펀드종류코드,0,FundKindCode,STRING,2,0",
+				"비고10,D1비고10,0,Rmk10,STRING,20,0",
+				"비고9,D1비고9,0,Rmk9,STRING,20,0",
+				"성과보수율2,D1성과보수율2,0,FrtgRwrdRat2,NUMSTRING,14,8",
+				"허들레이트2,D1허들레이트2,0,HurdleRat2,NUMSTRING,14,8"
+			]
+		}
+	}
+}

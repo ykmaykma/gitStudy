@@ -1,0 +1,44 @@
+{
+	"meta": "PSACCTR,계정계 일반,개인정보 보유현황 조회",
+	"name": "SACMQ509",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"구분문자1,D1구분문자1,0,TpText1,STRING,1,0",
+				"구분문자2,D1구분문자2,0,TpText2,STRING,1,0",
+				"실명확인방법코드,D1실명확인방법코드,0,RmnCnfMthdCode,STRING,2,0",
+				"구분문자3,D1구분문자3,0,TpText3,STRING,1,0",
+				"구분문자4,D1구분문자4,0,TpText4,STRING,1,0",
+				"구분문자5,D1구분문자5,0,TpText5,STRING,1,0",
+				"구분문자6,D1구분문자6,0,TpText6,STRING,1,0",
+				"구분문자7,D1구분문자7,0,TpText7,STRING,1,0",
+				"구분문자8,D1구분문자8,0,TpText8,STRING,1,0",
+				"구분문자9,D1구분문자9,0,TpText9,STRING,1,0",
+				"구분문자10,D1구분문자10,0,TpText10,STRING,1,0",
+				"구분문자11,D1구분문자11,0,TpText11,STRING,1,0",
+				"구분문자12,D1구분문자12,0,TpText12,STRING,1,0",
+				"구분문자13,D1구분문자13,0,TpText13,STRING,1,0",
+				"구분문자14,D1구분문자14,0,TpText14,STRING,1,0",
+				"구분문자15,D1구분문자15,0,TpText15,STRING,1,0",
+				"구분문자16,D1구분문자16,0,TpText16,STRING,1,0",
+				"구분문자17,D1구분문자17,0,TpText17,STRING,1,0",
+				"구분문자18,D1구분문자18,0,TpText18,STRING,1,0",
+				"구분문자19,D1구분문자19,0,TpText19,STRING,1,0",
+				"구분문자20,D1구분문자20,0,TpText20,STRING,1,0",
+				"구분문자21,D1구분문자21,0,TpText21,STRING,1,0",
+				"구분문자22,D1구분문자22,0,TpText22,STRING,1,0",
+				"구분문자23,D1구분문자23,0,TpText23,STRING,1,0"
+			]
+		}
+	}
+}

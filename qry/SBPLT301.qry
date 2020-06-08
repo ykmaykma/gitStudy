@@ -1,0 +1,70 @@
+{
+	"meta": "사용자정보확인",
+	"name": "SBPLT301",
+	"queryType": ".STRT",
+	"input":
+	{
+		"InBlock1":
+		{
+			"format":
+			[
+                "로그인구분,D1로그인구분,0,LoginTp,STRING,1,0",
+                "로그인비밀번호구분,D1로그인비밀번호구분,0,LoginPwdTp,STRING,1,0",
+                "로그인비밀번호,D1로그인비밀번호,0,LoginPwd,STRING,32,0"
+			]
+		}
+	},
+	
+	"output":
+	{
+		"OutBlock1":
+		{
+			"format":
+			[
+                "로그인구분,D1로그인구분,0,LoginTp,STRING,1,0",
+                "영업일,D1영업일,0,BizDt,STRING,8,0",
+                "전영업일,D1전영업일,0,BfBizDt,STRING,8,0",
+                "메뉴파일명,D1메뉴파일명,0,MenuFileNm,STRING,40,0",
+                "메뉴권한키,D1메뉴권한키,0,MenuAuthKey,STRING,256,0",
+                "유료권한값,D1유료권한값,0,PayAuthVal,STRING,32,0",
+                "최초접속구분,D1최초접속구분,0,FstConnTp,STRING,1,0",
+                "로그인비밀번호만료구분,D1로그인비밀번호만료구분,0,LoginPwdXpirTp,STRING,1,0",
+                "사용만료일시,D1사용만료일시,0,UseXpirDttm,STRING,17,0",
+                "재시도가능횟수,D1재시도가능횟수,0,RetryAbleCnt,NUMSTRING,2,0",
+                "본인확인유형구분,D1본인확인유형구분,0,OnesfCnfPtnTp,STRING,1,0",
+                "보안카드확인구분,D1보안카드확인구분,0,OtpCnfTp,STRING,1,0",
+                "인증서사용자구분,D1인증서사용자구분,0,CertUserTp,STRING,1,0",
+                "매체코드,D1매체코드,0,MdaCode,STRING,2,0",
+                "이용사명,D1이용사명,0,FirmNm,STRING,50,0",
+                "영문지점명,D1영문지점명,0,EngBrnNm,STRING,50,0",
+                "사용자명,D1사용자명,0,UserNm,STRING,40,0",
+                "사원번호,D1사원번호,0,EmpNo,STRING,9,0",
+                "고객구분,D1고객구분,0,ClntTp,STRING,1,0",
+                "최종로그인사설IP,D1최종로그인사설IP,0,LastLoginPrvtip,NUMSTRING,12,0",
+                "최종로그인일시,D1최종로그인일시,0,LastLoginDttm,STRING,17,0",
+                "팝업메시지여부,D1팝업메시지여부,0,PopupMsgYn,STRING,1,0",
+                "팝업메시지,D1팝업메시지,0,PopupMsg,STRING,100,0"
+			]
+		},
+		
+		"OutBlock2":
+		{
+    		"occurs": 50,
+			"format":
+			[
+                "기본수행화면명,D1기본수행화면명,0,DfltRunScrNm,STRING,40,0"
+			]
+		},
+		
+		"OutBlock3":
+		{
+			"format":
+			[
+                "최종로그인공인IP,D1최종로그인공인IP,0,LastLoginPubip,NUMSTRING,12,0",
+                "최종로그아웃일시,D1최종로그아웃일시,0,LastLogoutDttm,STRING,17,0",
+                "접속분류코드,D1접속분류코드,0,ConnClssCode,STRING,2,0",
+                "단말분류코드,D1단말분류코드,0,TermClssCode5,STRING,5,0"
+			]
+		}
+	}
+}

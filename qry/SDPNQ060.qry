@@ -1,0 +1,17 @@
+{
+	"meta": "PSACCTR,계정계 일반,은행장애현황",
+	"name": "SDPNQ060",
+	"queryType": ".STRT",
+	"input": {},
+	"output": {
+		"OutBlock1": {
+			"occurs": 80,
+			"format": [
+				"은행번호,D1은행번호,0,BnkNo,STRING,3,0",
+				"은행명,D1은행명,0,BnkNm,STRING,40,0",
+				"장애여부,D1장애여부,0,FltYn,STRING,1,0",
+				"색상구분,D1색상구분,0,Colortp,STRING,1,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,41 @@
+{
+	"meta": "PSACCTR,계정계 일반,통합콜센터 단문메세지 전송",
+	"name": "SCMAM113",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"이용사번호,D1이용사번호,0,FirmNo,STRING,3,0",
+				"비고,D1비고,0,Rmk,STRING,100,0",
+				"SMS메시지코드,D1SMS메시지코드,0,SmsMsgCode,STRING,3,0",
+				"SMS메시지내용,D1SMS메시지내용,0,SmsMsgCnts,STRING,256,0",
+				"휴대폰수신번호,D1휴대폰수신번호,0,HpRcvNo,STRING,14,0",
+				"휴대폰발신번호,D1휴대폰발신번호,0,HpSndNo,STRING,14,0",
+				"추가정보내용,D1추가정보내용,0,AddInfoCnts,STRING,200,0",
+				"구분명2,D1구분명2,0,TpNm2,STRING,40,0",
+				"구분명3,D1구분명3,0,TpNm3,STRING,40,0",
+				"구분명4,D1구분명4,0,TpNm4,STRING,40,0",
+				"구분명5,D1구분명5,0,TpNm5,STRING,40,0",
+				"구분명6,D1구분명6,0,TpNm6,STRING,40,0",
+				"구분명7,D1구분명7,0,TpNm7,STRING,40,0",
+				"구분명8,D1구분명8,0,TpNm8,STRING,40,0",
+				"구분명9,D1구분명9,0,TpNm9,STRING,40,0",
+				"구분명10,D1구분명10,0,TpNm10,STRING,40,0",
+				"처리메시지,D1처리메시지,0,TrxMsg,STRING,500,0",
+				"종목명,D1종목명,0,IsuNm,STRING,40,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"이용사번호,D1이용사번호,0,FirmNo,STRING,3,0",
+				"업무영역코드,D1업무영역코드,0,AfirAreaCode,STRING,2,0",
+				"SMS메시지코드,D1SMS메시지코드,0,SmsMsgCode,STRING,3,0",
+				"SMS메시지내용,D1SMS메시지내용,0,SmsMsgCnts,STRING,256,0",
+				"비고,D1비고,0,Rmk,STRING,100,0"
+			]
+		}
+	}
+}

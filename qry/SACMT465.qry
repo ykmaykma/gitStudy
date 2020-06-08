@@ -1,0 +1,35 @@
+{
+	"meta": "PSACCTR,계정계 일반,비대면 영상정보 등록/말소",
+	"name": "SACMT465",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"이미지번호,D1이미지번호,0,ImgNo,STRING,7,0",
+				"이미지길이,D1이미지길이,0,ImgLen,NUMSTRING,8,0",
+				"이미지확인코드,D1이미지확인코드,0,ImgCnfCode,STRING,4,0",
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"종류구분,D1종류구분,0,KindTp,STRING,1,0",
+				"파일확장자,D1파일확장자,0,FileExt,STRING,4,0",
+				"확인구분,D1확인구분,0,CnfTp,STRING,1,0"
+			]
+		},
+		"InBlock2": {
+			"format": [
+				"최종일련번호,D1최종일련번호,0,LastSeqno,NUMSTRING,10,0",
+				"처리일련번호,D1처리일련번호,0,TrxSeqno,NUMSTRING,10,0",
+				"레코드크기,D1레코드크기,0,RecLen,NUMSTRING,7,0",
+				"바이너리데이터8K,D1바이너리데이터8K,0,BinData8K,BINARY,8192,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"성공건수,D1성공건수,0,SucesCnt,NUMSTRING,16,0"
+			]
+		}
+	}
+}

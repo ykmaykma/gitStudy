@@ -1,0 +1,33 @@
+{
+	"meta": "PSACCTR,계정계 일반,비대면 CDD/EDD 정보등록",
+	"name": "SAMCT102",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리일,D1처리일,0,TrxDt,STRING,8,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"실명,D1실명,0,Rmn,STRING,40,0",
+				"휴대폰지역번호,D1휴대폰지역번호,0,HpRgno,STRING,4,0",
+				"휴대폰국번호,D1휴대폰국번호,0,HpExno,STRING,4,0",
+				"휴대폰일련번호,D1휴대폰일련번호,0,HpSeqno,STRING,4,0",
+				"RA직업코드,D1RA직업코드,0,RaJobCode,STRING,4,0",
+				"거래용도코드,D1거래용도코드,0,TrdUsageCode,STRING,2,0",
+				"EDD투자자금출처,D1EDD투자자금출처,0,EddInvstCode,STRING,2,0",
+				"실소유자여부,D1실소유자여부,0,RealOwnPsnYn,STRING,1,0",
+				"영문명,D1영문명,0,EngNm,STRING,40,0",
+				"상품유형구분,D1상품유형구분,0,PdptnTp,STRING,2,0",
+				"상품상세코드,D1상품상세코드,0,PrdtDtlCode,STRING,2,0",
+				"거래용도기타,D1거래용도기타,0,TrdUsageEtcRsn,STRING,100,0",
+				"EDD투자자금출처기타사유,D1EDD투자자금출처기타사유,0,EddInvstEtcRsn,STRING,100,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"고객명,D1고객명,0,ClntNm,STRING,40,0"
+			]
+		}
+	}
+}

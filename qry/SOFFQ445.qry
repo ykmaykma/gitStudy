@@ -1,0 +1,41 @@
+{
+	"meta": "PSACCTR,계정계 일반,예약매매내역조회",
+	"name": "SOFFQ445",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"조회시작일,D1조회시작일,0,QrySrtDt,STRING,8,0",
+				"조회종료일,D1조회종료일,0,QryEndDt,STRING,8,0",
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"신청일,D1신청일,0,PrslDt,STRING,8,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"일련번호,D1일련번호,0,Seqno,NUMSTRING,10,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"펀드명,D1펀드명,0,FundNm,STRING,40,0",
+				"주문일,D1주문일,0,OrdDt,STRING,8,0",
+				"주문금액,D1주문금액,0,OrdAmt,NUMSTRING,16,0",
+				"신규여부,D1신규여부,0,NewYn,STRING,1,0",
+				"납입방법코드,D1납입방법코드,0,PayMthdCode,STRING,2,0",
+				"납입방법명,D1납입방법명,0,PayMthdNm,STRING,40,0",
+				"계약기간,D1계약기간,0,CvntTerm,NUMSTRING,4,0",
+				"월납입일,D1월납입일,0,MthPayDt,STRING,2,0",
+				"취소여부,D1취소여부,0,CancYn,STRING,1,0",
+				"주문처리여부,D1주문처리여부,0,OrdTrxYn,STRING,1,0",
+				"기준가적용일,D1기준가적용일,0,BasePrcAppDt,STRING,8,0",
+				"결제일,D1결제일,0,SettDt,STRING,8,0",
+				"투신상세코드,D1투신상세코드,0,IvtrstDtlCode,STRING,2,0",
+				"투신상세명,D1투신상세명,0,IvtrstDtlNm,STRING,40,0",
+				"신청시각,D1신청시각,0,PrslTime,STRING,9,0"
+			]
+		}
+	}
+}

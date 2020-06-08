@@ -1,0 +1,30 @@
+{
+	"meta": "PSACCTR,계정계 일반,출금가능금액및실명번호조회(비번)",
+	"name": "SDPNQ184",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"출금계좌번호,D1출금계좌번호,0,MnyoutAcntNo,STRING,20,0",
+				"출금유형,D1출금유형,0,MnyoutPtnTp,STRING,1,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"출금가능금액,D1출금가능금액,0,MnyoutAbleAmt,NUMSTRING,16,0",
+				"D2예수금,D1D2예수금,0,D2Dps,NUMSTRING,16,0",
+				"계좌일회한도금액,D1계좌일회한도금액,0,AcntOnceLmtAmt,NUMSTRING,16,0",
+				"계좌일일한도금액,D1계좌일일한도금액,0,AcntDailyLmtAmt,NUMSTRING,16,0",
+				"최종이체일,D1최종이체일,0,LastMtrsfDt,STRING,8,0",
+				"당일이체총액,D1당일이체총액,0,ThdayMtrsfTotamt,NUMSTRING,16,0",
+				"회사일회한도금액,D1회사일회한도금액,0,CoOnceLmtAmt,NUMSTRING,16,0",
+				"회사일일한도금액,D1회사일일한도금액,0,CoDailyLmtAmt,NUMSTRING,16,0"
+			]
+		}
+	}
+}

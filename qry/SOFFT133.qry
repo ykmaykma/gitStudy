@@ -1,0 +1,40 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드 매수",
+	"name": "SOFFT133",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"주문금액구분,D1주문금액구분,0,OrdAmtTp,STRING,1,0",
+				"매수주문금액,D1매수주문금액,0,BuyOrdAmt,NUMSTRING,16,0",
+				"투자설명여부,D1투자설명여부,0,InvstDescrYn,STRING,1,0",
+				"펀드매매처리구분,D1펀드매매처리구분,0,FndtdTrxTp,STRING,1,0",
+				"출납번호,D1출납번호,0,Inouno,NUMSTRING,10,0",
+				"상대계좌번호,D1상대계좌번호,0,OppAcntNo,STRING,20,0",
+				"권유구분,D1권유구분,0,CnvsTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"주문번호,D1주문번호,0,OrdNo,NUMSTRING,10,0",
+				"매수수량,D1매수수량,0,BuyQty,NUMSTRING,16,0",
+				"펀드전잔수량,D1펀드전잔수량,0,FundBfbalQty,NUMSTRING,20,5",
+				"기준가,D1기준가,0,BasePrc,NUMSTRING,13,2",
+				"결제일,D1결제일,0,SettDt,STRING,8,0",
+				"매수금액,D1매수금액,0,BuyAmt,NUMSTRING,16,0",
+				"펀드금잔수량,D1펀드금잔수량,0,FundCrbalQty,NUMSTRING,20,5",
+				"과표기준가,D1과표기준가,0,BoaBasePrc,NUMSTRING,20,10",
+				"판매수수료,D1판매수수료,0,MchndCmsnAmt,NUMSTRING,16,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"투신펀드일련번호,D1투신펀드일련번호,0,IvstfndSeqno,NUMSTRING,10,0",
+				"매수유형코드,D1매수유형코드,0,BuyPtnCode,STRING,2,0",
+				"매수유형,D1매수유형,0,BuyPtnNm,STRING,40,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,51 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드 계좌잔고 조회",
+	"name": "SOFFQ365",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"잔고유무여부,D1잔고유무여부,0,BalIonYn,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"펀드잔고수량,D1펀드잔고수량,0,FundBalQty,NUMSTRING,20,5",
+				"예수금,D1예수금,0,Dps,NUMSTRING,16,0",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0",
+				"출금가능금액,D1출금가능금액,0,MnyoutAbleAmt,NUMSTRING,16,0",
+				"수익총액,D1수익총액,0,ErnTotamt,NUMSTRING,16,0"
+			]
+		},
+		"OutBlock2": {
+			"occurs": 99999,
+			"format": [
+				"계좌일련번호,D1계좌일련번호,0,SubAcntSeqno,STRING,3,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"투신펀드일련번호,D1투신펀드일련번호,0,IvstfndSeqno,NUMSTRING,10,0",
+				"펀드명,D1펀드명,0,FundNm,STRING,40,0",
+				"펀드잔고수량,D1펀드잔고수량,0,FundBalQty,NUMSTRING,20,5",
+				"출금가능금액,D1출금가능금액,0,MnyoutAbleAmt,NUMSTRING,16,0",
+				"세금,D1세금,0,Tax,NUMSTRING,16,0",
+				"환매수수료,D1환매수수료,0,RpCmsnAmt,NUMSTRING,16,0",
+				"납입방법명,D1납입방법명,0,PayMthdNm,STRING,40,0",
+				"기준가,D1기준가,0,BasePrc,NUMSTRING,13,2",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0",
+				"납입금액,D1납입금액,0,PayAmt,NUMSTRING,16,0",
+				"수익률,D1수익률,0,ErnRat,NUMSTRING,12,6",
+				"만기일,D1만기일,0,DueDt,STRING,8,0",
+				"개설일,D1개설일,0,OpnDt,STRING,8,0",
+				"증권예탁원펀드코드,D1증권예탁원펀드코드,0,KsdFundCode,STRING,12,0",
+				"상품상세코드,D1상품상세코드,0,PrdtDtlCode,STRING,2,0",
+				"상품상세명,D1상품상세명,0,PrdtDtlNm,STRING,40,0",
+				"수익금액,D1수익금액,0,ErnAmt,NUMSTRING,16,0",
+				"최초매수일,D1최초매수일,0,FstBuyDt,STRING,8,0",
+				"최종매수일,D1최종매수일,0,LastBuyDt,STRING,8,0"
+			]
+		}
+	}
+}

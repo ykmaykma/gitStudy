@@ -1,0 +1,17 @@
+{
+	"meta": "PSACCTR,계정계 일반,접속비밀번호재설정[오류초과]",
+	"name": "SBPGT145",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"상품유형코드,D1상품유형코드,0,PdPtnCode,STRING,2,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"변경로그인비밀번호,D1변경로그인비밀번호,0,ChgLoginPwd,STRING,32,0"
+			]
+		}
+	},
+	"output": {}
+}

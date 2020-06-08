@@ -1,0 +1,34 @@
+{
+	"meta": "PSACCTR,계정계 일반,전자금융ID별 복수계좌 현황",
+	"name": "SACEQ306",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"전자금융사용자ID,D1전자금융사용자ID,0,ElecfnUserId,STRING,16,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"상품유형코드,D1상품유형코드,0,PdptnCode,STRING,2,0",
+				"상품유형명,D1상품유형명,0,PdptnNm,STRING,40,0",
+				"계좌계층구분,D1계좌계층구분,0,AcntClssTp,STRING,1,0",
+				"계좌구분,D1계좌구분,0,AcntTpNm,STRING,20,0",
+				"계좌상태코드,D1계좌상태코드,0,AcntStatCode,STRING,2,0",
+				"계좌상태명,D1계좌상태명,0,AcntStatNm,STRING,40,0",
+				"지점번호,D1지점번호,0,BrnNo,STRING,3,0",
+				"지점명,D1지점명,0,BrnNm,STRING,40,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"동일인여부,D1동일인여부,0,SmpsnYn,STRING,1,0",
+				"동일인여부,D1동일인여부,0,SmpsnYnNm,STRING,40,0",
+				"만기일,D1만기일,0,DueDt,STRING,8,0",
+				"개인법인코드,D1개인법인코드,0,PsnlCorpCode,STRING,2,0",
+				"약정구분,D1약정구분,0,CtrctTp,STRING,1,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,35 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드수익률조회(펀드유형별)",
+	"name": "SOFFQ359",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0",
+				"간접투자코드,D1간접투자코드,0,IndrcInvstCode,STRING,2,0",
+				"조회일,D1조회일,0,QryDt,STRING,8,0",
+				"가입자격구분,D1가입자격구분,0,JoinQlfcTp,STRING,1,0",
+				"운용사코드,D1운용사코드,0,OpfirmCode,STRING,3,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"투신회사명,D1투신회사명,0,IvtrstCoNm,STRING,40,0",
+				"설정일,D1설정일,0,SetupDt,STRING,8,0",
+				"일수익률,D1일수익률,0,DayErnrat,NUMSTRING,12,6",
+				"주수익률,D1주수익률,0,WeekErnrat,NUMSTRING,12,6",
+				"수익률1,D1수익률1,0,Ernrat1,NUMSTRING,12,6",
+				"수익률3,D1수익률3,0,Ernrat3,NUMSTRING,12,6",
+				"수익률6,D1수익률6,0,Ernrat6,NUMSTRING,12,6",
+				"수익률12,D1수익률12,0,Ernrat12,NUMSTRING,12,6",
+				"기간수익률,D1기간수익률,0,TermErnrat,NUMSTRING,11,3"
+			]
+		}
+	}
+}

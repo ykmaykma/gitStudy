@@ -1,0 +1,8 @@
+{
+  "styleName": "FONT",
+  "items": {
+    "M": "\r\n.M\r\n{\r\n\tfont-family: 'KoPub_M';\r\n}",
+    "B": "\r\n\r\n.B\r\n{\r\n\tfont-family: 'KoPub_B';\r\n}",
+    "L": "\r\n\r\n.L\r\n{\r\n\tfont-family: 'KoPub_L';\r\n}"
+  }
+}

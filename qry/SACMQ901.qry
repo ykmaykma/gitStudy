@@ -1,0 +1,24 @@
+{
+	"meta": "PSACCTR,계정계 일반,계좌비밀번호검증",
+	"name": "SACMQ901",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"입력비밀번호,D1입력비밀번호,0,InptPwd,STRING,8,0",
+				"비밀번호처리코드,D1비밀번호처리코드,0,PwdTrxCode,STRING,5,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"개수,D1개수,0,Qty,NUMSTRING,10,0",
+				"비밀번호연속오류횟수,D1비밀번호연속오류횟수,0,PwdContErrCnt,NUMSTRING,10,0",
+				"유효여부,D1유효여부,0,AvalYn,STRING,1,0",
+				"비밀번호처리코드,D1비밀번호처리코드,0,PwdTrxCode,STRING,5,0"
+			]
+		}
+	}
+}

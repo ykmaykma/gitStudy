@@ -1,0 +1,48 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드 매수일별 평가금액현황",
+	"name": "SOFFQ126",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"조회일,D1조회일,0,QryDt,STRING,8,0",
+				"서브계좌번호,D1서브계좌번호,0,SubAcntNo,STRING,20,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"서브계좌명,D1서브계좌명,0,SubAcntNm,STRING,40,0",
+				"펀드코드,D1펀드코드,0,FundCode,STRING,20,0",
+				"펀드명,D1펀드명,0,FundNm,STRING,40,0",
+				"투신펀드일련번호,D1투신펀드일련번호,0,IvstfndSeqno,NUMSTRING,10,0",
+				"매매기준가,D1매매기준가,0,BnsBasePrc,NUMSTRING,20,10",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0",
+				"펀드잔고수량,D1펀드잔고수량,0,FundBalQty,NUMSTRING,20,5",
+				"확장한글투신펀드명,D1확장한글투신펀드명,0,HanglIvstfndNm2,STRING,100,0"
+			]
+		},
+		"OutBlock2": {
+			"occurs": 99999,
+			"format": [
+				"매수일,D1매수일,0,BuyDt,STRING,8,0",
+				"펀드매수수량,D1펀드매수수량,0,FundBuyQty,NUMSTRING,20,5",
+				"매수원금,D1매수원금,0,BuyPramt,NUMSTRING,16,0",
+				"펀드잔고수량,D1펀드잔고수량,0,FundBalQty,NUMSTRING,20,5",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0",
+				"매수기준가,D1매수기준가,0,BuyBasePrc,NUMSTRING,20,10",
+				"매수과표기준가,D1매수과표기준가,0,BuyBoaBasePrc,NUMSTRING,20,10",
+				"재투자여부,D1재투자여부,0,ReInvstYn,STRING,1,0",
+				"환매수수료면제일,D1환매수수료면제일,0,RpCmsnAmtExmtDt,STRING,8,0",
+				"기간수익률,D1기간수익률,0,TermErnrat,NUMSTRING,11,3",
+				"수익률12,D1수익률12,0,Ernrat12,NUMSTRING,12,6",
+				"신청시작일,D1신청시작일,0,PrslSrtDt,STRING,8,0",
+				"유보과표금액,D1유보과표금액,0,HldbkBoaAmt,NUMSTRING,16,0",
+				"과세표준금액,D1과세표준금액,0,TaxchrStdAmt,NUMSTRING,16,0",
+				"손실금액,D1손실금액,0,LossAmt,NUMSTRING,16,0",
+				"수수료,D1수수료,0,CmsnAmt,NUMSTRING,16,0"
+			]
+		}
+	}
+}

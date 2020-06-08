@@ -1,0 +1,77 @@
+{
+	"meta": "PSACCTR,계정계 일반,계좌간 자금대체",
+	"name": "SDPDT007",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"카드회사번호,D1카드회사번호,0,CardFirmNo,STRING,3,0",
+				"카드계좌번호,D1카드계좌번호,0,CardAcntNo,STRING,20,0",
+				"카드유형코드,D1카드유형코드,0,CardPtnCode,STRING,2,0",
+				"카드발급건수,D1카드발급건수,0,CardIssCnt,NUMSTRING,10,0",
+				"책임자카드회사번호,D1책임자카드회사번호,0,MgrCardFirmNo,STRING,3,0",
+				"책임자카드계좌번호,D1책임자카드계좌번호,0,MgrCardAcntNo,STRING,20,0",
+				"책임자카드유형코드,D1책임자카드유형코드,0,MgrCardPtnCode,STRING,2,0",
+				"책임자카드발급횟수,D1책임자카드발급횟수,0,MgrCardIssCnt,NUMSTRING,10,0",
+				"승인요청일,D1승인요청일,0,AgrmReqstDt,STRING,8,0",
+				"승인처리ID,D1승인처리ID,0,AgrmTrxId,STRING,8,0",
+				"최종승인자ID,D1최종승인자ID,0,LastAgrmUserId,STRING,16,0",
+				"승인사용자명,D1승인사용자명,0,AgrmUserNm,STRING,40,0",
+				"책임자승인구분,D1책임자승인구분,0,MgrAgrmTp,STRING,1,0",
+				"승인자추가메시지,D1승인자추가메시지,0,AgrmAddMsg,STRING,100,0",
+				"고객카드MSDATA,D1고객카드MSDATA,0,ClntCardMsdata,STRING,23,0",
+				"책임자카드MSDATA,D1책임자카드MSDATA,0,MgrCardMsdata,STRING,23,0",
+				"처리의뢰지점번호,D1처리의뢰지점번호,0,TrxSlctBrnNo,STRING,3,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"대체금액,D1대체금액,0,BkeepAmt,NUMSTRING,16,0",
+				"매도종목번호,D1매도종목번호,0,BncertSellIsuNo,STRING,6,0",
+				"출금유형,D1출금유형,0,MnyoutPtnTp,STRING,1,0",
+				"입금계좌번호,D1입금계좌번호,0,MnyinAcntNo,STRING,20,0",
+				"매수종목번호,D1매수종목번호,0,BncertBuyIsuNo,STRING,6,0",
+				"권유구분,D1권유구분,0,CnvsTp,STRING,1,0",
+				"지연이체구분,D1지연이체구분,0,DlyMtrsfTp,STRING,2,0",
+				"지연이체시간,D1지연이체시간,0,DlyMtrsfTime,STRING,4,0",
+				"구분2,D1구분2,0,Tp2,STRING,2,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"매도종목명,D1매도종목명,0,SellIsuNm,STRING,40,0",
+				"대체계좌명,D1대체계좌명,0,BkeepAcntNm,STRING,20,0",
+				"매수종목명,D1매수종목명,0,BuyIsuNm,STRING,40,0",
+				"출금출납번호,D1출금출납번호,0,MnyoutInouno,NUMSTRING,8,0",
+				"출금액,D1출금액,0,OutAmt,NUMSTRING,16,0",
+				"출금예수금전잔,D1출금예수금전잔,0,MnyoutDpsBfbalAmt,NUMSTRING,16,0",
+				"출금예수금금잔,D1출금예수금금잔,0,MnyoutDpsCrbalAmt,NUMSTRING,16,0",
+				"출금비저축전잔,D1출금비저축전잔,0,MnyoutNSavBfbalAmt,NUMSTRING,16,0",
+				"출금비저축금잔,D1출금비저축금잔,0,MnyoutNSavCrbalAmt,NUMSTRING,16,0",
+				"입금출납번호,D1입금출납번호,0,MnyinInouno,NUMSTRING,8,0",
+				"입금예수금전잔,D1입금예수금전잔,0,MnyinDpsBfbalAmt,NUMSTRING,16,0",
+				"입금예수금금잔,D1입금예수금금잔,0,MnyinDpsCrbalAmt,NUMSTRING,16,0",
+				"입금비저축전잔,D1입금비저축전잔,0,MnyinNSavBfbalAmt,NUMSTRING,16,0",
+				"입금비저축금잔,D1입금비저축금잔,0,MnyinNSavCrbalAmt,NUMSTRING,16,0",
+				"현금미수변제금액,D1현금미수변제금액,0,MnyRcvblRepayAmt,NUMSTRING,16,0",
+				"현금미수연체료변제금액,D1현금미수연체료변제금액,0,MnyrclOdpntRepayAmt,NUMSTRING,16,0",
+				"이자미납변제금액,D1이자미납변제금액,0,IntrstDlinqRepayAmt,NUMSTRING,17,0",
+				"이자미납연체료,D1이자미납연체료,0,IntrstDlinqOdpnt,NUMSTRING,17,0",
+				"기타대여변제금액,D1기타대여변제금액,0,EtclndRepayAmt,NUMSTRING,16,0",
+				"기타대여연체료,D1기타대여연체료,0,EtclndOdpnt,NUMSTRING,16,0",
+				"예수금일부변제금액,D1예수금일부변제금액,0,DpsCrdaySubRepayAmt,NUMSTRING,16,0",
+				"수익증권매수좌수,D1수익증권매수좌수,0,BncertBuyUnit,NUMSTRING,16,0",
+				"수익증권매도좌수,D1수익증권매도좌수,0,BncertSellUnit,NUMSTRING,16,0",
+				"매수입금주문번호,D1매수입금주문번호,0,BuyMnyinOrdNo,NUMSTRING,10,0",
+				"승인처리단계,D1승인처리단계,0,AgrmTrxStep,NUMSTRING,2,0",
+				"승인방식코드,D1승인방식코드,0,AgrmMthdCode,STRING,2,0",
+				"거래번호,D1거래번호,0,TrdNo,NUMSTRING,10,0",
+				"지연이체번호,D1지연이체번호,0,DlyMtrsfNo,NUMSTRING,10,0",
+				"지연처리시간,D1지연처리시간,0,DlyTrxTime,STRING,4,0",
+				"예약영역20,D1예약영역20,0,Filler20,STRING,20,0",
+				"금액1,D1금액1,0,Amt1,NUMSTRING,16,0"
+			]
+		}
+	}
+}

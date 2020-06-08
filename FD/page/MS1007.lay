@@ -1,0 +1,34 @@
+<div class="APage-Style ui-droppable" data-base="APage" data-class="MS1007" data-flag="1110" data-max-abutton="10" data-max-aimage="4" data-max-alabel="39" data-max-aview="26" style="width: 100%; height: 100%; border: 0px none rgb(255, 255, 255); background-color: rgba(0, 0, 0, 0);">
+    <div class="AView-Style ui-droppable wrap" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-style="wrap" id="MS1007--View23" style="width: 100%; height: 100%; background-color: rgb(0, 0, 0); left: 0px; top: 0px; position: absolute; border: 0px solid rgb(255, 255, 255);">
+        <div class="AView-Style ui-droppable head" data-base="AView" data-class="AView" data-flag="1011" data-style="head" id="MS1007--View17" style="width: 100%; height: 84px; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; position: relative; float: left;">
+            <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1007--Label27" style="position: relative; width: 100%; height: 100%; font-size: 35px; text-align: center;"><span class="page_tit" data-style="page_tit" style="color: rgb(50, 59, 76);">계좌개설</span></span>
+        </div>
+        <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" id="MS1007--View18" style="width: 100%; height: 200px; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; position: relative; border: 0px solid rgb(255, 255, 255); float: left;">
+            <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1007--Label29" style="width: 100%; height: 100%; left: 0px; top: 0px; position: absolute; text-align: center; line-height: 146%; font-size: 27px;">
+                <span class="B letter_sp2" data-style="B letter_sp2" style="background-color: rgba(0, 0, 0, 0); color: rgb(51, 51, 51);">메리츠자산운용 온라인지점에 오신것을 환영합니다.<br>
+                        <strong class="fc_red">원하시는 업무를 선택해 주세요.</strong>
+                    </span>
+                </span>
+            </div>
+            <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-float="left" id="MS1007--View24" style="width: 100%; background-color: rgba(0, 0, 0, 0); position: relative; float: left; height: 500px; padding-left: 34px; padding-right: 34px; border: 0px solid rgb(255, 255, 255);">
+                <div class="AView-Style ui-droppable BG_04_1 SD_01" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-listener-actionup="MS1007:onView19ActionUp" data-style="BG_04_1 SD_01" id="MS1007--View19" style="width: 100%; height: 200px; background-color: rgb(0, 0, 0); position: relative; border: 0px solid rgb(255, 255, 255); float: left;">
+                    <div class="AView-Style ui-droppable account2" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-style="account2" id="MS1007--View25" style="width: 100%; height: 200px; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; position: relative; float: left; border: 0px solid rgb(255, 255, 255);">
+                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1007--Label30" style="width: 83%; height: auto; left: 0px; top: 0px; position: relative; font-size: 35px; float: left;"><span class="B letter_sp2" data-style="B letter_sp2" style="color: rgb(226, 26, 34);">계좌개설</span></span>
+                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1007--Label31" style="width: 83%; height: auto; left: 0px; top: 0px; position: relative; font-size: 24px; line-height: 145%; float: left; margin-top: 10px;"><span class="L letter_sp2" data-style="L letter_sp2" style="color: rgb(102, 102, 102);">영업점 방문 없이 모바일에서<br>계좌개설이 가능합니다.</span></span>
+                            <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1007--Label38" style="width: 26px; height: 47px; position: absolute; float: none; right: 40px; top: 50%; margin-top: -23px;">
+                                <span class="arrow" data-style="arrow"></span>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="AView-Style ui-droppable BG_04_2_2 SD_01" data-base="AView" data-class="AView" data-flag="1011" data-listener-actionup="MS1007:onView20ActionUp" data-style="BG_04_2_2 SD_01" id="MS1007--View20" style="width: 100%; height: 200px; background-color: rgb(0, 0, 0); position: relative; border: 0px solid rgb(255, 255, 255); float: left; margin-top: 10px;">
+                        <div class="AView-Style ui-droppable reg" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-style="reg" id="MS1007--View26" style="width: 100%; height: 200px; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; position: absolute; float: left; border: 0px solid rgb(255, 255, 255);">
+                            <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1007--Label37" style="width: 83%; height: auto; position: relative; font-size: 35px; float: left;"><span class="B letter_sp2" data-style="B letter_sp2" style="color: rgb(88, 112, 175);">ID 등록</span></span>
+                            <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1007--Label33" style="width: 83%; height: auto; position: relative; font-size: 22px; line-height: 145%; float: left; margin-top: 10px;"><span class="L letter_sp2" data-style="L letter_sp2" style="color: rgb(102, 102, 102);">온라인 거래를 이용 하시려면<br>ID를 등록하셔야 합니다.</span></span>
+                                <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="MS1007--Label39" style="width: 26px; height: 47px; right: 40px; top: 50%; position: absolute; float: none; margin-top: -23px;">
+                                    <span class="arrow" data-style="arrow"></span>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>

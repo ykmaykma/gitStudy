@@ -1,0 +1,154 @@
+<div data-max-agrid="15" data-max-alabel="62" data-base="APage" data-class="FD1503" data-flag="1110" class="APage-Style ui-droppable bg_color4" data-max-adatepicker="1" data-max-abutton="1" data-max-adropbox="1" data-max-aradiobutton="2" data-max-aradiogroup="1" data-max-atoolbar="1" data-max-aview="24" data-max-excenterpivotview="1" data-max-expivotview="3" data-max-fixedgrid="1" data-query-name="SOFFQ130" data-style="bg_color4" style="width: 100%; height: 100%; border: 0px none rgb(255, 255, 255);">
+    <div class="AView-Style ui-droppable header" data-base="AView" data-class="AView" data-flag="1011" data-style="header" id="FD1503--TopUpperView" style="background-color: rgb(255, 255, 255); left: 0px; top: 0px; position: absolute;">
+        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label1" style="width: 480px; height: 100%; left: 80px; position: absolute; text-align: center;"><span class="head_tit" data-style="head_tit" style="color: rgb(34, 34, 59);">실질 투자수익률 보고서</span></span>
+        <button class="AButton-Style AButton-disable btn_back" data-base="AButton" data-bgcolor="rgba(0, 0, 0, 0)||" data-class="AButton" data-flag="0001" data-listener-click="FD1503:onBackBtnClick" data-state="2" data-style="btn_back|btn_back|btn_back" id="FD1503--BackBtn" style="width: 80px; height: 100%; left: 0px; top: 0px; position: absolute;"></button>
+    </div>
+    <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-float="left" id="FD1503--View23" style="width: 100%; height: 60px; background-color: rgb(255, 255, 255); left: 0px; top: 89px; position: absolute; border: 0px solid rgb(255, 255, 255);">
+        <div class="ARadioGroup-Style ui-droppable" data-base="ARadioGroup" data-center-left="true" data-center-top="true" data-class="ARadioGroup" data-flag="1011" data-float="left" id="FD1503--RadioGroup1" style="width: auto; height: auto; left: 166px; top: 12px; position: relative; float: left; border: 0px solid rgb(255, 255, 255);"><span class="ARadioButton-Style radio_nor" data-base="ARadioButton" data-class="ARadioButton" data-flag="0001" data-listener-click="FD1503:onRadioButton1Click" data-style-check="radio_chkk" data-style-normal="radio_nor" id="FD1503--RadioButton1" style="width: 200px; height: 40px; left: 0px; top: 0px; position: relative; line-height: 36px; float: left;">일반계좌</span>
+            <span class="ARadioButton-Style radio_nor" data-base="ARadioButton" data-class="ARadioButton" data-flag="0001" data-listener-click="FD1503:onRadioButton2Click" data-style-check="radio_chkk" data-style-normal="radio_nor" id="FD1503--RadioButton2" style="width: 200px; height: 40px; left: 0px; top: 0px; position: relative; float: left; line-height: 36px; margin-left: 30px;">연금계좌</span></div>
+    </div>
+    <div class="AView-Style ui-droppable acc_box gray_line_box" data-base="AView" data-class="AView" data-flag="1011" data-style="acc_box gray_line_box" id="FD1503--AccView" style="background-color: rgb(255, 255, 255); position: absolute; top: 149px; left: 0px; height: 82px; border: 1px solid rgb(222, 222, 222);"></div>
+    <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-float="left" id="FD1502 --View1" style="width: 100%; height: 200px; background-color: rgb(255, 255, 255); top: 249px; position: absolute; border: 0px solid rgb(255, 255, 255); padding: 20px 30px;">
+        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--lblDate" style="width: 500px; left: 0px; position: relative; float: left; letter-spacing: -2px; height: 60px; font-weight: normal; text-align: center;"><span class="month" data-style="month" style="padding-left: 20px;">2018년 8월</span></span>
+        <input data-style="cal4" class="ADatePicker-Style cal4" data-base="ADatePicker" data-class="ADatePicker" data-flag="0001" data-listener-change="FD1503:onDatePicker1Change" id="FD1503--DatePicker1" picker-type="yyyyMM" style="position: relative; border-width: 1px; float: left; left: 0px; text-align: right;" type="text" value=""><button class="AButton-Style btn_next_nor arrow AButton-normal" data-flag="0001" data-base="AButton" data-bgcolor="rgb(205, 205, 205)||" data-class="AButton" data-group="AlertGrp" data-listener-click="FD1503:onBtnSelFundClick" data-state="0" data-style="btn_next_nor arrow|btn_next_tch arrow|btn_next_dis arrow" id="FD1503--BtnSelFund" style="width: 100%; height: 60px; position: relative; float: left; left: 0px; top: 0px; margin-top: 20px; background-color: rgb(205, 205, 205);">보유펀드 선택</button></div>
+        <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-sgap-height="0px" id="FD1503--View2" style="width: 100%; height: 1540px; background-color: rgb(255, 255, 255); left: 0px; position: absolute; overflow: auto; border: 0px solid rgb(255, 255, 255); top: 460px; padding-top: 30px; padding-left: 30px; padding-right: 30px;">
+            <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label3" style="width: auto; height: 25px; left: 0px; top: 0px; position: relative; float: left;"><span class="ctit" data-style="ctit" style="">1. 기본정보</span></span>
+            <div class="AGrid-Style" data-flag="0101" data-base="AGrid" data-blocks-soffq603="OutBlock1,,D1한글투신펀드명,,D1최초매수일,,D1서브계좌번호,,D1투자기간일수,,D1펀드잔고수량,,D1기준일" data-class="FixedGrid" data-hide-header="true" data-query-name="SOFFQ603" data-state="body" data-style-def-body="table_type7" id="FD1503--evalGrid" style="width: 100%; height: auto; left: 0px; top: 0px; position: relative; float: left; margin-top: 18px;">
+                <table align="center" cellpadding="0" class="main-prop" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                    <colgroup>
+                        <col width="100px">
+                            <col>
+                                <col width="100px">
+                                    <col></colgroup>
+                                    <thead align="center" class="head-prop" style="display: none;">
+                                        <tr height="40px"><td>col1</td>
+                                            <td>col2</td>
+                                            <td style=""></td>
+                                            <td style=""></td>
+                                        </tr>
+                                    </thead>
+                                    <tbody align="center" class="body-prop table_type7">
+                                        <tr class="normal-prop" height="80">
+                                            <td style="text-align: center;">상품명</td>
+                                            <td class="" style="padding: 0px 0px 0px 10px;"></td>
+                                            <td style="">최초<br>투자일자</td>
+                                                <td style=""></td>
+                                            </tr>
+                                            <tr class="normal-prop" height="80">
+                                                <td style="text-align: center;">계좌번호</td>
+                                                <td></td>
+                                                <td style="">투자기간</td>
+                                                <td style=""></td>
+                                            </tr>
+                                            <tr class="normal-prop" height="80">
+                                                <td style="text-align: center;">잔고좌수</td>
+                                                <td></td>
+                                                <td style="">정보제공<br>기준시점</td>
+                                                    <td style=""></td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label4" style="width: 100%; height: auto; left: 0px; top: 0px; position: relative; float: left; margin-top: 20px; text-align: left;"><span class="fc_s_gray" data-style="fc_s_gray" style="">* 최초 투자일자’는 해당 펀드를 최초로 매수한 시점입니다.</span></span>
+                                    <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label40" style="width: 100%; height: auto; left: 0px; top: 0px; position: relative; float: left; text-align: left;"><span class="fc_s_gray txt_indent2" data-style="fc_s_gray txt_indent2" style="vertical-align: middle;">* ‘투자기간’은 정보제공 기준시점에서 최초 투자일자를 차감한 날에 1일을 가산하였습니다.</span></span>
+                                    <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label5" style="width: 100%; height: 30px; left: 0px; top: 0px; position: relative; float: left; margin-top: 35px;"><span class="ctit" data-style="ctit" style="">2. 주요정보</span></span>
+                                    <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-float="left" id="FD1503--View24" style="width: 100%; height: auto; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; position: relative; float: left; margin-top: 20px; border: 0px solid rgb(255, 255, 255);">
+                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label50" style="width: 100%; height: auto; left: 0px; top: 0px; position: relative; float: left; font-size: 20px; margin-top: 6px;"><span class="">)입니다.</span>
+                                        </span>
+                                    </div>
+                                    <div class="AGrid-Style" data-base="AGrid" data-class="FixedGrid" data-flag="0101" data-hide-header="true" data-state="body" data-style-def-body="table_type8" id="FD1503--FixedGrid1" style="width: 100%; height: 1034px; left: 0px; top: 0px; position: relative; float: left; margin-top: 15px;">
+                                        <table align="center" cellpadding="0" class="main-prop" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                                            <colgroup>
+                                                <col width="145px">
+                                                    <col width="145px">
+                                                        <col width="*"></colgroup>
+                                                        <thead align="center" class="head-prop" style="display: none;">
+                                                            <tr height="40px"><td>col1</td>
+                                                                <td>col2</td>
+                                                                <td style=""></td>
+                                                                <td style=""></td>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody align="center" class="body-prop table_type8">
+                                                            <tr class="normal-prop" height="70">
+                                                                <td colspan="2">① 투자원금</td>
+                                                                <td data-span="col_hide" style="display:none;"></td>
+                                                                <td class="" style="padding: 0px 20px 0px 10px;"></td>
+                                                            </tr>
+                                                            <tr class="normal-prop" height="70">
+                                                                <td rowspan="2">② 중간<br>환매대금</td>
+                                                                    <td>비용 차감 전</td>
+                                                                    <td class=""></td>
+                                                                </tr>
+                                                                <tr class="normal-prop" height="70">
+                                                                    <td data-span="row_hide" style="display:none;"></td>
+                                                                    <td>비용 차감 후</td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr class="normal-prop" height="68">
+                                                                    <td colspan="2" rowspan="2">③ 수수료·보수</td>
+                                                                    <td data-span="col_hide" rowspan="2" style="display:none;"></td>
+                                                                    <td class="bdb_none" style="padding: 0px 20px 0px 10px;"></td>
+                                                                </tr>
+                                                                <tr class="normal-prop" height="80">
+                                                                    <td colspan="2" data-span="row_hide" style="display:none;"></td>
+                                                                    <td data-span="col_hide" style="display:none;"></td>
+                                                                    <td class="" style="vertical-align: top; padding: 0px 20px 0px 10px;"></td>
+                                                                </tr>
+                                                                <tr class="normal-prop" height="135">
+                                                                    <td class="bg cellSelect" colspan="3" style="padding: 0px;"></td>
+                                                                    <td data-span="col_hide" style="display:none;"></td>
+                                                                    <td data-span="col_hide" style="display:none;"></td>
+                                                                </tr>
+                                                                <tr class="normal-prop" height="70">
+                                                                    <td class="red" colspan="2">④ 평가금액</td>
+                                                                    <td data-span="col_hide" style="display:none;"></td>
+                                                                    <td></td>
+                                                                </tr>
+                                                                <tr class="normal-prop" height="120">
+                                                                    <td rowspan="2">⑤ 환매<br>예상금액</td>
+                                                                        <td>차감 예상액<br>(환매수수료,<br>세금 등)</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr class="normal-prop" height="70">
+                                                                                <td data-span="row_hide" style="display:none;"></td>
+                                                                                <td>환매예상금액</td>
+                                                                                <td></td>
+                                                                            </tr>
+                                                                            <tr class="normal-prop" height="70">
+                                                                                <td rowspan="2">⑥ 누적<br>수익률</td>
+                                                                                    <td>비용 차감 전</td>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr class="normal-prop" height="70">
+                                                                                    <td data-span="row_hide" style="display:none;"></td>
+                                                                                    <td>비용 차감 후</td>
+                                                                                    <td></td>
+                                                                                </tr>
+                                                                                <tr class="normal-prop" height="70">
+                                                                                    <td rowspan="2">⑦ 연환산<br>수익률</td>
+                                                                                        <td>비용 차감 전</td>
+                                                                                        <td></td>
+                                                                                    </tr>
+                                                                                    <tr class="normal-prop" height="70">
+                                                                                        <td data-span="row_hide" style="display:none;"></td>
+                                                                                        <td>비용 차감 후</td>
+                                                                                        <td></td>
+                                                                                    </tr>
+                                                                                </tbody>
+                                                                            </table>
+                                                                        </div>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label20" style="width: 100%; height: auto; position: relative; left: 0px; top: 0px; float: left; margin-top: 40px;"><span class="guide_tit" data-style="guide_tit">유의사항</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label21" style="width: 580px; height: auto; top: 0px; position: relative; float: left; margin-top: 15px; left: 0px;"><span class="noti_txt" data-style="noti_txt">1) 수익률은 투자원금대비 세전평가금액으로 계산한 수익률이며, 일부 환매가 있었던 경우 투자원금에 대한 인식차이로 인하여 수익률의 계산에 차이가 있을 수 있습니다.</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label53" style="width: 580px; height: auto; top: 0px; position: relative; float: left; margin-top: 12px; left: 0px;"><span class="noti_txt" data-style="noti_txt">2) “중간환매대금”은 투자기간 중 해당 집합투자증권을 환매한 금액의 누계이며, 비용 차감 후 중간환매대금은 환매수수료 및 세금 등 제반 비용을 차감하고 투자자분께 실제 지급한 금액입니다.</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label54" style="width: 580px; height: auto; top: 0px; position: relative; float: left; margin-top: 12px; left: 0px;"><span class="noti_txt" data-style="noti_txt">3) “수수료·보수”는 투자기간 중 발생한 판매수수료 등 각종 수수료 및 총보수(판매보수, 운용보수, 신탁보수, 사무관리보 수) 입니다.</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label55" style="width: 580px; height: auto; top: 0px; position: relative; float: left; margin-top: 12px; left: 0px;"><span class="noti_txt" data-style="noti_txt">4) “평가금액”은 정보제공 기준시점의 집합투자기구의 기준가 격과 투자자가 보유한 집합투자증권의 좌수를 곱하여 계산된 금액입니다.</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label56" style="width: 580px; height: auto; top: 0px; position: relative; float: left; margin-top: 12px; left: 0px;"><span class="noti_txt" data-style="noti_txt">5) “차감 예상액”은 정보제공 기준시점의 평가금액으로 전액 환매했을 경우 발생할 것으로 예상되는 환매수수료, 후취판매수수료, 세금, 미지급 성과보수 등 제반비용이 합산된 금액입니다. 다만, 사모펀드에서 차감 예상액을 산정하는 경우 미지급 성과보수를 반영하지 않을 수 있습니다.</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label57" style="width: 580px; height: auto; top: 0px; position: relative; float: left; margin-top: 12px; left: 0px;"><span class="noti_txt" data-style="noti_txt">6) “누적수익률(비용 차감 전)”은 [(평가금액 + 비용차감전중간 환매대금) ÷ 투자원금 - 1] 으로 계산됩니다.</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label58" style="width: 580px; height: auto; top: 0px; position: relative; float: left; margin-top: 12px; left: 0px;"><span class="noti_txt" data-style="noti_txt">7) “누적수익률(비용 차감 후)”는 [(환매예상금액 + 비용차감후중 간환매대금) ÷ 투자원금 - 1] 으로 계산됩니다.</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label59" style="width: 580px; height: auto; top: 0px; position: relative; float: left; margin-top: 12px; left: 0px;"><span class="noti_txt" data-style="noti_txt">8) “연환산수익률”은 ((1+가입이후 누적수익률)1/가입년수 -1) 연평균(기하평균)하여 계산되며, 투자기간이 1년 미만일 경우 표기되지 않을 수 있습니다.</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label60" style="width: 580px; height: auto; top: 0px; position: relative; float: left; margin-top: 12px; left: 0px;"><span class="noti_txt" data-style="noti_txt">9) 기타 상세한 내용은 아래 기준에 따릅니다.</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label61" style="width: 560px; height: auto; top: 0px; position: relative; float: left; margin-top: 12px; left: 0px; margin-left: 15px;"><span class="noti_txt" data-style="noti_txt">- 현금배당은 중간환매대금에 포함됩니다.</span></span>
+                                                                        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1503--Label62" style="width: 560px; height: auto; top: 0px; position: relative; float: left; margin-top: 12px; left: 0px; margin-left: 15px;"><span class="noti_txt" data-style="noti_txt">- 연금저축펀드의 경우 납입액 중 세액공제 받은 금액은 16.5% 과세되며, 소득공제 받지 않은 금액에 대해서는 과세 제외됩니다. 연금저축펀드의 경우 세액공제 받은 금액이 환매예상금액 (차감예상액)에 표기되지 않을 수 있습니다.</span></span>
+                                                                    </div>
+                                                                </div>

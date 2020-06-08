@@ -1,0 +1,25 @@
+<div class="APage-Style ui-droppable" data-base="APage" data-class="FD3203" data-flag="1110" data-max-abutton="1" data-max-alabel="3" data-max-alistview="1" data-max-aview="5" style="width: 100%; height: 100%; border: 0px none rgb(255, 255, 255);">
+    <div class="AView-Style ui-droppable header" data-base="AView" data-class="AView" data-flag="1011" data-style="header" id="FD3203--TopUpperView" style="width: 100%; height: 70px; background-color: rgb(255, 255, 255); left: 0px; top: 0px; position: absolute;">
+        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD3203--Label1" style="width: 480px; height: 100%; left: 80px; position: absolute; text-align: center;"><span class="head_tit" data-style="head_tit" style="color: rgb(34, 34, 59);">펀드매도</span></span>
+        <button class="AButton-Style btn_back AButton-normal" data-base="AButton" data-bgcolor="rgba(0, 0, 0, 0)||" data-class="AButton" data-flag="0001" data-listener-click="FD3203:onBackBtnClick" data-state="0" data-style="btn_back|btn_back|btn_back" id="FD3203--BackBtn" style="width: 80px; height: 100%; left: 0px; top: 0px; position: absolute; background-color: rgba(0, 0, 0, 0);"></button>
+    </div>
+    <div class="AView-Style ui-droppable acc_box" data-base="AView" data-class="AView" data-flag="1011" data-style="acc_box" id="FD3203--AccView" style="width: 100%; height: 110px; background-color: rgb(255, 255, 255); left: 0px; top: 89px; position: absolute; float: left; padding-left: 30px; padding-top: 16px;"></div>
+    <div class="AView-Style ui-droppable bg_color4" data-base="AView" data-class="AView" data-flag="1011" data-sgap-height="0px" data-style="bg_color4" id="FD3203--View2" style="width: 100%; height: 949px; background-color: rgb(255, 255, 255); left: 0px; top: 189px; position: absolute; float: left; border: 0px solid rgb(255, 255, 255); overflow: auto;">
+        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD3203--Label2" style="width: 600px; height: auto; position: absolute; left: 0px; float: none; text-align: left; top: 30px;"><span class="ctit" data-style="ctit" style="color: rgb(0, 0, 0); padding-left: 30px;">매도가능내역</span></span>
+        <div class="AView-Style ui-droppable bg_color4" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-sgap-height="0px" data-style="bg_color4" id="FD3203--CenterView" style="width: 100%; height: 875px; background-color: rgba(0, 0, 0, 0); left: 0px; top: 74px; position: absolute; border: 0px solid rgb(255, 255, 255); overflow: hidden; float: none;">
+            <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-sgap-height="0px" id="FD3203--View3" style="width: 100%; height: 875px; background-color: rgba(0, 0, 0, 0); left: 0px; top: 0px; position: relative; float: left; border: 0px solid rgb(255, 255, 255); overflow: hidden; padding-left: 28px; padding-right: 28px;">
+                <div class="AListView-Style line_type2" data-base="AListView" data-class="AListView" data-flag="0001" data-sgap-height="0px" data-style="line_type2" id="FD3203--ListView1" style="width: 100%; height: 875px; position: relative; left: 0px; top: 0px; float: left; background-color: rgba(0, 0, 0, 0);">
+                    <div class="listview_row" style="padding-top: 16px; height: 170px;"></div>
+                    <div class="listview_row AListView-select" style="padding-top: 16px; height: 170px; background-color: rgba(0, 0, 0, 0);"></div>
+                    <div class="listview_row" style="padding-top: 16px; height: 170px;"></div>
+                    <div class="listview_row" style="padding-top: 16px; height: 170px;"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="AView-Style ui-droppable bg_color4" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-sgap-height="0px" data-style="bg_color4" id="FD3203--Nodata" style="width: 100%; height: 949px; background-color: rgb(255, 255, 255); top: 189px; position: absolute; float: left; border: 0px solid rgb(255, 255, 255); padding-left: 30px; padding-right: 30px; padding-top: 30px; left: 0px;">
+        <div class="AView-Style ui-droppable nodata2" data-base="AView" data-class="AView" data-flag="1011" data-style="nodata2" id="FD3203--View4" style="width: 100%; height: 360px; background-color: rgb(0, 0, 0); position: relative; left: 0px; top: 0px; float: left; border: 0px solid rgb(255, 255, 255);">
+            <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD3203--NodataLbl" style="width: 100%; height: auto; position: absolute; text-align: center; margin-top: 208px;"><span class="font26" data-style="font26" style="color: rgb(153, 153, 153);">조회 내역이 없습니다.</span></span>
+        </div>
+    </div>
+</div>

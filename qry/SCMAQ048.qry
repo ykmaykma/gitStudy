@@ -1,0 +1,80 @@
+{
+	"meta": "PSACCTR,계정계 일반,당일일자정보조회",
+	"name": "SCMAQ048",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"일자공통그룹코드,D1일자공통그룹코드,0,DateCmnGrpCode,STRING,3,0",
+				"출납일기준영업전전일,D1출납일기준영업전전일,0,InoutDtBaseBizBfPrday,STRING,8,0",
+				"출납일기준영업전일,D1출납일기준영업전일,0,InoutDtBaseBizPrday,STRING,8,0",
+				"출납일기준영업일,D1출납일기준영업일,0,InoutDtBaseBizDt,STRING,8,0",
+				"출납일기준영업익일,D1출납일기준영업익일,0,InoutDtBaseBizNtday,STRING,8,0",
+				"출납일기준영업익익일,D1출납일기준영업익익일,0,InoutDtBaseBizPrftNtday,STRING,8,0",
+				"주문일기준결제전일,D1주문일기준결제전일,0,OrdDtBaseSettPrday,STRING,8,0",
+				"주문일기준주문전일,D1주문일기준주문전일,0,OrdDtBaseOrdPrday,STRING,8,0",
+				"주문일,D1주문일,0,OrdDt,STRING,8,0",
+				"결제일,D1결제일,0,SettDt,STRING,8,0",
+				"주문일기준주문익일,D1주문일기준주문익일,0,OrdDtBaseOrdNtday,STRING,8,0",
+				"주문일기준결제익일,D1주문일기준결제익일,0,OrdDtBaseSettNtday,STRING,8,0",
+				"30만기일,D130만기일,0,Due30Dt,STRING,8,0",
+				"60만기일,D160만기일,0,Due60Dt,STRING,8,0",
+				"90만기일,D190만기일,0,Due90Dt,STRING,8,0",
+				"120만기일,D1120만기일,0,Due120Dt,STRING,8,0",
+				"150만기일,D1150만기일,0,Due150Dt,STRING,8,0",
+				"180만기일,D1180만기일,0,Due180Dt,STRING,8,0",
+				"210만기일,D1210만기일,0,Due210Dt,STRING,8,0",
+				"270만기일,D1270만기일,0,Due270Dt,STRING,8,0",
+				"365만기일,D1365만기일,0,Due365Dt,STRING,8,0",
+				"주문가능일여부,D1주문가능일여부,0,OrdAbleDtYn,STRING,1,0",
+				"요일구분,D1요일구분,0,WdayTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"이용사번호,D1이용사번호,0,FirmNo,STRING,3,0",
+				"이용사명,D1이용사명,0,FirmNm,STRING,50,0",
+				"출납일기준영업전전일,D1출납일기준영업전전일,0,InoutDtBaseBizBfPrday,STRING,8,0",
+				"출납일기준영업전일,D1출납일기준영업전일,0,InoutDtBaseBizPrday,STRING,8,0",
+				"출납일기준영업일,D1출납일기준영업일,0,InoutDtBaseBizDt,STRING,8,0",
+				"출납일기준영업익일,D1출납일기준영업익일,0,InoutDtBaseBizNtday,STRING,8,0",
+				"출납일기준영업익익일,D1출납일기준영업익익일,0,InoutDtBaseBizPrftNtday,STRING,8,0",
+				"주문일기준결제전일,D1주문일기준결제전일,0,OrdDtBaseSettPrday,STRING,8,0",
+				"주문일기준주문전일,D1주문일기준주문전일,0,OrdDtBaseOrdPrday,STRING,8,0",
+				"주문일,D1주문일,0,OrdDt,STRING,8,0",
+				"결제일,D1결제일,0,SettDt,STRING,8,0",
+				"주문일기준주문익일,D1주문일기준주문익일,0,OrdDtBaseOrdNtday,STRING,8,0",
+				"주문일기준결제익일,D1주문일기준결제익일,0,OrdDtBaseSettNtday,STRING,8,0",
+				"30만기일,D130만기일,0,Due30Dt,STRING,8,0",
+				"60만기일,D160만기일,0,Due60Dt,STRING,8,0",
+				"90만기일,D190만기일,0,Due90Dt,STRING,8,0",
+				"120만기일,D1120만기일,0,Due120Dt,STRING,8,0",
+				"150만기일,D1150만기일,0,Due150Dt,STRING,8,0",
+				"180만기일,D1180만기일,0,Due180Dt,STRING,8,0",
+				"210만기일,D1210만기일,0,Due210Dt,STRING,8,0",
+				"270만기일,D1270만기일,0,Due270Dt,STRING,8,0",
+				"365만기일,D1365만기일,0,Due365Dt,STRING,8,0",
+				"주문가능일여부,D1주문가능일여부,0,OrdAbleDtYn,STRING,1,0",
+				"요일구분,D1요일구분,0,WdayTp,STRING,1,0",
+				"정리매매종료일,D1정리매매종료일,0,ArngtdEndDt,STRING,8,0",
+				"상장일,D1상장일,0,LstdDt,STRING,8,0",
+				"발행일,D1발행일,0,FltnDt,STRING,8,0",
+				"작업일,D1작업일,0,WorkDt,STRING,8,0",
+				"온라인마감구분,D1온라인마감구분,0,OnlineFinTp,STRING,1,0",
+				"건수,D1건수,0,Cnt1,NUMSTRING,10,0",
+				"건수,D1건수,0,Cnt2,NUMSTRING,10,0",
+				"건수,D1건수,0,Cnt3,NUMSTRING,10,0",
+				"건수,D1건수,0,Cnt4,NUMSTRING,10,0",
+				"건수5,D1건수5,0,Cnt5,NUMSTRING,10,0",
+				"건수6,D1건수6,0,Cnt6,NUMSTRING,10,0",
+				"건수7,D1건수7,0,Cnt7,NUMSTRING,10,0",
+				"건수8,D1건수8,0,Cnt8,NUMSTRING,10,0",
+				"건수9,D1건수9,0,Cnt9,NUMSTRING,10,0",
+				"건수10,D1건수10,0,Cnt10,NUMSTRING,10,0",
+				"건수11,D1건수11,0,Cnt11,NUMSTRING,10,0"
+			]
+		}
+	}
+}

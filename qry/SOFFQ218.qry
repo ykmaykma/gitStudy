@@ -1,0 +1,50 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드정보조회",
+	"name": "SOFFQ218",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"매수주문금액,D1매수주문금액,0,BuyOrdAmt,NUMSTRING,16,0",
+				"매도계좌번호,D1매도계좌번호,0,SellAcntNo,STRING,20,0",
+				"매도투신펀드코드,D1매도투신펀드코드,0,SellIvstfndCode,STRING,12,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"환매유형코드,D1환매유형코드,0,RpPtnCode,STRING,2,0",
+				"기준가,D1기준가,0,BasePrc,NUMSTRING,13,2",
+				"미매각수량,D1미매각수량,0,UnSellQty,NUMSTRING,20,5",
+				"신청일,D1신청일,0,PrslDt,STRING,8,0",
+				"기준가적용일,D1기준가적용일,0,BasePrcAppDt,STRING,8,0",
+				"결제일,D1결제일,0,SettDt,STRING,8,0",
+				"수수료율,D1수수료율,0,CmsnAmtRat,NUMSTRING,11,8",
+				"전환가능횟수,D1전환가능횟수,0,TnovrAbleCnt,NUMSTRING,10,0",
+				"기준시간매매구분,D1기준시간매매구분,0,BaseTimeBnsType,STRING,1,0",
+				"주식형결제구분,D1주식형결제구분,0,StkSettType,STRING,1,0",
+				"매수가능여부,D1매수가능여부,0,BuyAbleYn,STRING,1,0",
+				"환매가능여부,D1환매가능여부,0,RpAbleYn,STRING,1,0",
+				"예수금,D1예수금,0,Dps,NUMSTRING,16,0",
+				"주문가능금액,D1주문가능금액,0,OrdAbleAmt,NUMSTRING,16,0",
+				"출금가능금액,D1출금가능금액,0,MnyoutAbleAmt,NUMSTRING,16,0",
+				"통화코드,D1통화코드,0,CrcyCode,STRING,3,0",
+				"환율,D1환율,0,Xchrat,NUMSTRING,11,4",
+				"수수료징수여부,D1수수료징수여부,0,CmsnAmtLevyYn,STRING,1,0",
+				"펀드증거수량,D1펀드증거수량,0,FundMgnqty,NUMSTRING,20,3",
+				"CMS처리구분,D1CMS처리구분,0,CmsTrxTp,STRING,1,0",
+				"모집유형구분,D1모집유형구분,0,OfrPtnTp,STRING,1,0",
+				"구분문자1,D1구분문자1,0,TpText1,STRING,1,0",
+				"구분문자2,D1구분문자2,0,TpText2,STRING,1,0",
+				"구분문자3,D1구분문자3,0,TpText3,STRING,1,0",
+				"구분문자4,D1구분문자4,0,TpText4,STRING,1,0",
+				"구분문자5,D1구분문자5,0,TpText5,STRING,1,0"
+				
+			]
+		}
+	}
+}

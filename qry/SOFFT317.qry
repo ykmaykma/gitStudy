@@ -1,0 +1,45 @@
+{
+	"meta": "PSACCTR,계정계 일반,연금저축계좌 수관접수",
+	"name": "SOFFT317",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"접수일,D1접수일,0,RcptDt,STRING,8,0",
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"접수번호,D1접수번호,0,RcptNo,NUMSTRING,10,0",
+				"비고200,D1비고200,0,Rmk200,STRING,200,0",
+				"비고,D1비고,0,Rmk,STRING,100,0",
+				"가입일선택구분,D1가입일선택구분,0,JoinDtChoicTp,STRING,1,0",
+				"송금예정금액,D1송금예정금액,0,SndmnyPrergAmt,NUMSTRING,16,0",
+				"송금예정일,D1송금예정일,0,SndmnyPrergDt,STRING,8,0",
+				"상대기관접수번호,D1상대기관접수번호,0,OppIttRcptNo,NUMSTRING,10,0",
+				"상대기관명,D1상대기관명,0,OppIttNm,STRING,40,0",
+				"상대지점명,D1상대지점명,0,OppBrnNm,STRING,40,0",
+				"상대계좌번호,D1상대계좌번호,0,OppAcntNo,STRING,20,0",
+				"계좌가입일,D1계좌가입일,0,AcntJoinDt,STRING,8,0",
+				"납입한도금액,D1납입한도금액,0,PayLmtAmt,NUMSTRING,16,0",
+				"당해년도납입금액,D1당해년도납입금액,0,TyrPayAmt,NUMSTRING,16,0",
+				"이연퇴직소득포함여부,D1이연퇴직소득포함여부,0,DfrRetirIncmIclnYn,STRING,1,0",
+				"연금수령개시여부,D1연금수령개시여부,0,AnutyAcptOpnYn,STRING,1,0",
+				"연금계좌승계여부,D1연금계좌승계여부,0,AnutyAcntHeritYn,STRING,1,0",
+				"특별중도해지여부,D1특별중도해지여부,0,SpclMidwAbndYn,STRING,1,0",
+				"접수거부사유,D1접수거부사유,0,RcptRjtRsn,STRING,100,0",
+				"연금계좌코드,D1연금계좌코드,0,AnutyAcntCode,STRING,2,0",
+				"제도가입일,D1제도가입일,0,SysJoinDt,STRING,8,0",
+				"개인부담금납입여부,D1개인부담금납입여부,0,PsnlCtribPayYn,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"접수일,D1접수일,0,RcptDt,STRING,8,0",
+				"접수번호,D1접수번호,0,RcptNo,NUMSTRING,10,0",
+				"상태,D1상태,0,Stat,STRING,100,0",
+				"취소여부명,D1취소여부명,0,CancYnNm,STRING,10,0"
+			]
+		}
+	}
+}

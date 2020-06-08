@@ -1,0 +1,67 @@
+{
+	"meta": "PSACCTR,계정계 일반,비대면계좌개설고객정보 등록/삭제",
+	"name": "SACMT632",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"본인확인구분,D1본인확인구분,0,,STRING,1,0",
+				"상품유형코드,D1상품유형코드,0,,STRING,2,0",
+				"상품상세코드,D1상품상세코드,0,,STRING,2,0",
+				"IC Card 발급구분,D1IC Card 발급구분,0,IccardIssTp,STRING,1,0",
+				"OTP발급구분,D1OTP발급구분,0,OtpIssTp,STRING,1,0",
+				"보안카드 발급구분,D1보안카드 발급구분,0,SecurecardIssTp,STRING,1,0",
+				"거래매체수령주소유형코드,D1거래매체수령주소유형코드,0,TrdmdaAcptPlcAddrPtnCode,STRING,2,0",
+				"영상통화일련번호,D1영상통화일련번호,0,VideoCallSeqno,NUMSTRING,10,0",
+				"당타사여부,D1당타사여부,0,ThcoOtcoTp,STRING,1,0",
+				"은행코드,D1은행코드,0,BnkCode,STRING,3,0",
+				"기관계좌번호,D1기관계좌번호,0,IttAcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"이체금액,D1이체금액,0,MtrsfAmt,NUMSTRING,16,0",
+				"상대기관코드,D1상대기관코드,0,OppIttCode,STRING,3,0",
+				"상대계좌번호,D1상대계좌번호,0,OppAcntNo,STRING,20,0",
+				"상대계좌명,D1상대계좌명,0,OppAcntNm,STRING,40,0",
+				"자택우편번호,D1자택우편번호,0,HomePostNo,STRING,6,0",
+				"자택동이상주소,D1자택동이상주소,0,HomeAbdngAddr,STRING,100,0",
+				"자택동이하주소2,D1자택동이하주소2,0,HomeBlwdngAddr2,STRING,100,0",
+				"자택전화지역번호,D1자택전화지역번호,0,HomeTelRgno,STRING,4,0",
+				"자택전화국번호,D1자택전화국번호,0,HomeTelExno,STRING,4,0",
+				"자택전화일련번호,D1자택전화일련번호,0,HomeTelSeqno,STRING,4,0",
+				"팩스지역번호1,D1팩스지역번호1,0,FaxRgno1,STRING,4,0",
+				"팩스국번호1,D1팩스국번호1,0,FaxExno1,STRING,4,0",
+				"팩스일련번호1,D1팩스일련번호1,0,FaxSeqno1,STRING,4,0",
+				"직장우편번호,D1직장우편번호,0,WkplcPostNo,STRING,6,0",
+				"직장동이상주소,D1직장동이상주소,0,WkplcAbdngAddr,STRING,100,0",
+				"직장동이하주소,D1직장동이하주소,0,WkplcBlwdngAddr,STRING,100,0",
+				"직장전화지역번호,D1직장전화지역번호,0,WkplcTelRgno,STRING,4,0",
+				"직장전화국번호,D1직장전화국번호,0,WkplcTelExno,STRING,4,0",
+				"직장전화일련번호,D1직장전화일련번호,0,WkplcTelSeqno,STRING,4,0",
+				"팩스지역번호2,D1팩스지역번호2,0,FaxRgno2,STRING,4,0",
+				"팩스국번호2,D1팩스국번호2,0,FaxExno2,STRING,4,0",
+				"팩스일련번호2,D1팩스일련번호2,0,FaxSeqno2,STRING,4,0",
+				"직장명,D1직장명,0,WkplcNm,STRING,40,0",
+				"이메일주소,D1이메일주소,0,EmailAddr,STRING,100,0",
+				"이동전화식별번호,D1이동전화식별번호,0,MoveTelIdfyNo,STRING,4,0",
+				"이동전화국번호,D1이동전화국번호,0,MoveTelExno,STRING,4,0",
+				"이동전화일련번호,D1이동전화일련번호,0,MoveTelSeqno,STRING,4,0",
+				"휴대폰지역번호,D1휴대폰지역번호,0,HpRgno,STRING,4,0",
+				"휴대폰국번호,D1휴대폰국번호,0,HpExno,STRING,4,0",
+				"휴대폰일련번호,D1휴대폰일련번호,0,HpSeqno,STRING,4,0",
+				"디바이스고유번호,D1디바이스고유번호,0,DevUniqNo,STRING,40,0",
+				"이미지번호,D1이미지번호,0,ImgNo,STRING,7,0",
+				"영상이미지번호,D1영상이미지번호,0,VideoImgNo,STRING,7,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"고객번호,D1고객번호,0,ClntNo,STRING,20,0",
+				"기존고객여부,D1기존고객여부,0,LgcyClntYn,STRING,1,0"
+			]
+		}
+	}
+}

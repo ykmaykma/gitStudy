@@ -1,0 +1,102 @@
+{
+	"meta": "PSACCTR,계정계 일반,계좌 거래내역",
+	"name": "SDPBQ001",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"조회시작일,D1조회시작일,0,QrySrtDt,STRING,8,0",
+				"조회종료일,D1조회종료일,0,QryEndDt,STRING,8,0",
+				"시작번호,D1시작번호,0,SrtNo,NUMSTRING,10,0",
+				"상품유형코드,D1상품유형코드,0,PdptnCode,STRING,2,0",
+				"종목번호,D1종목번호,0,IsuNo,STRING,12,0",
+				"정렬순서구분,D1정렬순서구분,0,StnlnSeqTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0"
+			]
+		},
+		"OutBlock2": {
+			"occurs": 60,
+			"format": [
+				"거래일자,D1거래일자,0,TrdDate,STRING,8,0",
+				"거래번호,D1거래번호,0,TrdNo,NUMSTRING,10,0",
+				"거래계좌번호,D1거래계좌번호,0,TrdAcntNo,STRING,20,0",
+				"거래구분,D1거래구분,0,TrdTpNm,STRING,20,0",
+				"적요번호,D1적요번호,0,SmryNo,STRING,4,0",
+				"적요명,D1적요명,0,SmryNm,STRING,40,0",
+				"취소구분,D1취소구분,0,CancTpNm,STRING,20,0",
+				"거래수량,D1거래수량,0,TrdQty,NUMSTRING,16,0",
+				"거래세,D1거래세,0,Trtax,NUMSTRING,16,0",
+				"정산금액,D1정산금액,0,AdjstAmt,NUMSTRING,16,0",
+				"연체합,D1연체합,0,OvdSum,NUMSTRING,16,0",
+				"예수금전잔금액,D1예수금전잔금액,0,DpsBfbalAmt,NUMSTRING,16,0",
+				"매도담보상환금,D1매도담보상환금,0,SellPldgRfundAmt,NUMSTRING,16,0",
+				"예탁담보대출전잔금액,D1예탁담보대출전잔금액,0,DpspdgLoanBfbalAmt,NUMSTRING,16,0",
+				"거래매체명,D1거래매체명,0,TrdmdaNm,STRING,40,0",
+				"원거래번호,D1원거래번호,0,OrgTrdNo,NUMSTRING,10,0",
+				"종목명,D1종목명,0,IsuNm,STRING,40,0",
+				"거래단가,D1거래단가,0,TrdUprc,NUMSTRING,13,2",
+				"수수료,D1수수료,0,CmsnAmt,NUMSTRING,16,0",
+				"상환차이금액,D1상환차이금액,0,RfundDiffAmt,NUMSTRING,16,0",
+				"변제금합계,D1변제금합계,0,RepayAmtSum,NUMSTRING,16,0",
+				"유가증권금잔수량,D1유가증권금잔수량,0,SecCrbalQty,NUMSTRING,16,0",
+				"매도대금담보대출상환이자금액,D1매도대금담보대출상환이자금액,0,CslLoanRfundIntrstAmt,NUMSTRING,16,0",
+				"예탁담보대출금잔금액,D1예탁담보대출금잔금액,0,DpspdgLoanCrbalAmt,NUMSTRING,16,0",
+				"처리시각,D1처리시각,0,TrxTime,STRING,9,0",
+				"출납번호,D1출납번호,0,Inouno,NUMSTRING,10,0",
+				"종목번호,D1종목번호,0,IsuNo,STRING,12,0",
+				"거래금액,D1거래금액,0,TrdAmt,NUMSTRING,16,0",
+				"세금합계금액,D1세금합계금액,0,TaxSumAmt,NUMSTRING,16,0",
+				"이자이용료,D1이자이용료,0,IntrstUtlfee,NUMSTRING,16,0",
+				"배당금액,D1배당금액,0,DvdAmt,NUMSTRING,16,0",
+				"미수발생금액,D1미수발생금액,0,RcvblOcrAmt,NUMSTRING,16,0",
+				"처리지점번호,D1처리지점번호,0,TrxBrnNo,STRING,3,0",
+				"처리지점명,D1처리지점명,0,TrxBrnNm,STRING,40,0",
+				"예탁담보대출금액,D1예탁담보대출금액,0,DpspdgLoanAmt,NUMSTRING,16,0",
+				"예탁담보대출상환금액,D1예탁담보대출상환금액,0,DpspdgLoanRfundAmt,NUMSTRING,16,0",
+				"기준가,D1기준가,0,BasePrc,NUMSTRING,13,2",
+				"예수금금잔금액,D1예수금금잔금액,0,DpsCrbalAmt,NUMSTRING,16,0",
+				"과표,D1과표,0,Boa,NUMSTRING,16,0",
+				"출금가능금액,D1출금가능금액,0,MnyoutAbleAmt,NUMSTRING,16,0",
+				"수익증권담보대출발생금,D1수익증권담보대출발생금,0,BcrLoanOcrAmt,NUMSTRING,16,0",
+				"수익증권담보대출전잔금,D1수익증권담보대출전잔금,0,BcrLoanBfbalAmt,NUMSTRING,16,0",
+				"매매기준가,D1매매기준가,0,BnsBasePrc,NUMSTRING,20,10",
+				"과세기준가,D1과세기준가,0,TaxchrBasePrc,NUMSTRING,20,10",
+				"거래좌수,D1거래좌수,0,TrdUnit,NUMSTRING,16,0",
+				"잔고좌수,D1잔고좌수,0,BalUnit,NUMSTRING,16,0",
+				"제세금,D1제세금,0,EvrTax,NUMSTRING,16,0",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0",
+				"수익증권담보대출상환금,D1수익증권담보대출상환금,0,BcrLoanRfundAmt,NUMSTRING,16,0",
+				"수익증권담보대출금잔금,D1수익증권담보대출금잔금,0,BcrLoanCrbalAmt,NUMSTRING,16,0",
+				"추가증거금발생총액,D1추가증거금발생총액,0,AddMgnOcrTotamt,NUMSTRING,16,0",
+				"추가현금증거금발생금액,D1추가현금증거금발생금액,0,AddMnyMgnOcrAmt,NUMSTRING,16,0",
+				"추가증거금납부총액,D1추가증거금납부총액,0,AddMgnDfryTotamt,NUMSTRING,16,0",
+				"추가현금증거금납부금액,D1추가현금증거금납부금액,0,AddMnyMgnDfryAmt,NUMSTRING,16,0",
+				"매매손익금액,D1매매손익금액,0,BnsplAmt,NUMSTRING,16,0",
+				"소득세,D1소득세,0,Ictax,NUMSTRING,16,0",
+				"주민세,D1주민세,0,Ihtax,NUMSTRING,16,0",
+				"대출일,D1대출일,0,LoanDt,STRING,8,0",
+				"기타채권정보,D1기타채권정보,0,EtcBndInfo,STRING,100,0",
+				"신용등급값,D1신용등급값,0,CrdtGrdVal,STRING,40,0"
+			]
+		},
+		"OutBlock3": {
+			"format": [
+				"손익합계금액,D1손익합계금액,0,PnlSumAmt,NUMSTRING,16,0",
+				"약정누계,D1약정누계,0,CtrctAsm,NUMSTRING,16,0",
+				"수수료합계금액,D1수수료합계금액,0,CmsnAmtSumAmt,NUMSTRING,16,0",
+				"보호내용,D1보호내용,0,PrtctCnts,STRING,100,0",
+				"위험내용,D1위험내용,0,RiskCnts,STRING,100,0",
+				"기초자산내용,D1기초자산내용,0,FdastCnts,STRING,120,0"
+			]
+		}
+	}
+}

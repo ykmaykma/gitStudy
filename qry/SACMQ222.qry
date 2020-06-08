@@ -1,0 +1,72 @@
+{
+	"meta": "PSACCTR,계정계 일반,투자신탁계좌정보 조회",
+	"name": "SACMQ222",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"입력비밀번호,D1입력비밀번호,0,InptPwd,STRING,8,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"상품상세명,D1상품상세명,0,PrdtDtlNm,STRING,40,0",
+				"계좌상태명,D1계좌상태명,0,AcntStatNm,STRING,40,0",
+				"계좌한글부기명,D1계좌한글부기명,0,AcntHanglAlias,STRING,40,0",
+				"관리사원명,D1관리사원명,0,MgempNm,STRING,40,0",
+				"집계지점명,D1집계지점명,0,AgrgtBrnNm,STRING,40,0",
+				"납입방법명,D1납입방법명,0,PayMthdNm,STRING,40,0",
+				"계약금액,D1계약금액,0,CvntAmt,NUMSTRING,16,0",
+				"계약기간월수,D1계약기간월수,0,CvntTermMthQty,NUMSTRING,6,0",
+				"단위납입금액,D1단위납입금액,0,UnitPayAmt,NUMSTRING,16,0",
+				"통장발급여부,D1통장발급여부,0,PsbIssYnNm,STRING,40,0",
+				"통장발급횟수,D1통장발급횟수,0,PsbIssCnt,NUMSTRING,6,0",
+				"계좌개설일,D1계좌개설일,0,AcntOpnDt,STRING,8,0",
+				"최종거래일,D1최종거래일,0,LastTrdDt,STRING,8,0",
+				"전입일,D1전입일,0,TrsfrDt,STRING,8,0",
+				"전입계좌번호,D1전입계좌번호,0,TrsfrAcntNo,STRING,20,0",
+				"전출일,D1전출일,0,BfOutDt,STRING,8,0",
+				"전출계좌번호,D1전출계좌번호,0,BfOutAcntNo,STRING,20,0",
+				"잡수익처리일,D1잡수익처리일,0,MisincTrxDt,STRING,8,0",
+				"계좌통폐합일,D1계좌통폐합일,0,AcntCncDt,STRING,8,0",
+				"계좌통폐합해지일,D1계좌통폐합해지일,0,AcntCncAbndDt,STRING,8,0",
+				"만기일,D1만기일,0,DueDt,STRING,8,0",
+				"계좌해지일,D1계좌해지일,0,AcntAbndDt,STRING,8,0",
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"HTS등록일,D1HTS등록일,0,HtsRegDt,STRING,8,0",
+				"관리사원번호,D1관리사원번호,0,MgempNo,STRING,9,0",
+				"관리지점명,D1관리지점명,0,MgmtBrnNm,STRING,40,0",
+				"대체약정여부,D1대체약정여부,0,BkeepCtrctYn,STRING,1,0",
+				"자동대체약정여부,D1자동대체약정여부,0,AbkpCtrctYn,STRING,1,0",
+				"자동입금입고계좌지정여부,D1자동입금입고계좌지정여부,0,AutoInAcntDsgnYn,STRING,1,0",
+				"상위계좌번호,D1상위계좌번호,0,HirnkAcntNo,STRING,20,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"월납입일,D1월납입일,0,MthPayDt,STRING,2,0",
+				"과세유형코드,D1과세유형코드,0,TaxchrPtnCode,STRING,2,0",
+				"분리과세여부,D1분리과세여부,0,SprtaxYn,STRING,1,0",
+				"결산처리구분,D1결산처리구분,0,ClrgTrxTp,STRING,1,0",
+				"운용사특수관계여부,D1운용사특수관계여부,0,OpfirmSprelYn,STRING,1,0",
+				"생계형가입코드,D1생계형가입코드,0,LhfrmJoinCode,STRING,2,0",
+				"연금지급구분,D1연금지급구분,0,AnutyGivTp,STRING,1,0",
+				"연금지급기간값,D1연금지급기간값,0,AnutyGivTermVal,NUMSTRING,6,0",
+				"연금지급시작일,D1연금지급시작일,0,AnutyGivSrtDt,STRING,8,0",
+				"연금지급주기구분,D1연금지급주기구분,0,AnutyGivCyclTp,STRING,1,0",
+				"사절원여부명,D1사절원여부명,0,RfslYnNm,STRING,40,0",
+				"전입지점번호,D1전입지점번호,0,TrsfrBrnNo,STRING,3,0",
+				"전출지점번호,D1전출지점번호,0,TrnsfBrnNo,STRING,3,0",
+				"통장개설일,D1통장개설일,0,PsbOpnDt,STRING,8,0",
+				"근거계좌번호,D1근거계좌번호,0,GrndAcntNo,STRING,20,0",
+				"권유사원번호,D1권유사원번호,0,CnvsEmpNo,STRING,9,0",
+				"권유사원명,D1권유사원명,0,CnvsEmpNm,STRING,40,0",
+				"자산운용보고서통보지,D1자산운용보고서통보지,0,AstmgtRptSdinfAddrPtncode,STRING,2,0",
+				"자산운용보고서통보처,D1자산운용보고서통보처,0,AstmgtRptSdinfPlc,STRING,40,0",
+				"투자신탁잔고통보지,D1투자신탁잔고통보지,0,IvtrstBalSdinfAddrPtnCode,STRING,2,0",
+				"투자신탁잔고통보처,D1투자신탁잔고통보처,0,IvtrstBalSdinfPlc,STRING,40,0",
+				"특이구분,D1특이구분,0,UnuslAcntClssNm,STRING,40,0"
+			]
+		}
+	}
+}

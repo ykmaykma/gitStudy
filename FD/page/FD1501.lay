@@ -1,0 +1,7 @@
+<div class="APage-Style ui-droppable" data-base="APage" data-class="FD1501" data-flag="1110" data-max-abutton="1" data-max-alabel="1" data-max-alistview="1" data-max-aview="1" style="width: 100%; height: 100%;">
+    <div class="AView-Style ui-droppable header" data-base="AView" data-class="AView" data-flag="1011" data-style="header" id="FD1501--TopUpperView" style="background-color: rgb(255, 255, 255); left: 0px; top: 0px; position: absolute;">
+        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1501--Label1" style="width: 480px; left: 80px; position: absolute; text-align: center; height: 100%;"><span class="head_tit" data-style="head_tit" style="color: rgb(34, 34, 59);">약관조회</span></span>
+        <button class="AButton-Style AButton-disable btn_back" data-base="AButton" data-bgcolor="rgba(0, 0, 0, 0)||" data-class="AButton" data-flag="0001" data-listener-click="FD1501:onBackBtnClick" data-state="2" data-style="btn_back|btn_back|btn_back" id="FD1501--BackBtn" style="width: 80px; height: 100%; left: 0px; top: 0px; position: absolute;"></button>
+    </div>
+    <div class="AView-Style ui-droppable" data-base="AView" data-class="NativeWebView" data-flag="1111" data-sgap-height="9px" id="FD1501--WebView" style="width: 100%; height: 1040px; background-color: rgb(255, 255, 255); left: 0px; top: 89px; position: absolute;"></div>
+</div>

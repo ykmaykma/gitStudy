@@ -1,0 +1,60 @@
+<div class="APage-Style ui-droppable" data-base="APage" data-class="FD1402" data-flag="1110" data-max-abutton="1" data-max-alabel="2" data-max-aview="1" data-max-fixedgrid="1" style="width: 100%; height: 100%; border: 0px none rgb(255, 255, 255); background-color: rgb(255, 255, 255);">
+    <div class="AView-Style ui-droppable header" data-base="AView" data-class="AView" data-flag="1011" data-style="header" id="FD1402--TopUpperView" style="width: 100%; background-color: rgb(255, 255, 255); left: 0px; top: 0px; position: absolute;">
+        <span class="ALabel-Style" data-base="ALabel" data-center-left="true" data-center-top="true" data-class="ALabel" data-flag="0001" id="FD1402--Label1" style="width: 100%; left: 0px; top: 25px; position: absolute; text-align: center;"><span class="head_tit" data-style="head_tit" style="color: rgb(34, 34, 59);">개인정보 열람청구</span></span>
+        <button class="AButton-Style AButton-normal btn_back" data-base="AButton" data-bgcolor="rgba(0, 0, 0, 0)||" data-class="AButton" data-flag="0001" data-listener-click="FD1402:onBackBtnClick" data-state="0" data-style="btn_back||" id="FD1402--BackBtn" style="width: 66px; height: 100%; left: 0px; top: 0px; position: absolute; background-color: rgba(0, 0, 0, 0);"></button>
+        <button class="AButton-Style AButton-disable btn_info" data-base="AButton" data-bgcolor="rgba(0, 0, 0, 0)||" data-class="AButton" data-flag="0001" data-listener-click="FD1402:onBtnInfoClick" data-state="2" data-style="btn_info|btn_info|btn_info" id="FD1402--BtnInfo" style="width: 95px; height: 100%; position: absolute; right: 0px;"></button>
+    </div>
+    <div class="AView-Style ui-droppable acc_box" data-base="AView" data-class="AView" data-flag="1011" data-load-url="FD/view/FD0000_V00.lay" data-style="acc_box" id="FD1402--AccView" style="background-color: rgb(255, 255, 255); top: 89px; position: absolute;"></div>
+    <div class="AView-Style ui-droppable" data-base="AView" data-class="AView" data-flag="1011" data-float="left" data-sgap-height="0px" id="FD1402--CenterView" style="width: 100%; height: 949px; background-color: rgb(255, 255, 255); left: 0px; top: 189px; position: absolute; border: 0px solid rgb(255, 255, 255); padding: 30px;">
+        <span class="ALabel-Style" data-base="ALabel" data-class="ALabel" data-flag="0001" id="FD1402--Label2" style="position: relative; width: 100%; float: left; height: auto;"><span class="ctit" data-style="ctit">개인정보보유현황</span></span>
+        <div class="AGrid-Style" data-base="AGrid" data-class="FixedGrid" data-flag="0101" data-hide-header="true" data-state="body" data-style-def-body="table_type1" id="FD1402--InfoGrd" style="width: 100%; height: 641px; position: relative; float: left; margin-top: 20px;">
+            <table align="center" cellpadding="0" class="main-prop" scroll="no" style="width: 100%; border-collapse: collapse; table-layout: fixed;">
+                <colgroup>
+                    <col width="50%">
+                        <col></colgroup>
+                        <thead align="center" class="head-prop" style="display: none;">
+                            <tr height="40px"><td>col1</td>
+                                <td>col2</td></tr>
+                        </thead>
+                        <tbody align="center" class="body-prop table_type1">
+                            <tr class="normal-prop" height="64px">
+                                <td class="al_ct" style="padding: 0px; text-align: center;">성명</td>
+                                <td class="" style="padding: 0px 0px 0px 20px; text-align: center;"></td>
+                            </tr>
+                            <tr class="normal-prop" height="64px">
+                                <td class="al_ct" style="padding: 0px; text-align: center;">실명확인번호</td>
+                                <td class="" style="padding: 0px 0px 0px 20px; text-align: center;"></td>
+                            </tr>
+                            <tr class="normal-prop" height="64px">
+                                <td class="al_ct" style="padding: 0px; text-align: center;">자택주소</td>
+                                <td class="" style="padding: 0px 0px 0px 20px; text-align: center;"></td>
+                            </tr>
+                            <tr class="normal-prop" height="64px">
+                                <td class="al_ct" style="padding: 0px; text-align: center;">자택연락처</td>
+                                <td class="" style="padding: 0px 0px 0px 20px; text-align: center;"></td>
+                            </tr>
+                            <tr class="normal-prop" height="64px">
+                                <td class="al_ct" style="padding: 0px; text-align: center;">직업</td>
+                                <td class="" style="padding: 0px 0px 0px 20px; text-align: center;"></td>
+                            </tr>
+                            <tr class="normal-prop" height="64px">
+                                <td class="al_ct" style="padding: 0px; text-align: center;">국적</td>
+                                <td class="" style="padding: 0px 0px 0px 20px; text-align: center;"></td>
+                            </tr>
+                            <tr class="normal-prop" height="64px">
+                                <td class="al_ct" style="padding: 0px; text-align: center;">이메일</td>
+                                <td class="" style="padding: 0px 0px 0px 20px; text-align: center;"></td>
+                            </tr>
+                            <tr class="normal-prop" height="64px">
+                                <td class="al_ct" style="padding: 0px; text-align: center;">이동전화번호1</td>
+                                <td class="" style="padding: 0px 0px 0px 20px; text-align: center;"></td>
+                            </tr>
+                            <tr class="normal-prop" height="64px">
+                                <td class="al_ct" style="padding: 0px; text-align: center;">이동전화번호2</td>
+                                <td class="" style="padding: 0px 0px 0px 20px; text-align: center;"></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>

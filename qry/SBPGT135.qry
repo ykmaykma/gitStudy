@@ -1,0 +1,24 @@
+{
+	"meta": "PSACCTR,계정계 일반,약관동의여부 기록 및 조회",
+	"name": "SBPGT135",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"약관동의처리대상ID,D1약관동의처리대상ID,0,StplAgrmTrxObjId,STRING,20,0",
+				"약관종류코드,D1약관종류코드,0,StplKindCode,STRING,2,0",
+				"약관동의여부,D1약관동의여부,0,StplAgrmYn,STRING,1,0",
+				"약관동의처리대상코드,D1약관동의처리대상코드,0,StplAgrmTrxObjCode,STRING,2,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"약관승인일,D1약관승인일,0,StplAgrmDt,STRING,8,0",
+				"약관동의시각,D1약관동의시각,0,StplAgrmTime,STRING,9,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+	"meta": "PSACCTR,계정계 일반,연금저축계좌 이수관내역 조회",
+	"name": "SOFFQ555",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"지점번호,D1지점번호,0,BranchNo,STRING,3,0",
+				"시작일,D1시작일,0,SrtDt,STRING,8,0",
+				"종료일,D1종료일,0,EndDt,STRING,8,0",
+				"이수관구분,D1이수관구분,0,MvioTp,STRING,1,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"취소구분,D1취소구분,0,CancTp,STRING,1,0",
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"접수일,D1접수일,0,RcptDt,STRING,8,0",
+				"접수번호,D1접수번호,0,RcptNo,NUMSTRING,10,0",
+				"타사명,D1타사명,0,OtcoNm,STRING,40,0",
+				"증권예탁원펀드코드,D1증권예탁원펀드코드,0,KsdFundCode,STRING,12,0",
+				"펀드코드,D1펀드코드,0,FundCode,STRING,20,0",
+				"펀드명,D1펀드명,0,FundNm,STRING,40,0",
+				"납입한도금액,D1납입한도금액,0,PayLmtAmt,NUMSTRING,16,0",
+				"당해년도납입금액,D1당해년도납입금액,0,TyrPayAmt,NUMSTRING,16,0",
+				"구분값,D1구분값,0,TpVal,STRING,40,0",
+				"이수관상태,D1이수관상태,0,MvioStatNm,STRING,40,0",
+				"취소구분,D1취소구분,0,CancTpNm,STRING,20,0",
+				"이체금액,D1이체금액,0,MtrsfAmt,NUMSTRING,16,0",
+				"가입일선택구분,D1가입일선택구분,0,JoinDtChoicTp,STRING,1,0",
+				"송금예정일,D1송금예정일,0,SndmnyPrergDt,STRING,8,0",
+				"계좌가입일,D1계좌가입일,0,AcntJoinDt,STRING,8,0",
+				"납입금액,D1납입금액,0,PayAmt,NUMSTRING,16,0",
+				"납입기간만료일,D1납입기간만료일,0,PayTermXpirDt,STRING,8,0",
+				"이수관상태구분,D1이수관상태구분,0,MvioStatTp,STRING,1,0"
+			]
+		}
+	}
+}

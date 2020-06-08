@@ -1,0 +1,40 @@
+{
+	"meta": "PSACCTR,계정계 일반,실명확인번호 소유계좌현황",
+	"name": "SACMQ241",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"고객정보구분,D1고객정보구분,0,ClninfTy,STRING,1,0",
+				"계좌상태코드,D1계좌상태코드,0,AcntStatCode,STRING,2,0",
+				"지점번호,D1지점번호,0,BrnNo,STRING,3,0",
+				"고객확인번호,D1고객확인번호,0,ClntCnfNo,STRING,20,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"지점명,D1지점명,0,BrnNm,STRING,40,0",
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0"
+			]
+		},
+		"OutBlock2": {
+			"occurs": 200,
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"계좌개설일,D1계좌개설일,0,AcntOpnDt,STRING,8,0",
+				"위탁계좌번호,D1위탁계좌번호,0,CsgnAcntNo,STRING,20,0",
+				"코드명,D1코드명,0,CodeNm01,STRING,40,0",
+				"증권저축계좌,D1증권저축계좌,0,SecSavAcntNo,STRING,20,0",
+				"코드명,D1코드명,0,CodeNm02,STRING,40,0",
+				"선물옵션계좌,D1선물옵션계좌,0,FnoAcntNo,STRING,20,0",
+				"코드명,D1코드명,0,CodeNm03,STRING,40,0",
+				"투자신탁계좌,D1투자신탁계좌,0,IvtrstAcntNo,STRING,20,0",
+				"코드명,D1코드명,0,CodeNm04,STRING,40,0"
+			]
+		}
+	}
+}

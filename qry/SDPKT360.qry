@@ -1,0 +1,71 @@
+{
+	"meta": "PSACCTR,계정계 일반,은행이체출금",
+	"name": "SDPKT360",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"카드회사번호,D1카드회사번호,0,CardFirmNo,STRING,3,0",
+				"카드계좌번호,D1카드계좌번호,0,CardAcntNo,STRING,20,0",
+				"카드유형코드,D1카드유형코드,0,CardPtnCode,STRING,2,0",
+				"카드발급건수,D1카드발급건수,0,CardIssCnt,NUMSTRING,10,0",
+				"책임자카드회사번호,D1책임자카드회사번호,0,MgrCardFirmNo,STRING,3,0",
+				"책임자카드계좌번호,D1책임자카드계좌번호,0,MgrCardAcntNo,STRING,20,0",
+				"책임자카드유형코드,D1책임자카드유형코드,0,MgrCardPtnCode,STRING,2,0",
+				"책임자카드발급횟수,D1책임자카드발급횟수,0,MgrCardIssCnt,NUMSTRING,10,0",
+				"승인요청일,D1승인요청일,0,AgrmReqstDt,STRING,8,0",
+				"승인처리ID,D1승인처리ID,0,AgrmTrxId,STRING,8,0",
+				"최종승인자ID,D1최종승인자ID,0,LastAgrmUserId,STRING,16,0",
+				"승인사용자명,D1승인사용자명,0,AgrmUserNm,STRING,40,0",
+				"승인자추가메시지,D1승인자추가메시지,0,AgrmAddMsg,STRING,100,0",
+				"중계은행코드,D1중계은행코드,0,RlyBnkCode,STRING,3,0",
+				"출금계좌번호,D1출금계좌번호,0,MnyoutAcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"출금금액,D1출금금액,0,MnyoutAmt,NUMSTRING,16,0",
+				"입금은행코드,D1입금은행코드,0,MnyinBnkCode,STRING,3,0",
+				"은행계좌번호,D1은행계좌번호,0,BnkAcntNo,STRING,20,0",
+				"수취인명,D1수취인명,0,RcvrNm,STRING,40,0",
+				"은행이체비밀번호,D1은행이체비밀번호,0,BnkTrsfPwd,STRING,8,0",
+				"출금유형,D1출금유형,0,MnyoutPtnTp,STRING,1,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"의뢰인명,D1의뢰인명,0,AskpsnNm,STRING,40,0",
+				"전화국번호,D1전화국번호,0,TelExno,STRING,4,0",
+				"전화지역번호,D1전화지역번호,0,TelRgno,STRING,4,0",
+				"전화일련번호,D1전화일련번호,0,TelSeqno,STRING,4,0",
+				"수수료구분,D1수수료구분,0,CmsnTp,STRING,1,0",
+				"지연이체구분,D1지연이체구분,0,DlyMtrsfTp,STRING,2,0",
+				"지연이체시간,D1지연이체시간,0,DlyMtrsfTime,STRING,4,0",
+				"지연이체구분코드,D1지연이체구분코드,0,DlyMtrsfTpCode,STRING,12,0",
+				"필러200,D1필러200,0,Filler200,STRING,200,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"이체거래번호,D1이체거래번호,0,MtrsfTrdNo,NUMSTRING,10,0",
+				"중계은행명,D1중계은행명,0,RlyBnkNm,STRING,40,0",
+				"입금은행명,D1입금은행명,0,MnyinBnkNm,STRING,40,0",
+				"수취인명,D1수취인명,0,RcvrNm,STRING,40,0",
+				"주문번호,D1주문번호,0,OrdNo,NUMSTRING,10,0",
+				"수익증권매도좌수,D1수익증권매도좌수,0,BncertSellUnit,NUMSTRING,16,0",
+				"출납번호,D1출납번호,0,Inouno,NUMSTRING,10,0",
+				"출금금액,D1출금금액,0,MnyoutAmt,NUMSTRING,16,0",
+				"이체출금수수료,D1이체출금수수료,0,OutTrsfCmsnAmt,NUMSTRING,16,0",
+				"출금총금액,D1출금총금액,0,MnyoutTotAmt,NUMSTRING,16,0",
+				"예수금전잔금액,D1예수금전잔금액,0,DpsBfbalAmt,NUMSTRING,16,0",
+				"예수금금잔금액,D1예수금금잔금액,0,DpsCrbalAmt,NUMSTRING,16,0",
+				"펀드명,D1펀드명,0,FundNm,STRING,40,0",
+				"은행응답코드,D1은행응답코드,0,BnkRspnsCode,STRING,4,0",
+				"은행메시지내용,D1은행메시지내용,0,BnkMsgCnts,STRING,100,0",
+				"승인처리단계,D1승인처리단계,0,AgrmTrxStep,NUMSTRING,2,0",
+				"승인방식코드,D1승인방식코드,0,AgrmMthdCode,STRING,2,0",
+				"거래번호,D1거래번호,0,TrdNo,NUMSTRING,10,0",
+				"지연이체번호,D1지연이체번호,0,DlyMtrsfNo,NUMSTRING,10,0",
+				"지연처리시간,D1지연처리시간,0,DlyTrxTime,STRING,4,0",
+				"필러200,D1필러200,0,Filler200,STRING,200,0"
+			]
+		}
+	}
+}

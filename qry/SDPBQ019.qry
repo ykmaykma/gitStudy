@@ -1,0 +1,28 @@
+{
+	"meta": "PSACCTR,계정계 일반,일간매수서비스 매수신청일수 현황",
+	"name": "SDPBQ019",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌구분,D1계좌구분,0,AcntTp,STRING,1,0",
+				"조회사용자ID,D1조회사용자ID,0,QryUserId,STRING,16,0",
+				"가입금액,D1가입금액,0,JoinAmt,NUMSTRING,16,0",
+				"조회시작일,D1조회시작일,0,QrySrtDt,STRING,8,0",
+				"조회종료일,D1조회종료일,0,QryEndDt,STRING,8,0",
+				"납입일수,D1납입일수,0,PayDays,NUMSTRING,6,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 20,
+			"format": [
+				"조회사용자ID,D1조회사용자ID,0,QryUserId,STRING,16,0",
+				"입금계좌번호,D1입금계좌번호,0,MnyinAcntNo,STRING,20,0",
+				"가입금액,D1가입금액,0,JoinAmt,NUMSTRING,16,0",
+				"납입일수,D1납입일수,0,PayDays,NUMSTRING,6,0"
+			]
+		}
+	}
+}

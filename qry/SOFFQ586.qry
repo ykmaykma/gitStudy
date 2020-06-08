@@ -1,0 +1,58 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드 계좌보유펀드 조회 (951전용)",
+	"name": "SOFFQ586",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"기준일,D1기준일,0,BaseDt,STRING,8,0",
+				"매매구분,D1매매구분,0,BnsTp,STRING,1,0",
+				"펀드주문구분,D1펀드주문구분,0,FundOrdTp,STRING,1,0",
+				"서브계좌번호,D1서브계좌번호,0,SubAcntNo,STRING,20,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0",
+				"예수금,D1예수금,0,Dps,NUMSTRING,16,0",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0"
+			]
+		},
+		"OutBlock2": {
+			"occurs": 99999,
+			"format": [
+				"서브계좌번호,D1서브계좌번호,0,SubAcntNo,STRING,20,0",
+				"계좌일련번호,D1계좌일련번호,0,SubAcntSeqno,STRING,3,0",
+				"개설일,D1개설일,0,OpnDt,STRING,8,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"기준가,D1기준가,0,BasePrc,NUMSTRING,13,2",
+				"과표기준가,D1과표기준가,0,BoaBasePrc,NUMSTRING,20,10",
+				"펀드잔고수량,D1펀드잔고수량,0,FundBalQty,NUMSTRING,20,5",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0",
+				"원금액1,D1원금액1,0,OrgAmt1,NUMSTRING,16,0",
+				"수익금액,D1수익금액,0,ErnAmt1,NUMSTRING,16,0",
+				"수익률1,D1수익률1,0,Ernrat1,NUMSTRING,12,6",
+				"투신상세명,D1투신상세명,0,IvtrstDtlNm,STRING,40,0",
+				"납입방법명,D1납입방법명,0,PayMthdNm,STRING,40,0",
+				"간접투자명,D1간접투자명,0,IndrcInvstNm,STRING,40,0",
+				"운용사명,D1운용사명,0,OpfirmNm,STRING,50,0",
+				"예수금,D1예수금,0,Dps,NUMSTRING,16,0",
+				"CMS약정여부,D1CMS약정여부,0,CmsCtrctYn,STRING,1,0",
+				"기준시간매매구분,D1기준시간매매구분,0,BaseTimeBnsType,STRING,1,0",
+				"클래스구분,D1클래스구분,0,ClssTp,STRING,2,0",
+				"총보수율,D1총보수율,0,TotRwrdRat,NUMSTRING,17,10",
+				"판매보수율,D1판매보수율,0,MchndRwrdRat,NUMSTRING,17,10",
+				"판매수수료율,D1판매수수료율,0,MchndCmsnAmtRat,NUMSTRING,11,8",
+				"펀드설정원본,D1펀드설정원본,0,FundSetupOrgAmt,NUMSTRING,17,0",
+				"펀드순자산총액,D1펀드순자산총액,0,FundNetAstTotAmt,NUMSTRING,20,2",
+				"HTS매매가능여부,D1HTS매매가능여부,0,HtsBnsAbleYn,STRING,1,0",
+				"대체약정여부,D1대체약정여부,0,BkeepCtrctYn,STRING,1,0"
+			]
+		}
+	}
+}

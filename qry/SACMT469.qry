@@ -1,0 +1,36 @@
+{
+	"meta": "PSACCTR,계정계 일반,비대면 고객인증정보 등록 및 삭제",
+	"name": "SACMT469",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0",
+				"고객번호,D1고객번호,0,ClntNo,STRING,20,0",
+				"내외국인구분,D1내외국인구분,0,NrfTp,STRING,1,0",
+				"휴대폰번호,D1휴대폰번호,0,HpNo,STRING,14,0",
+				"전화구분,D1전화구분,0,TelTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"등록여부,D1등록여부,0,RegYn,STRING,1,0",
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"내외국인구분,D1내외국인구분,0,NrfTp,STRING,1,0",
+				"생년월일,D1생년월일,0,Dob,STRING,8,0",
+				"전화구분,D1전화구분,0,TelTp,STRING,1,0",
+				"휴대폰번호,D1휴대폰번호,0,HpNo,STRING,14,0",
+				"미성년계좌여부,D1미성년계좌여부,0,NageAcntYn,STRING,1,0",
+				"대리인여부,D1대리인여부,0,AgntYn,STRING,1,0",
+				"대리인명,D1대리인명,0,AgntNm,STRING,40,0",
+				"대리인핸드폰국번,D1대리인핸드폰국번,0,AgntHpExno1,STRING,4,0",
+				"대리인핸드폰지역,D1대리인핸드폰지역,0,AgntHpRgno1,STRING,4,0",
+				"대리인핸드폰일련번호,D1대리인핸드폰일련번호,0,AgntHpSeqno1,STRING,4,0",
+				"대리인코드,D1대리인코드,0,AgntCode,STRING,13,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,13 @@
+{
+	"meta": "PSACCTR,계정계 일반,FATCA사용여부조회",
+	"name": "SFCFQ005",
+	"queryType": ".STRT",
+	"input": {},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"사용여부,D1사용여부,0,UseYn,STRING,1,0"
+			]
+		}
+	}
+}

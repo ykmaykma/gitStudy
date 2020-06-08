@@ -1,0 +1,15 @@
+{
+	"meta": "PSACCTR,계정계 일반,HTS사용자비밀번호변경적합성검증",
+	"name": "SBPGQ312",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"사용자ID,D1사용자ID,0,UserId,STRING,16,0",
+				"변경로그인비밀번호,D1변경로그인비밀번호,0,ChgLoginPwd,STRING,32,0",
+				"확인로그인비밀번호,D1확인로그인비밀번호,0,CnfLoginPwd,STRING,32,0"
+			]
+		}
+	},
+	"output": {}
+}

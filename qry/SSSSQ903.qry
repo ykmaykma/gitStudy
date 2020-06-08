@@ -1,0 +1,13 @@
+{
+	"meta": "서비시간조회",
+	"name": "SSSSQ903",
+	"queryType": ".STRT",
+	"input": {},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"서버시간,D1서버시간,0,SvcId,STRING,17,0"				
+			]
+		}
+	}
+}

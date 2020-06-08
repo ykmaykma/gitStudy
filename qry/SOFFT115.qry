@@ -1,0 +1,44 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드 예약매도",
+	"name": "SOFFT115",
+	"queryType": ".STRT",
+	"input": {
+	
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"처리지점번호,D1처리지점번호,0,TrxBrnNo,STRING,3,0",
+				"신청일,D1신청일,0,PrslDt,STRING,8,0",
+				"일련번호,D1일련번호,0,Seqno,NUMSTRING,10,0"
+			]
+		},
+		"InBlock2": {
+			"format": [
+				"처리지점번호,D1처리지점번호,0,TrxBrnNo,STRING,3,0",
+				"신청일,D1신청일,0,PrslDt,STRING,8,0",
+				"일련번호,D1일련번호,0,Seqno,NUMSTRING,10,0",
+				"이용사번호,D1이용사번호,0,FirmNo,STRING,3,0",
+				"예약환매구분,D1예약환매구분,0,RsvRpTp,STRING,1,0",
+				"예약주문일,D1예약주문일,0,RsvOrdDt,STRING,8,0",
+				"목표수익률,D1목표수익률,0,TrgtErnrat,NUMSTRING,12,6",
+				"목표금액,D1목표금액,0,TrgtAmt,NUMSTRING,16,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"환매신청유형구분,D1환매신청유형구분,0,RpPrslPtnTp,STRING,1,0",
+				"환매수량,D1환매수량,0,RpQty,NUMSTRING,20,5",
+				"환매금액,D1환매금액,0,RpAmt,NUMSTRING,16,0",
+				"주문일,D1주문일,0,OrdDt,STRING,8,0",
+				"주문처리여부,D1주문처리여부,0,OrdTrxYn,STRING,1,0",
+				"주문번호,D1주문번호,0,OrdNo,NUMSTRING,10,0",
+				"주문처리지점번호,D1주문처리지점번호,0,OrdTrxBrnNo,STRING,3,0",
+				"취소여부,D1취소여부,0,CancYn,STRING,1,0",
+				"취소시각,D1취소시각,0,CancTime,STRING,9,0",
+				"취소단말번호,D1취소단말번호,0,CancTermNo,STRING,3,0",
+				"취소사용자ID,D1취소사용자ID,0,CancUserId,STRING,16,0",
+				"처리시각,D1처리시각,0,TrxTime,STRING,9,0",
+				"단말번호,D1단말번호,0,TermNo,STRING,3,0",
+				"사용자ID,D1사용자ID,0,UserId,STRING,16,0"
+			]
+		}
+	},
+	"output": {}
+}

@@ -1,0 +1,28 @@
+{
+	"meta": "PSACCTR,계정계 일반,도로명 새주소 검색(구주소 매핑)",
+	"name": "SCMAQ071",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0",
+				"도로명,D1도로명,0,RoadNm,STRING,40,0",
+				"건물번호,D1건물번호,0,BldNo,NUMSTRING,10,0",
+				"건물부번호,D1건물부번호,0,BldSubNo,NUMSTRING,10,0",
+				"건물명,D1건물명,0,BldNm,STRING,100,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 100,
+			"format": [
+				"우편번호,D1우편번호,0,PostNo,STRING,6,0",
+				"동이상주소,D1동이상주소,0,AbdngAddr,STRING,100,0",
+				"동이하주소,D1동이하주소,0,BlwdngAddr,STRING,100,0",
+				"도로이상주소,D1도로이상주소,0,AbroadAddr,STRING,100,0",
+				"도로이하주소,D1도로이하주소,0,BlwroadAddr,STRING,200,0"
+			]
+		}
+	}
+}

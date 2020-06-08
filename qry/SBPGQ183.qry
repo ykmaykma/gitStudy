@@ -1,0 +1,28 @@
+{
+	"meta": "PSACCTR,계정계 일반,HTS 고객 ID 찾기",
+	"name": "SBPGQ183",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"실명확인방법코드,D1실명확인방법코드,0,RmnCnfMthdCode,STRING,2,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"계좌비밀번호,D1계좌비밀번호,0,AcntPwd1,STRING,32,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"전자금융사용자ID,D1전자금융사용자ID,0,ElecfnUserId,STRING,16,0",
+				"고객구분,D1고객구분,0,ClntTpNm,STRING,10,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"본인확인유형구분,D1본인확인유형구분,0,OnesfCnfPtnTp,STRING,1,0"
+			]
+		}
+	}
+}

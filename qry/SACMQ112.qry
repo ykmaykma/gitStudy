@@ -1,0 +1,14 @@
+{
+	"meta": "PSACCTR,계정계 일반,주민등록번호검증",
+	"name": "SACMQ112",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0"
+			]
+		}
+	},
+	"output": {}
+}

@@ -1,0 +1,60 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드 계좌보유펀드 조회",
+	"name": "SOFFQ141",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"기준일,D1기준일,0,BaseDt,STRING,8,0",
+				"매매구분,D1매매구분,0,BnsTp,STRING,1,0",
+				"펀드주문구분,D1펀드주문구분,0,FundOrdTp,STRING,1,0",
+				"서브계좌번호,D1서브계좌번호,0,SubAcntNo,STRING,20,0",
+				"환매유형코드,D1환매유형코드,0,RpPtnCode,STRING,2,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌명,D1계좌명,0,AcntNm,STRING,40,0"
+			]
+		},
+		"OutBlock2": {
+			"occurs": 99999,
+			"format": [
+				"간접투자코드,D1간접투자코드,0,IndrcInvstCode,STRING,2,0",
+				"서브계좌번호,D1서브계좌번호,0,SubAcntNo,STRING,20,0",
+				"계좌일련번호,D1계좌일련번호,0,SubAcntSeqno,STRING,3,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"펀드일련번호,D1펀드일련번호,0,FundSeq,NUMSTRING,10,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"기준가,D1기준가,0,BasePrc,NUMSTRING,13,2",
+				"펀드잔고수량,D1펀드잔고수량,0,FundBalQty,NUMSTRING,20,5",
+				"개설일,D1개설일,0,OpnDt,STRING,8,0",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0",
+				"정산금액,D1정산금액,0,AdjstAmt,NUMSTRING,16,0",
+				"매수유형코드,D1매수유형코드,0,BuyPtnCode,STRING,2,0",
+				"납입방법코드,D1납입방법코드,0,PayMthdCode,STRING,2,0",
+				"계약기간월수,D1계약기간월수,0,CvntTermMthQty,NUMSTRING,6,0",
+				"계약금액,D1계약금액,0,CvntAmt,NUMSTRING,16,0",
+				"환매유형코드,D1환매유형코드,0,RpPtnCode,STRING,2,0",
+				"운용사코드,D1운용사코드,0,OpfirmCode,STRING,3,0",
+				"운용사명,D1운용사명,0,OpfirmNm,STRING,50,0",
+				"간접투자명,D1간접투자명,0,IndrcInvstNm,STRING,40,0",
+				"납입방법명,D1납입방법명,0,PayMthdNm,STRING,40,0",
+				"예수금,D1예수금,0,Dps,NUMSTRING,16,0",
+				"월납입일,D1월납입일,0,MthPayDt,STRING,2,0",
+				"투신상세코드,D1투신상세코드,0,IvtrstDtlCode,STRING,2,0",
+				"투신상세명,D1투신상세명,0,IvtrstDtlNm,STRING,40,0",
+				"매수원금,D1매수원금,0,BuyPramt,NUMSTRING,16,0",
+				"과표기준가,D1과표기준가,0,BoaBasePrc,NUMSTRING,20,10",
+				"기준시간매매구분,D1기준시간매매구분,0,BaseTimeBnsType,STRING,1,0",
+				"총보수율,D1총보수율,0,TotRwrdRat,NUMSTRING,17,10",
+				"판매보수율,D1판매보수율,0,MchndRwrdRat,NUMSTRING,17,10",
+				"판매수수료율,D1판매수수료율,0,MchndCmsnAmtRat,NUMSTRING,11,8"
+			]
+		}
+	}
+}

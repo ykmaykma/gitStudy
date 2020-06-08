@@ -1,0 +1,52 @@
+{
+	"meta": "PSACCTR,계정계 일반,(수익증권) 실질수익률 계좌별 상세조회",
+	"name": "SOFFQ603",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"기준월,D1기준월,0,BaseMth,STRING,6,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"기준일,D1기준일,0,BaseDt,STRING,8,0",
+				"서브계좌번호,D1서브계좌번호,0,SubAcntNo,STRING,20,0",
+				"계좌일련번호,D1계좌일련번호,0,SubAcntSeqno,STRING,3,0",
+				"서브계좌명,D1서브계좌명,0,SubAcntNm,STRING,40,0",
+				"고객번호,D1고객번호,0,Clntno,STRING,20,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"대체계좌번호,D1대체계좌번호,0,BkeepAcntNo,STRING,20,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"최초매수일,D1최초매수일,0,FstBuyDt,STRING,8,0",
+				"투자기간일수,D1투자기간일수,0,InvstTermDays,NUMSTRING,6,0",
+				"펀드잔고수량,D1펀드잔고수량,0,FundBalQty,NUMSTRING,20,5",
+				"투자원금,D1투자원금,0,InvstOrgAmt,NUMSTRING,20,0",
+				"펀드환매금액,D1펀드환매금액,0,IvstfndRpAmt1,NUMSTRING,16,0",
+				"펀드환매금액,D1펀드환매금액2,0,IvstfndRpAmt2,NUMSTRING,16,0",
+				"보수금액,D1보수금액,0,RwrdAmt,NUMSTRING,16,0",
+				"판매수수료율,D1판매수수료율,0,MchndCmsnAmtRat,NUMSTRING,11,8",
+				"보수율,D1보수율,0,RwrdRat,NUMSTRING,7,4",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0",
+				"환매수수료합계금액,D1환매수수료합계금액,0,RpCmsnSumAmt,NUMSTRING,16,0",
+				"예상금액,D1예상금액,0,FcastAmt,NUMSTRING,16,0",
+				"세전수익률,D1세전수익률,0,TaxBfErnrat,NUMSTRING,12,6",
+				"세후수익률,D1세후수익률,0,TaxAfErnrat,NUMSTRING,12,6",
+				"년수익률,D1년수익률,0,YearErnrat,NUMSTRING,12,6",
+				"연환산수익률,D1연환산수익률,0,YearConvtErnRat,NUMSTRING,12,6",
+				"원금액,D1원금액,0,OrgAmt,NUMSTRING,16,0",
+				"투자수익률,D1투자수익률,0,InvstErnrat,NUMSTRING,9,2",
+				"수령주소지정구분,D1수령주소지정구분,0,AcptAddrDsgnTp,STRING,1,0",
+				"우편번호,D1우편번호,0,PostNo,STRING,6,0",
+				"주소,D1주소,0,MbrAddr,STRING,200,0",
+				"이메일,D1이메일,0,Email,STRING,50,0",
+				"전화번호,D1전화번호,0,Telno,STRING,20,0",
+				"비고,D1비고,0,Rmk,STRING,100,0"
+			]
+		}
+	}
+}

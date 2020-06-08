@@ -1,0 +1,27 @@
+{
+	"meta": "PSACCTR,계정계 일반,전사 사원 내역",
+	"name": "SSLDQ019",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"사원번호,D1사원번호,0,EmpNo,STRING,9,0",
+				"지점번호,D1지점번호,0,BrnNo,STRING,3,0",
+				"사원명,D1사원명,0,EmpNm,STRING,40,0",
+				"퇴직여부,D1퇴직여부,0,RetirYn,STRING,1,0",
+				"회사전체여부,D1회사전체여부,0,CoAllYn,STRING,1,0",
+				"추가사원여부,D1추가사원여부,0,AddEmpYn,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 99999,
+			"format": [
+				"사원번호,D1사원번호,0,EmpNo,STRING,9,0",
+				"사원명,D1사원명,0,EmpNm,STRING,40,0",
+				"지점명,D1지점명,0,BrnNm,STRING,40,0"
+			]
+		}
+	}
+}

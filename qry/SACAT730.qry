@@ -1,0 +1,23 @@
+{
+	"meta": "PSACCTR,계정계 일반,SMS발송",
+	"name": "SACAT730",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"SMS메시지자체,D1SMS메시지자체,0,SmsData,STRING,80,0",
+				"SMS여부,D1SMS여부,0,SMSYn,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"휴대폰발신번호,D1휴대폰발신번호,0,HpSndNo,STRING,14,0",
+				"휴대폰수신번호,D1휴대폰수신번호,0,HpRcvNo,STRING,14,0"
+			]
+		}
+	}
+}

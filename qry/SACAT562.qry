@@ -1,0 +1,49 @@
+{
+	"meta": "PSACCTR,계정계 일반,윌지급식펀드자동인출약정 등록 및 정정",
+	"name": "SACAT562",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"서비스종류코드,D1서비스종류코드,0,SvcKindCode,STRING,4,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"대체계좌번호,D1대체계좌번호,0,BkeepAcntNo,STRING,20,0",
+				"은행코드,D1은행코드,0,BnkCode,STRING,3,0",
+				"은행계좌번호,D1은행계좌번호,0,BnkAcntNo,STRING,20,0",
+				"은행계좌명,D1은행계좌명,0,BnkAcntNm,STRING,40,0",
+				"일괄대체코드,D1일괄대체코드,0,BbkpgCode,STRING,2,0",
+				"자동이체대체금액,D1자동이체대체금액,0,AmtrBkeepAmt,NUMSTRING,16,0",
+				"타사대체구분,D1타사대체구분,0,OthbkpTp,STRING,1,0",
+				"약정시작일,D1약정시작일,0,CtrctSrtDt,STRING,8,0",
+				"자동대체일,D1자동대체일,0,AbkpDt,STRING,2,0",
+				"대출만기일,D1대출만기일,0,LoanDueDt,STRING,8,0",
+				"월지급펀드여부,D1월지급펀드여부,0,MonPayFundYn,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"대체계좌번호,D1대체계좌번호,0,BkeepAcntNo,STRING,20,0",
+				"은행코드,D1은행코드,0,BnkCode,STRING,3,0",
+				"은행계좌번호,D1은행계좌번호,0,BnkAcntNo,STRING,20,0",
+				"은행계좌명,D1은행계좌명,0,BnkAcntNm,STRING,40,0",
+				"일괄대체코드,D1일괄대체코드,0,BbkpgCode,STRING,2,0",
+				"자동이체대체금액,D1자동이체대체금액,0,AmtrBkeepAmt,NUMSTRING,16,0",
+				"타사대체구분,D1타사대체구분,0,OthbkpTp,STRING,1,0",
+				"약정시작일,D1약정시작일,0,CtrctSrtDt,STRING,8,0",
+				"자동대체일,D1자동대체일,0,AbkpDt,STRING,2,0",
+				"대출만기일,D1대출만기일,0,LoanDueDt,STRING,8,0",
+				"월지급펀드여부,D1월지급펀드여부,0,MonPayFundYn,STRING,1,0",
+				"월지급일,D1월지급일,0,MonPayDay,NUMSTRING,6,0",
+				"월지급펀드비율,D1월지급펀드비율,0,MonPayFundRat,NUMSTRING,7,4"
+			]
+		}
+	}
+}

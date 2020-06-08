@@ -1,0 +1,50 @@
+{
+	"meta": "PSACCTR,계정계 일반,투자정보확인서 등록/변경",
+	"name": "SACMT110",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"고객구분,D1고객구분,0,ClntTp,STRING,1,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"고객번호,D1고객번호,0,ClntNo,STRING,20,0",
+				"개인법인구분,D1개인법인구분,0,PsnlCorpTp,STRING,1,0",
+				"투자권유구분,D1투자권유구분,0,InvstCnvsTp,STRING,1,0",
+				"정보제공구분,D1정보제공구분,0,InfoPrvdTp,STRING,1,0",
+				"본인대리인구분,D1본인대리인구분,0,OnesfAgntTp,STRING,1,0",
+				"질문1,D1질문1,0,Quest1,STRING,1,0",
+				"질문2,D1질문2,0,Quest2,STRING,1,0",
+				"질문3,D1질문3,0,Quest3,STRING,1,0",
+				"질문4,D1질문4,0,Quest4,STRING,1,0",
+				"질문5,D1질문5,0,Quest5,STRING,1,0",
+				"질문6,D1질문6,0,Quest6,STRING,1,0",
+				"질문7,D1질문7,0,Quest7,STRING,1,0",
+				"수량1,D1수량1,0,Qty1,NUMSTRING,16,0",
+				"고객등급명,D1고객등급명,0,ClntGrdNm,STRING,40,0",
+				"질문8,D1질문8,0,Quest8,STRING,1,0",
+				"산출등급명,D1산출등급명,0,GrdNm,STRING,40,0",
+				"주식거래가능여부,D1주식거래가능여부,0,StkTrdAbleYn,STRING,1,0",
+				"ELW거래가능여부,D1ELW거래가능여부,0,ElwTrdAbleYn,STRING,1,0",
+				"파생상품거래가능여부,D1파생상품거래가능여부,0,DrvtTrdAbleYn,STRING,1,0",
+				"파생상품투자기간,D1파생상품투자기간,0,DrvtInvstTerm,NUMSTRING,6,0",
+				"정보확인사원번호,D1정보확인사원번호,0,InfoCnfEmpNo,STRING,9,0",
+				"생년월일,D1생년월일,0,Bod,STRING,8,0",
+				"조회여부1,D1조회여부1,0,QryYn1,STRING,1,0",
+				"조회여부2,D1조회여부2,0,QryYn2,STRING,1,0",
+				"조회여부3,D1조회여부3,0,QryYn3,STRING,1,0",
+				"조회여부4,D1조회여부4,0,QryYn4,STRING,1,0",
+				"조회여부5,D1조회여부5,0,QryYn5,STRING,1,0",
+				"고령자여부,D1고령자여부,0,AgedYn,STRING,1,0",
+				"특이사항내용,D1특이사항내용,0,UnuslCnts,STRING,100,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"만기일자,D1만기일자,0,DueDate,STRING,8,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,66 @@
+{
+	"meta": "PSACCTR,계정계 일반,펀드계좌매매내역조회",
+	"name": "SOFFQ455",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"조회시작일,D1조회시작일,0,QrySrtDt,STRING,8,0",
+				"조회종료일,D1조회종료일,0,QryEndDt,STRING,8,0",
+				"조회구분,D1조회구분,0,QryTp,STRING,1,0",
+				"매매구분,D1매매구분,0,BnsTp,STRING,1,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"occurs": 30,
+			"format": [
+				"처리지점번호,D1처리지점번호,0,TrxBrnNo,STRING,3,0",
+				"처리지점명,D1처리지점명,0,TrxBrnNm,STRING,40,0",
+				"주문일,D1주문일,0,OrdDt,STRING,8,0",
+				"주문번호,D1주문번호,0,OrdNo,NUMSTRING,10,0",
+				"주문유형명,D1주문유형명,0,OrdPtnNm,STRING,40,0",
+				"거래번호,D1거래번호,0,TrdNo,NUMSTRING,10,0",
+				"계좌번호,D1계좌번호,0,AcntNo,STRING,20,0",
+				"계좌일련번호,D1계좌일련번호,0,SubAcntSeqno,STRING,3,0",
+				"투신상세명,D1투신상세명,0,IvtrstDtlNm,STRING,40,0",
+				"투신펀드코드,D1투신펀드코드,0,IvstfndCode,STRING,12,0",
+				"한글투신펀드명,D1한글투신펀드명,0,HanglIvstfndNm,STRING,40,0",
+				"상품유형명,D1상품유형명,0,PdptnNm,STRING,40,0",
+				"매매금액,D1매매금액,0,BnsAmt,NUMSTRING,16,0",
+				"매매수량,D1매매수량,0,BnsQty,NUMSTRING,16,0",
+				"평가금액,D1평가금액,0,EvalAmt,NUMSTRING,16,0",
+				"과표금액,D1과표금액,0,BoaAmt,NUMSTRING,16,0",
+				"매매기준가,D1매매기준가,0,BnsBasePrc,NUMSTRING,20,10",
+				"과표기준가,D1과표기준가,0,BoaBasePrc,NUMSTRING,20,10",
+				"소득세,D1소득세,0,Ictax,NUMSTRING,16,0",
+				"주민세,D1주민세,0,Ihtax,NUMSTRING,16,0",
+				"세금합계금액,D1세금합계금액,0,TaxSumAmt,NUMSTRING,16,0",
+				"매도원금,D1매도원금,0,SellPramt,NUMSTRING,16,0",
+				"판매수수료,D1판매수수료,0,MchndCmsnAmt,NUMSTRING,16,0",
+				"환매수수료,D1환매수수료,0,RpCmsnAmt,NUMSTRING,16,0",
+				"처리시각,D1처리시각,0,TrxTime,STRING,9,0",
+				"시간외주문여부,D1시간외주문여부,0,OvtmOrdVn,STRING,1,0",
+				"기준가적용일,D1기준가적용일,0,BasePrcAppDt,STRING,8,0",
+				"결제일,D1결제일,0,SettDt,STRING,8,0",
+				"펀드주문유형코드,D1펀드주문유형코드,0,FundOrdPtnCode,STRING,2,0",
+				"운용사명,D1운용사명,0,OpfirmNm,STRING,50,0",
+				"매도투신펀드코드,D1매도투신펀드코드,0,SellIvstfndCode,STRING,12,0",
+				"매수투신펀드코드,D1매수투신펀드코드,0,BuyIvstfndCode,STRING,12,0",
+				"매도계좌번호,D1매도계좌번호,0,SellAcntNo,STRING,20,0",
+				"매수계좌번호,D1매수계좌번호,0,BuyAcntNo,STRING,20,0",
+				"펀드명,D1펀드명,0,FundNm,STRING,40,0",
+				"영문투신펀드명,D1영문투신펀드명,0,EngIvstfndNm,STRING,40,0",
+				"펀드일련번호,D1펀드일련번호,0,FundSeq,NUMSTRING,10,0",
+				"조작자ID,D1조작자ID,0,TrxtrId,STRING,16,0",
+				"단말번호,D1단말번호,0,TermNo,STRING,3,0",
+				"출납번호,D1출납번호,0,Inouno,NUMSTRING,10,0",
+				"취소여부,D1취소여부,0,CancYn,STRING,1,0",
+				"납입방법코드,D1납입방법코드,0,ZPayMthdCode,STRING,2,0"
+			]
+		}
+	}
+}

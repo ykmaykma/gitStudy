@@ -1,0 +1,34 @@
+{
+	"meta": "PSACCTR,계정계 일반,계좌 은행이체 약정",
+	"name": "SACAT504",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"종합계좌번호,D1종합계좌번호,0,IntaccNo,STRING,20,0",
+				"비밀번호,D1비밀번호,0,Pwd,STRING,8,0",
+				"은행본인계좌여부,D1은행본인계좌여부,0,BnkOnesfAcntYn,STRING,1,0",
+				"은행코드,D1은행코드,0,BnkCode,STRING,3,0",
+				"은행계좌번호,D1은행계좌번호,0,BnkAcntNo,STRING,20,0",
+				"은행계좌명,D1은행계좌명,0,BnkAcntNm,STRING,40,0",
+				"은행이체비밀번호,D1은행이체비밀번호,0,BnkTrsfPwd,STRING,8,0",
+				"승인요청일,D1승인요청일,0,AgrmReqstDt,STRING,8,0",
+				"승인자추가메시지,D1승인자추가메시지,0,AgrmAddMsg,STRING,100,0",
+				"승인사용자명,D1승인사용자명,0,AgrmUserNm,STRING,40,0",
+				"승인처리ID,D1승인처리ID,0,AgrmTrxId,STRING,8,0",
+				"최종승인자ID,D1최종승인자ID,0,LastAgrmUserId,STRING,16,0",
+				"통화코드,D1통화코드,0,CrcyCode,STRING,3,0",
+				"발급신청경로코드,D1발급신청경로코드,0,IssPrslPathCode,STRING,2,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"승인방식코드,D1승인방식코드,0,AgrmMthdCode,STRING,2,0"
+			]
+		}
+	}
+}

@@ -1,0 +1,28 @@
+{
+	"meta": "PSACCTR,계정계 일반,인증기본정보조회[NO-COMMIT]",
+	"name": "SBPGQ391",
+	"queryType": ".STRT",
+	"input": {
+		"InBlock1": {
+			"format": [
+				"처리구분,D1처리구분,0,TrxTp,STRING,1,0",
+				"사용자ID,D1사용자ID,0,UserId,STRING,16,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0"
+			]
+		}
+	},
+	"output": {
+		"OutBlock1": {
+			"format": [
+				"사용자ID,D1사용자ID,0,UserId,STRING,16,0",
+				"실명확인번호,D1실명확인번호,0,Rmnno,STRING,13,0",
+				"고객구분,D1고객구분,0,ClntTp,STRING,1,0",
+				"고객명,D1고객명,0,ClntNm,STRING,40,0",
+				"전자서명오류횟수,D1전자서명오류횟수,0,DigisigErrCnt99,STRING,2,0",
+				"인증서상태구분,D1인증서상태구분,0,CertStatTp,STRING,1,0",
+				"인증서식별명,D1인증서식별명,0,CertDnm,STRING,256,0",
+				"본인확인구분,D1본인확인구분,0,OnesfCnfTp,STRING,1,0"
+			]
+		}
+	}
+}
