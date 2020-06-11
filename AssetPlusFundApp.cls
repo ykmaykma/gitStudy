@@ -1,8 +1,4 @@
 
-/**
-Constructor
-Do not call Function in Constructor.
-*/
 @class AssetPlusFundApp()
 {
 	@super();
